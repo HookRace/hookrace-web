@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            HookRace
+tagline:          The successor of DDraceNetwork
+url:              http://hookrace.net
+paginate:         1
+baseurl:          /
+author:
+  name:           Dennis Felsing
+  url:            http://felsin9.de/nnis
+  email:          dennis@felsin9.de
+
+pages_list:
+  Posts: '/blog/'
+  Feed: '/blog/atom.xml'
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/poole/poole
