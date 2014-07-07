@@ -107,6 +107,7 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 strong {
@@ -150,7 +151,7 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Monaco, "Courier New", monospace;
+  font-family: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Consolas, Monaco, "Courier New", monospace;
 }
 code {
   padding: .25em .5em;
@@ -190,7 +191,7 @@ pre code {
 
 /* Gist via GitHub Pages */
 .gist .gist-file {
-  font-family: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Monaco, "Courier New", monospace !important;
+  font-family: Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", Consolas, Monaco, "Courier New", monospace !important;
 }
 .gist .markdown-body {
   padding: 15px;
@@ -331,6 +332,10 @@ tbody tr:nth-child(odd) th {
 .page,
 .post {
   margin-bottom: 4em;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 /* Blog post or page title */
