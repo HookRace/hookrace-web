@@ -18,7 +18,7 @@ author:
 
 pages_list:
   Posts: '/blog/'
-  Feed: '/blog/atom.xml'
+  Feed: '/blog/feed/'
 
 # Custom vars
 version:          1.0.0

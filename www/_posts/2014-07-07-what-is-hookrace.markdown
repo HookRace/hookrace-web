@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "What is HookRace?"
-date:   2014-07-07 14:12:08
 categories: hookrace, ddnet, nimrod
 permalink: /blog/what-is-hookrace/
 ---
@@ -26,3 +25,10 @@ echo "Average line length: ",
 {% endhighlight %}
 
 On this blog I will report about my progress in the development of HookRace and my current Nimrod adventures.
+
+Some of the plans I have so far for HookRace:
+
+- Vector Graphics (SVG) ingame for a sharp image on any screen
+- Whole physics is executed at the client as well as the server, for perfect prediction
+- No lags with high player numbers
+- Accounts to prevent faking
