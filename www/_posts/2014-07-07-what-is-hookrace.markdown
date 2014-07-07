@@ -9,6 +9,13 @@ I have been running [DDraceNetwork](http://ddnet.tw) for 1 year, which started o
 
 Now it's time to start something new. I'm working on a new game called HookRace, which will be the successor to DDraceNetwork. It will be its own game, not based on Teeworlds.
 
+Some of the plans I have so far for HookRace:
+
+- Vector Graphics (SVG) ingame for a sharp image on any screen
+- Whole physics is executed at the client as well as the server, for perfect prediction
+- No lags with high player numbers
+- Accounts to prevent faking
+
 As the programming language for HookRace, I chose [Nimrod](http://nimrod-lang.org):
 
 {% highlight nimrod %}
@@ -24,11 +31,14 @@ echo "Average line length: ",
   if count > 0: sum / count else: 0
 {% endhighlight %}
 
+Nimrod is a rather new language, and it took me some time to choose it over C++ and Rust. Here are some of my reasons for this choice:
+
+- Python-like syntax
+- Statically typed, compiled
+- High performance (same ballpark as C/C++)
+- Garbage Collector that can be controlled for soft real-time
+- Produces executables without dependencies (compiles to C)
+- Easily interfaces C libraries (compiles to C)
+- Clean and powerful metaprogramming
+
 On this blog I will report about my progress in the development of HookRace and my current Nimrod adventures.
-
-Some of the plans I have so far for HookRace:
-
-- Vector Graphics (SVG) ingame for a sharp image on any screen
-- Whole physics is executed at the client as well as the server, for perfect prediction
-- No lags with high player numbers
-- Accounts to prevent faking
