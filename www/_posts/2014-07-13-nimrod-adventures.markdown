@@ -5,7 +5,7 @@ categories: nimrod
 permalink: /blog/nimrod-adventures/
 ---
 
-To learn some Nimrod I held a talk about it at the [GPN14](https://entropia.de/GPN14) (in German, [Slides](http://felsin9.de/nnis/nimrod/nimrod-gpn14.pdf)).
+To learn some [Nimrod](http://nimrod-lang.org/) I held a talk about it at the [GPN14](https://entropia.de/GPN14) (in German, [Slides](http://felsin9.de/nnis/nimrod/nimrod-gpn14.pdf)).
 
 Afterwards I started solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in [Nimrod](http://rosettacode.org/wiki/Category:Nimrod) to get a better feel for the language and standard library. That also made me discover some [rough edges](https://github.com/Araq/Nimrod/issues/created_by/def-?page=1&state=open) in the language, but luckily the community, albeit small, is active and competent. All the small code pieces I wrote are now on [Github](https://github.com/search?q=user%3Adef-+nimrod) too.
 
@@ -39,7 +39,7 @@ proc insertSort[T](a: var openarray[T]) =
 {% endhighlight %}
 
 ## [Rank languages by popularity](http://rosettacode.org/wiki/Rosetta_Code/Rank_languages_by_popularity#Nimrod)
-The standard library is extremely useful, providing an HTTP client, JSON parser, regular expression, string utils and algorithm, which I use to create a ranking of the popularity of languages on Rosetta Code:
+The standard library is extremely useful, providing an [HTTP client](http://nimrod-lang.org/httpclient.html), [JSON parser](http://nimrod-lang.org/json.html), [regular expressions](http://nimrod-lang.org/re.html), [string utils](http://nimrod-lang.org/strutils.html) and [algorithms](http://nimrod-lang.org/algorithm.html), which I use to create a ranking of the popularity of languages on Rosetta Code:
 {% highlight nimrod %}
 import httpclient, json, re, strutils, algorithm, future
 
@@ -74,7 +74,14 @@ printf("Hello %d %s!\n", 12, x)
 
 ## [Wrapping a shared C library](http://rosettacode.org/wiki/Call_a_function_in_a_shared_library#Nimrod)
 {% highlight nimrod %}
-proc openimage(s: cstring): cint {.importc, dynlib: "imglib.so".}
+when defined(windows):
+  const imglib = "imglib.dll"
+elif defined(macosx):
+  const imglib = "imglib.dylib"
+else:
+  const imglib = "imglib.so"
+
+proc openimage(s: cstring): cint {.importc, dynlib: imglib.}
 
 echo openimage("foo")
 {% endhighlight %}
