@@ -325,9 +325,9 @@ int main() {
 }
 {% endhighlight %}
 
-## Compile to Javascript
+## Compile to JavaScript
 
-You can compile Nim to Javascript, instead of C, as well. This allows you to write the client as well as the server directly in Nim. Let's make a small visitor counter on the server that gets displayed in the browser. This is our `client.nim`:
+You can [compile Nim to JavaScript](http://nim-lang.org/backends.html#the-javascript-target), instead of C, as well. This allows you to write the client as well as the server directly in Nim. Let's make a small visitor counter on the server that gets displayed in the browser. This is our `client.nim`:
 
 {% highlight nimrod %}
 import htmlgen, dom
@@ -346,7 +346,7 @@ proc printInfo(data: Data) {.exportc.} =
 
 We define a `Data` type that we use to pass data from the server to client. The `printInfo` procedure will be called with this `data` and display it. Compile this with `nim js client`. The result javascript file ends up in `nimcache/client.js`.
 
-For the server we need to [get nimble](https://github.com/nim-lang/nimble) and run `nimble install jester`. Now we can use the Jester web framework and write our `server.nim`:
+For the server we need to [get nimble](https://github.com/nim-lang/nimble) and run `nimble install jester`. Now we can use the [Jester web framework](https://github.com/dom96/jester) and write our `server.nim`:
 
 {% highlight nimrod %}
 import jester, asyncdispatch, json, strutils, times, sets, htmlgen
@@ -398,4 +398,4 @@ You can see our code in action on the [Jester-generated site](http://visitors.ho
 
 I hope I could pick your interest in in the Nim programming language.
 
-For comments use [Reddit](), [Hacker News]() or just write me a mail at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+For comments use [Reddit](http://reddit.com/r/programming), [Hacker News](//news.ycombinator.com/news) or just write me a mail at [dennis@felsin9.de](mailto:dennis@felsin9.de).

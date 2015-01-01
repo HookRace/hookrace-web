@@ -1,8 +1,8 @@
 # Dependencies
 markdown:         redcarpet
 redcarpet:
-  extensions: ["tables"]
-pygments:         true
+  extensions: [tables, with_toc_data]
+highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
