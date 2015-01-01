@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is HookRace?"
-categories: hookrace, ddnet, nimrod
+categories: hookrace, ddnet, nim
 permalink: /blog/what-is-hookrace/
 ---
 
@@ -16,7 +16,7 @@ Some of the plans I have so far for HookRace:
 - No lags with high player numbers
 - Accounts to prevent faking
 
-As the programming language for HookRace, I chose [Nimrod](http://nimrod-lang.org):
+As the programming language for HookRace, I chose [Nim](http://nim-lang.org):
 
 {% highlight nimrod %}
 # Game of Life in terminal
@@ -71,7 +71,7 @@ while true:
   sleep 200
 {% endhighlight %}
 
-Nimrod is a rather new language, and it took me some time to choose it. What I love about the language:
+Nim is a rather new language, and it took me some time to choose it. What I love about the language:
 
 - Python-like syntax
 - Statically typed, compiled
@@ -81,4 +81,4 @@ Nimrod is a rather new language, and it took me some time to choose it. What I l
 - Easily interfaces C libraries (compiles to C)
 - Clean and powerful metaprogramming
 
-On this blog I will report about my progress in the development of HookRace and my current Nimrod adventures.
+On this blog I will report about my progress in the development of HookRace and my current Nim adventures.

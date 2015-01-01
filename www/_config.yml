@@ -1,12 +1,14 @@
 # Dependencies
 markdown:         redcarpet
+redcarpet:
+  extensions: ["tables"]
 pygments:         true
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            HookRace
+title:            HookRace - a Nim blog for now
 tagline:          The successor of DDraceNetwork
 url:              http://hookrace.net
 paginate:         1

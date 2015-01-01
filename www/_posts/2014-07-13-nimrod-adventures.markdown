@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Nimrod Adventures"
-categories: nimrod
-permalink: /blog/nimrod-adventures/
+title:  "Nim Adventures"
+categories: nim
+permalink: /blog/nim-adventures/
 ---
 
-To learn some [Nimrod](http://nimrod-lang.org/) I held a talk about it at the [GPN14](https://entropia.de/GPN14) (in German, [Slides](http://felsin9.de/nnis/nimrod/nimrod-gpn14.pdf)).
+To learn some [Nim](http://nim-lang.org/) I held a talk about it at the [GPN14](https://entropia.de/GPN14) (in German, [Slides](http://felsin9.de/nnis/nimrod/nimrod-gpn14.pdf)).
 
-Afterwards I started solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in [Nimrod](http://rosettacode.org/wiki/Category:Nimrod) to get a better feel for the language and standard library. That also made me discover some [rough edges](https://github.com/Araq/Nimrod/issues/created_by/def-?page=1&state=open) in the language, but luckily the community, albeit small, is active and competent. All the small code pieces I wrote are now on [Github](https://github.com/search?q=user%3Adef-+nimrod) too.
+Afterwards I started solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in [Nim](http://rosettacode.org/wiki/Category:Nimrod) to get a better feel for the language and standard library. That also made me discover some [rough edges](https://github.com/Araq/Nimrod/issues/created_by/def-?page=1&state=open) in the language, but luckily the community, albeit small, is active and competent. All the small code pieces I wrote are now on [Github](https://github.com/search?q=user%3Adef-+nimrod) too.
 
 What I noticed is that most problems are as easy to solve as in Python, but much more performant. I'm now more confident that this language is the right choice for writing HookRace in.
 
@@ -26,7 +26,7 @@ def insertion_sort(l):
         l[j+1] = key
 {% endhighlight %}
 
-and in Nimrod:
+and in Nim:
 {% highlight nimrod %}
 proc insertSort[T](a: var openarray[T]) =
   for i in 1 .. <a.len:
@@ -39,7 +39,7 @@ proc insertSort[T](a: var openarray[T]) =
 {% endhighlight %}
 
 ## [Rank languages by popularity](http://rosettacode.org/wiki/Rosetta_Code/Rank_languages_by_popularity#Nimrod)
-The standard library is extremely useful, providing an [HTTP client](http://nimrod-lang.org/httpclient.html), [JSON parser](http://nimrod-lang.org/json.html), [regular expressions](http://nimrod-lang.org/re.html), [string utils](http://nimrod-lang.org/strutils.html) and [algorithms](http://nimrod-lang.org/algorithm.html), which I use to create a ranking of the popularity of languages on Rosetta Code:
+The standard library is extremely useful, providing an [HTTP client](http://nim-lang.org/httpclient.html), [JSON parser](http://nim-lang.org/json.html), [regular expressions](http://nim-lang.org/re.html), [string utils](http://nim-lang.org/strutils.html) and [algorithms](http://nim-lang.org/algorithm.html), which I use to create a ranking of the popularity of languages on Rosetta Code:
 {% highlight nimrod %}
 import httpclient, json, re, strutils, algorithm, future
 
@@ -87,7 +87,7 @@ echo openimage("foo")
 {% endhighlight %}
 
 ## [Quine](http://rosettacode.org/wiki/Quine#Nimrod)
-A quine is a program that prints its own source code. This Nimrod program does that once at compiletime and once at runtime:
+A quine is a program that prints its own source code. This Nim program does that once at compiletime and once at runtime:
 {% highlight nimrod %}
 const x = "const x = |const y = x[0..9]&34.chr&x&34.chr&10.chr&x[11..100]&10.chr&x[102..115]&10.chr&x[117 .. -1]|static: echo y|echo y"
 const y = x[0..9]&34.chr&x&34.chr&10.chr&x[11..100]&10.chr&x[102..115]&10.chr&x[117 .. -1]
