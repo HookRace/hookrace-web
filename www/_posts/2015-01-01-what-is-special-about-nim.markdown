@@ -456,6 +456,6 @@ Note that the language is not completely stable yet. Especially with the more ob
 
 Bonus: Since Nim compiles to C and only depends on the C standard library you can deploy it nearly everywhere, including x86-64, ARM and Intel Xeon Phi accelerator cards.
 
-For comments use [Reddit](https://www.reddit.com/r/programming/comments/2r06ej/what_is_special_about_nim/), [Hacker News](https://news.ycombinator.com/item?id=8822816) or ask the Nim community directly on IRC (#nim on freenode). You can reach me personally at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+For comments use [Reddit](https://www.reddit.com/r/programming/comments/2r06ej/what_is_special_about_nim/), [Hacker News](https://news.ycombinator.com/item?id=8822816) or ask the Nim community directly on IRC ([#nim on freenode](irc://irc.freenode.net/nim)). You can reach me personally at [dennis@felsin9.de](mailto:dennis@felsin9.de).
 
 Thanks to Andreas Rumpf and Dominik Picheta for proof-reading this post.
