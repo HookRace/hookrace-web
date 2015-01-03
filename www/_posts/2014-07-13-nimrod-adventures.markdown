@@ -7,7 +7,7 @@ permalink: /blog/nim-adventures/
 
 To learn some [Nim](http://nim-lang.org/) I held a talk about it at the [GPN14](https://entropia.de/GPN14) (in German, [Slides](http://felsin9.de/nnis/nimrod/nimrod-gpn14.pdf)).
 
-Afterwards I started solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in [Nim](http://rosettacode.org/wiki/Category:Nimrod) to get a better feel for the language and standard library. That also made me discover some [rough edges](https://github.com/Araq/Nimrod/issues/created_by/def-?page=1&state=open) in the language, but luckily the community, albeit small, is active and competent. All the small code pieces I wrote are now on [Github](https://github.com/search?q=user%3Adef-+nimrod) too.
+Afterwards I started solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in [Nim](http://rosettacode.org/wiki/Category:Nimrod) to get a better feel for the language and standard library. That also made me discover some [rough edges](https://github.com/Araq/Nimrod/issues/created_by/def-?page=1&state=open) in the language, but luckily the community, albeit small, is active and competent. All the small code pieces I wrote are now on [Github](https://github.com/search?q=user%3Adef-+nim) too.
 
 What I noticed is that most problems are as easy to solve as in Python, but much more performant. I'm now more confident that this language is the right choice for writing HookRace in.
 
