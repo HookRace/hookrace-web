@@ -21,6 +21,8 @@ author:
 pages_list:
   Posts: '/blog/'
   Feed: '/blog/feed/'
+  DDNet: 'http://ddnet.tw/'
+  Me: 'http://felsin9.de/nnis/'
 
 # Custom vars
 version:          1.0.0
