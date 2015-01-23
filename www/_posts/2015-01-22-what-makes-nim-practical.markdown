@@ -11,7 +11,7 @@ In [my last post](../what-is-special-about-nim/) I showed what makes the [Nim](h
 
 Programs written in interpreted languages like Python are difficult to distribute. Either you require Python (in a specific version even) to be installed already, or you ship it with your program. This even causes some to [reconsider Python as a teaching language](http://prog21.dadgum.com/203.html).
 
-How does Nim ship around this problem? For starters your program gets statically linked against the Nim runtime. That means you end up with a single binary that depends solely on the standard C library, which we can take for granted on any operating system we're interested in.
+How does Nim work around this problem? For starters your program gets statically linked against the Nim runtime. That means you end up with a single binary that depends solely on the standard C library, which we can take for granted on any operating system we're interested in.
 
 Let's write a small program and give this a try:
 
@@ -140,7 +140,7 @@ for i in 1..1_000:
 echo max(s)
 {% endhighlight %}
 
-We want our program to never access out of sequence bounds, so we want to compile with `nim -d:release --checks:on max`. As it's unreasonable to write this every time, we can create a `nim.cfg` file in our directory instead and enable runtime checks for every compilation of our program:
+We want our program to never access out of sequence bounds, so we want to compile with `nim -d:release --checks:on max`. As it's unreasonable to write this every time, we can create a `max.nim.cfg` file in our directory instead and enable runtime checks for every compilation of our program:
 
     checks: on
 
@@ -242,8 +242,89 @@ echo "Value of x: ", x
     Continuing.
     Value of x: 200
 
+## Wrapping libraries with c2nim
+
+Nice C libraries can automatically be converted into a Nim wrapper with [c2nim](https://github.com/nim-lang/c2nim). Let's do this for Bellard's new [BPG image format](http://bellard.org/bpg/). Since the library is so new, there is no shared library compilation included yet, so I [added that](https://github.com/def-/libbpg/commit/6253393fd70c318022db9f920c2d41c5f70b6c34) myself in [my fork](https://github.com/def-/libbpg).
+
+We need to fix up the C header for c2nim by adding this at the top of [libbpg.h](https://github.com/def-/libbpg/blob/master/libbpg.h):
+
+    #ifdef C2NIM
+    #  dynlib bpglib
+    #  cdecl
+
+    /* Dynamically link to the correct library for our system: */
+    #  if defined(windows)
+    #    define bpglib "libbpg.dll"
+    #  elif defined(macosx)
+    #    define bpglib "libbpg.dylib"
+    #  else
+    #    define bpglib "libbpg.so"
+    #  endif
+
+    /* Remove prefixes in our wrapper, we have modules in Nim: */
+    #  prefix bpg_decoder_
+    #  prefix BPG_
+    #  prefix BPG
+
+    /* These are not recognized by c2nim, but that's easy to fix: */
+    #  mangle uint8_t uint8
+    #  mangle uint16_t uint16
+    #  mangle uint32_t uint32
+    #endif
+
+I made a [patch](https://github.com/def-/nim-bpg/blob/master/libbpg.h.patch) so I can apply the changes again when the libbpg interface changes. Creating the wrapper is now as simple as this:
+
+    $ patch -p1 < libbpg.h.patch
+    patching file libbpg.h
+    $ c2nim -o:bpg.nim libbpg.h
+    Hint: operation successful (155 lines compiled; 0 sec total; 516.528KB) [SuccessX]
+
+Look, no hands! The [resulting wrapper](https://github.com/def-/nim-bpg/blob/master/src/bpg.nim) doesn't even look bad. Now we can write a simple program to decode a BPG file and save it in the PPM format:
+
+{% highlight nimrod %}
+import bpg, os
+
+proc writePPM(img, filename) =
+  var imgInfo: ImageInfo
+  discard img.getInfo(addr imgInfo)
+
+  let (w,h) = (imgInfo.width.int, imgInfo.height.int)
+  var rgbLine = newSeq[uint8](w * 3)
+
+  var f = open(filename, fmWrite)
+  f.writeln "P6\n", w, " ", h, "\n255"
+
+  discard img.start(OUTPUT_FORMAT_RGB24)
+  for y in 1..h:
+    discard img.getLine(addr rgbLine[0])
+    discard f.writeBuffer(addr rgbLine[0], w * 3)
+
+  f.close()
+
+if paramCount() != 1:
+  stderr.writeln "Usage: decode img.bpg"
+  quit 1
+
+var
+  buf = readFile paramStr(1)
+  img = bpg.open()
+
+if img.decode(cast[ptr uint8](addr buf[0]), buf.len.cint) < 0:
+  stderr.writeln "Could not decode image"
+  quit 2
+
+img.writePPM("out.ppm")
+img.close()
+{% endhighlight %}
+
+Note that you can tell from the `discard` statements where I chose to ignore errors. If you actually want to run this, check out the [instructions in the repository](https://github.com/def-/nim-bpg).
+
 ## Final words
 
 That's Nim from a more practical angle. Hopefully you'll consider Nim for your next project, there are [many libraries](http://nim-lang.org/lib.html) available already. Also, the community always needs more helping hands!
 
-For comments use [Reddit](TODO), [Hacker News](TODO) or get in touch with the [Nim community](http://nim-lang.org/community.html) directly. You can reach me personally at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+To do my part in making Nim more practical, I'm trying to implement a new, working REPL using TinyCC. We may also soon get a working compiler as a service for proper IDE integration, directly from Andreas Rumpf.
+
+For comments use [Reddit](https://www.reddit.com/r/programming/comments/2tedjb/what_makes_nim_practical/), [Hacker News](https://news.ycombinator.com/item?id=8934582) or get in touch with the [Nim community](http://nim-lang.org/community.html) directly. You can reach me personally at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+
+Thanks to Andreas Rumpf and Dominik Picheta again, for proof-reading this post as well.
