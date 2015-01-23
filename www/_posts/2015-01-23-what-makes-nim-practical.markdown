@@ -5,7 +5,7 @@ categories: nim
 permalink: /blog/what-makes-nim-practical/
 ---
 
-In [my last post](../what-is-special-about-nim/) I showed what makes the [Nim](http://nim-lang/) programming language special. Today, let's consider Nim from another angle: What makes Nim a practical programming language?
+In [my last post](/blog/what-is-special-about-nim/) I showed what makes the [Nim](http://nim-lang.org/) programming language special. Today, let's consider Nim from another angle: What makes Nim a practical programming language?
 
 ## Binary Distribution
 
