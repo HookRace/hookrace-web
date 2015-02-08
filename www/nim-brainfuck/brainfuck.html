@@ -1158,7 +1158,13 @@ dt pre > span.Operator ~ span.Identifier, dt pre > span.Operator ~ span.Operator
 <li>
   <a class="reference reference-toplevel" href="#12" id="62">Procs</a>
   <ul class="simple simple-toc-section">
-      <li><a class="reference" href="#interpret,string"
+      <li><a class="reference" href="#readCharEOF,Stream"
+    title="readCharEOF*(input: Stream): char"><wbr />read<wbr />Char<wbr />EOF</a></li>
+  <li><a class="reference" href="#interpret,string,Stream,Stream"
+    title="interpret*(code: string; input, output: Stream)"><wbr />interpret</a></li>
+  <li><a class="reference" href="#interpret,string,string"
+    title="interpret*(code, input: string): string"><wbr />interpret</a></li>
+  <li><a class="reference" href="#interpret,string"
     title="interpret*(code: string)"><wbr />interpret</a></li>
 
   </ul>
@@ -1166,8 +1172,12 @@ dt pre > span.Operator ~ span.Identifier, dt pre > span.Operator ~ span.Operator
 <li>
   <a class="reference reference-toplevel" href="#17" id="67">Macros</a>
   <ul class="simple simple-toc-section">
-      <li><a class="reference" href="#compileString.m,string"
+      <li><a class="reference" href="#compileString.m,string,expr,expr"
+    title="compileString*(code: string; input, output: expr): stmt"><wbr />compile<wbr />String</a></li>
+  <li><a class="reference" href="#compileString.m,string"
     title="compileString*(code: string): stmt"><wbr />compile<wbr />String</a></li>
+  <li><a class="reference" href="#compileFile.m,string,expr,expr"
+    title="compileFile*(filename: string; input, output: expr): stmt"><wbr />compile<wbr />File</a></li>
   <li><a class="reference" href="#compileFile.m,string"
     title="compileFile*(filename: string): stmt"><wbr />compile<wbr />File</a></li>
 
@@ -1178,20 +1188,58 @@ dt pre > span.Operator ~ span.Identifier, dt pre > span.Operator ~ span.Operator
 
   </div>
   <div class="nine columns" id="content">
-  <p class="module-desc"></p>
+  <p class="module-desc"><table class="docinfo" frame="void" rules="none"><col class="docinfo-name" /><col class="docinfo-content" /><tbody valign="top"><tr><th class="docinfo-name">Author:</th><td> Dennis Felsing</td></tr>
+</tbody></table><p>This module implements an interpreter for the brainfuck programming language as well as a compiler of brainfuck into efficient Nim code.</p>
+<p>Example:</p>
+<pre><span class="Keyword">import</span> <span class="Identifier">brainfuck</span><span class="Punctuation">,</span> <span class="Identifier">streams</span>
+
+<span class="Identifier">interpret</span><span class="Punctuation">(</span><span class="StringLit">&quot;++++++++[&gt;++++[&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;+&gt;+&gt;-&gt;&gt;+[&lt;]&lt;-]&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.&gt;&gt;+.&gt;++.&quot;</span><span class="Punctuation">)</span>
+<span class="Comment"># Prints &quot;Hello World!&quot;</span>
+
+<span class="Keyword">proc</span> <span class="Identifier">mandelbrot</span> <span class="Operator">=</span> <span class="Identifier">compileFile</span><span class="Punctuation">(</span><span class="StringLit">&quot;examples/mandelbrot.b&quot;</span><span class="Punctuation">)</span>
+<span class="Identifier">mandelbrot</span><span class="Punctuation">(</span><span class="Punctuation">)</span> <span class="Comment"># Draws a mandelbrot set</span></pre></p>
   <div class="section" id="6">
 <h1><a class="toc-backref" href="#6">Imports</a></h1>
 <dl class="item">
-<a class="reference external" href="macros.html">macros</a>, <a class="reference external" href="docopt.html">docopt</a>, <a class="reference external" href="tables.html">tables</a>, <a class="reference external" href="strutils.html">strutils</a>
+<a class="reference external" href="streams.html">streams</a>, <a class="reference external" href="macros.html">macros</a>, <a class="reference external" href="docopt.html">docopt</a>, <a class="reference external" href="tables.html">tables</a>, <a class="reference external" href="strutils.html">strutils</a>
 </dl></div>
 <div class="section" id="12">
 <h1><a class="toc-backref" href="#12">Procs</a></h1>
 <dl class="item">
+<dt id="readCharEOF"><a name="readCharEOF,Stream"></a><pre><span class="Keyword">proc</span> <span class="Identifier">readCharEOF</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">input</span><span class="Other">:</span> <span class="Identifier">Stream</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">char</span></pre></dt>
+<dd>
+Read a character from an <cite>input</cite> stream and return a Unix EOF (-1). This is necessary because brainfuck assumes Unix EOF while streams use 0 for EOF.
+&nbsp;&nbsp;<a
+href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L19"
+class="link-seesrc" target="_blank">Source</a>
+</dd>
+<dt id="interpret"><a name="interpret,string,Stream,Stream"></a><pre><span class="Keyword">proc</span> <span class="Identifier">interpret</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">input</span><span class="Other">,</span> <span class="Identifier">output</span><span class="Other">:</span> <span class="Identifier">Stream</span><span class="Other">)</span></pre></dt>
+<dd>
+<p>Interprets the brainfuck <cite>code</cite> string, reading from <cite>input</cite> and writing to <cite>output</cite>.</p>
+<p>Example:</p>
+<pre><span class="Keyword">var</span> <span class="Identifier">inpStream</span> <span class="Operator">=</span> <span class="Identifier">newStringStream</span><span class="Punctuation">(</span><span class="StringLit">&quot;Hello World!</span><span class="EscapeSequence">\n</span><span class="StringLit">&quot;</span><span class="Punctuation">)</span>
+<span class="Keyword">var</span> <span class="Identifier">outStream</span> <span class="Operator">=</span> <span class="Identifier">newFileStream</span><span class="Punctuation">(</span><span class="Identifier">stdout</span><span class="Punctuation">)</span>
+<span class="Identifier">interpret</span><span class="Punctuation">(</span><span class="Identifier">readFile</span><span class="Punctuation">(</span><span class="StringLit">&quot;examples/rot13.b&quot;</span><span class="Punctuation">)</span><span class="Punctuation">,</span> <span class="Identifier">inpStream</span><span class="Punctuation">,</span> <span class="Identifier">outStream</span><span class="Punctuation">)</span></pre>
+&nbsp;&nbsp;<a
+href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L27"
+class="link-seesrc" target="_blank">Source</a>
+</dd>
+<dt id="interpret"><a name="interpret,string,string"></a><pre><span class="Keyword">proc</span> <span class="Identifier">interpret</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">,</span> <span class="Identifier">input</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span></pre></dt>
+<dd>
+<p>Interprets the brainfuck <cite>code</cite> string, reading from <cite>input</cite> and returning the result directly.</p>
+<p>Example:</p>
+<pre><span class="Identifier">echo</span> <span class="Identifier">interpret</span><span class="Punctuation">(</span><span class="Identifier">readFile</span><span class="Punctuation">(</span><span class="StringLit">&quot;examples/rot13.b&quot;</span><span class="Punctuation">)</span><span class="Punctuation">,</span> <span class="StringLit">&quot;Hello World!</span><span class="EscapeSequence">\n</span><span class="StringLit">&quot;</span><span class="Punctuation">)</span></pre>
+&nbsp;&nbsp;<a
+href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L68"
+class="link-seesrc" target="_blank">Source</a>
+</dd>
 <dt id="interpret"><a name="interpret,string"></a><pre><span class="Keyword">proc</span> <span class="Identifier">interpret</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span></pre></dt>
 <dd>
-Interprets the brainfuck <cite>code</cite> string, reading from stdin and writing to stdout.
+<p>Interprets the brainfuck <cite>code</cite> string, reading from stdin and writing to stdout.</p>
+<p>Example:</p>
+<pre><span class="Identifier">interpret</span><span class="Punctuation">(</span><span class="Identifier">readFile</span><span class="Punctuation">(</span><span class="StringLit">&quot;examples/rot13.b&quot;</span><span class="Punctuation">)</span><span class="Punctuation">)</span></pre>
 &nbsp;&nbsp;<a
-href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L1"
+href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L80"
 class="link-seesrc" target="_blank">Source</a>
 </dd>
 
@@ -1199,18 +1247,39 @@ class="link-seesrc" target="_blank">Source</a>
 <div class="section" id="17">
 <h1><a class="toc-backref" href="#17">Macros</a></h1>
 <dl class="item">
+<dt id="compileString"><a name="compileString.m,string,expr,expr"></a><pre><span class="Keyword">macro</span> <span class="Identifier">compileString</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">input</span><span class="Other">,</span> <span class="Identifier">output</span><span class="Other">:</span> <span class="Identifier">expr</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">stmt</span></pre></dt>
+<dd>
+Compiles the brainfuck code read from <cite>filename</cite> at compile time into Nim code that reads from the <cite>input</cite> variable and writes to the <cite>output</cite> variable, both of which have to be strings.
+&nbsp;&nbsp;<a
+href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L128"
+class="link-seesrc" target="_blank">Source</a>
+</dd>
 <dt id="compileString"><a name="compileString.m,string"></a><pre><span class="Keyword">macro</span> <span class="Identifier">compileString</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">code</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">stmt</span></pre></dt>
 <dd>
 Compiles the brainfuck <cite>code</cite> string into Nim code that reads from stdin and writes to stdout.
 &nbsp;&nbsp;<a
-href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L66"
+href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L136"
+class="link-seesrc" target="_blank">Source</a>
+</dd>
+<dt id="compileFile"><a name="compileFile.m,string,expr,expr"></a><pre><span class="Keyword">macro</span> <span class="Identifier">compileFile</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">filename</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">input</span><span class="Other">,</span> <span class="Identifier">output</span><span class="Other">:</span> <span class="Identifier">expr</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">stmt</span></pre></dt>
+<dd>
+<p>Compiles the brainfuck code read from <cite>filename</cite> at compile time into Nim code that reads from the <cite>input</cite> variable and writes to the <cite>output</cite> variable, both of which have to be strings.</p>
+<p>Example:</p>
+<pre><span class="Keyword">proc</span> <span class="Identifier">rot13</span><span class="Punctuation">(</span><span class="Identifier">input</span><span class="Punctuation">:</span> <span class="Identifier">string</span><span class="Punctuation">)</span><span class="Punctuation">:</span> <span class="Identifier">string</span> <span class="Operator">=</span>
+  <span class="Identifier">compileFile</span><span class="Punctuation">(</span><span class="StringLit">&quot;examples/rot13.b&quot;</span><span class="Punctuation">,</span> <span class="Identifier">input</span><span class="Punctuation">,</span> <span class="Identifier">result</span><span class="Punctuation">)</span>
+<span class="Identifier">echo</span> <span class="Identifier">rot13</span><span class="Punctuation">(</span><span class="StringLit">&quot;Hello World!</span><span class="EscapeSequence">\n</span><span class="StringLit">&quot;</span><span class="Punctuation">)</span></pre>
+&nbsp;&nbsp;<a
+href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L142"
 class="link-seesrc" target="_blank">Source</a>
 </dd>
 <dt id="compileFile"><a name="compileFile.m,string"></a><pre><span class="Keyword">macro</span> <span class="Identifier">compileFile</span><span class="Operator">*</span><span class="Other">(</span><span class="Identifier">filename</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">stmt</span></pre></dt>
 <dd>
-Compiles the brainfuck code read from <cite>filename</cite> at compile time into Nim code that reads from stdin and writes to stdout.
+<p>Compiles the brainfuck code read from <cite>filename</cite> at compile time into Nim code that reads from stdin and writes to stdout.</p>
+<p>Example:</p>
+<pre><span class="Keyword">proc</span> <span class="Identifier">mandelbrot</span> <span class="Operator">=</span> <span class="Identifier">compileFile</span><span class="Punctuation">(</span><span class="StringLit">&quot;examples/mandelbrot.b&quot;</span><span class="Punctuation">)</span>
+<span class="Identifier">mandelbrot</span><span class="Punctuation">(</span><span class="Punctuation">)</span></pre>
 &nbsp;&nbsp;<a
-href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L71"
+href="https://github.com/def-/nim-brainfuck/blob/master/brainfuck.nim#L157"
 class="link-seesrc" target="_blank">Source</a>
 </dd>
 
@@ -1223,7 +1292,7 @@ class="link-seesrc" target="_blank">Source</a>
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br>
-        <small>Made with Nim. Generated: 2015-02-07 02:57:01 UTC</small>
+        <small>Made with Nim. Generated: 2015-02-07 20:54:01 UTC</small>
       </div>
     </div>
   </div>
