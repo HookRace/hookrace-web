@@ -43,10 +43,15 @@ And you can run MAL implented in MAL itself using the Nim interpreter:
     mal-user>
 
 The benchmark results from [Joel Martin](https://github.com/kanaka), the author
-of MAL, don't look bad for Nim. In the short benchmarks it's the fastest, in
-the long benchmark only the JVM can beat it. I didn't really try to optimize
-and oriented mostly on the Python implementation, which is quite a lot slower
-as you can see. So it's pretty nice to see idiomatic Nim performing well:
+of MAL, don't look bad for Nim. _Edit_: Note that these are just rough
+measurements to see that the Nim implementation is doing fine. Don't judge the
+other languages for their numbers, which may not have ideal implementations
+performance-wise.
+
+In the short benchmarks Nim is the fastest, in the long benchmark only the JVM
+can beat it. I didn't really try to optimize and oriented mostly on the Python
+implementation, which is quite a lot slower as you can see. So it's pretty nice
+to see idiomatic Nim performing well:
 
                  perf1  perf2       perf3
                 macros   math      macros
@@ -77,9 +82,10 @@ as you can see. So it's pretty nice to see idiomatic Nim performing well:
     matlab        1688   5844           2
     make          3427  28453           0
 
+
 I also didn't really aim for a low amount of code but rather good readability,
-but it may still be interesting to look at. I guess that Nim is so close to
-Python shows how much I oriented on the Python implementation
+but it may still be interesting to look at. I guess Nim's size bein so close to
+Python shows how much I oriented on the Python implementation:
 
                     Lines   Words   Chars
     mal               280     913    7075
