@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "NimES: a NES emulator in Nim"
+categories: nim
+permalink: /blog/nimes/
+---
+
+Since today Nim 0.11 has been released, I guess it's a good time to
+release this as well: NimES is a NES emulator written in Nim. More info in the
+[GitHub repository](https://github.com/def-/nimes) and the [JS demo](/nimes/).
+
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=9468146) and [Reddit](https://www.reddit.com/r/programming/comments/34gfah/nimes_nes_emulator_in_nim/).

@@ -84,8 +84,8 @@ to see idiomatic Nim performing well:
 
 
 I also didn't really aim for a low amount of code but rather good readability,
-but it may still be interesting to look at. I guess Nim's size bein so close to
-Python shows how much I oriented on the Python implementation:
+but it may still be interesting to look at. I guess Nim's size being so close
+to Python shows how much I oriented on the Python implementation:
 
                     Lines   Words   Chars
     mal               280     913    7075
