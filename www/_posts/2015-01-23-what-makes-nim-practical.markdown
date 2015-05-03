@@ -215,6 +215,8 @@ for kind, path in walkDir baseDir/"maps":
 
 Of course you can always compile your program if you need the full speed of Clang or GCC. But for quick tests while developing, or scripts you just need occasionally, this is good enough.
 
+There is a nicer version of this idea now, called [nimrun](https://github.com/flaviut/nimrun)
+
 ## Debugging Nim
 
 GDB works rather well with Nim. The only problem I've had so far is that the variables get unique identifiers in C, but using tab completion you can get along fine:
