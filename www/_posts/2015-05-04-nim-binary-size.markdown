@@ -204,3 +204,7 @@ Nim is fine for writing small binaries. Now you also know how to write Nim witho
     ...
 
 Discussions on [Hacker News](https://news.ycombinator.com/item?id=9485526) and [Reddit](https://www.reddit.com/r/programming/comments/34tb7r/nim_binary_size_from_160_kb_to_150_bytes/).
+
+_Addendum_: I did this for 32bit x86 now as well, which results in a 119 byte binary with GCC and 118 byte with Clang, more information in the [repository](https://github.com/def-/nim-binary-size#x86).
+
+_Addendum 2_: With [a simple patch](https://github.com/Araq/Nim/pull/2657) to the Nim compiler the `{.noReturn.}` pragma now actually removes the final `retq` call that is useless after the `EXIT` syscall. So the final binary size now is 149 bytes with x86-64, 116 bytes with x86.
