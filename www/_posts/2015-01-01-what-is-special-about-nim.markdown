@@ -18,6 +18,7 @@ for i in 0..10:
   echo "Hello World"[0..i]
 {% endhighlight %}
 
+<!--more-->
 If you want to do so, [get the Nim compiler](http://nim-lang.org/download.html). Save this code as `hello.nim`, compile it with `nim c hello` and finally run the binary with `./hello`. To immediately compile and run, use `nim -r c hello`. To use an optimized release build instead of a debug build use `nim -d:release c hello`. With all of these settings you will see the following output:
 
     H

@@ -11,6 +11,7 @@ Afterwards I started solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_
 
 What I noticed is that most problems are as easy to solve as in Python, but much more performant. I'm now more confident that this language is the right choice for writing HookRace in.
 
+<!--more-->
 Some highlights:
 
 ## [Insertion Sort](http://rosettacode.org/wiki/Sorting_algorithms/Insertion_sort#Nimrod)

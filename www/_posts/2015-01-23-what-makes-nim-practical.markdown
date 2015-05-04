@@ -13,6 +13,7 @@ Programs written in interpreted languages like Python are difficult to distribut
 
 How does Nim work around this problem? For starters your program gets statically linked against the Nim runtime. That means you end up with a single binary that depends solely on the standard C library, which we can take for granted on any operating system we're interested in.
 
+<!--more-->
 Let's write a small program and give this a try:
 
 {% highlight nimrod %}

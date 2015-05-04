@@ -7,6 +7,8 @@ highlighter:      pygments
 # Permalinks
 permalink:        pretty
 
+excerpt_separator: <!--more-->
+
 # Setup
 title:            HookRace - a Nim blog for now
 tagline:          The successor of DDraceNetwork

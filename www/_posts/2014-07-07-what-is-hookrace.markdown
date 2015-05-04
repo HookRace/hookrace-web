@@ -11,6 +11,7 @@ Now it's time to start something new. I'm working on a new game called HookRace,
 
 Some of the plans I have so far for HookRace:
 
+<!--more-->
 - Vector Graphics (SVG) ingame for a sharp image on any screen
 - Whole physics is executed at the client as well as the server, for perfect prediction
 - No lags with high player numbers

@@ -9,6 +9,7 @@ permalink: /blog/porting-nes-go-nim/
 >
 > &mdash; <cite>Summary by [haberman](https://news.ycombinator.com/item?id=9474030)</cite>
 
+<!--more-->
 I spent the last weeks working on [NimES](https://github.com/def-/nimes), a NES emulator in the [Nim](http://nim-lang.org/) programming language. As I really liked [fogleman's NES emulator in Go](https://github.com/fogleman/nes) I ended up mostly porting it to Nim. The source code is so clean that it's often easier to understand the internals of the NES by reading the source code than by reading documentation about it.
 
 The choice of backend fell on SDL2 for me, contrary to GLFW + PortAudio that the Go version used. This was mainly motivated by the great portability promised by SDL2. Later we will see how porting to JavaScript and Android worked. If you're impatient and want to play a game, there's a [JS demo](/nimes/).

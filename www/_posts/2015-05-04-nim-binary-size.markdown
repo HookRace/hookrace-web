@@ -13,6 +13,7 @@ The size of binaries in the [Nim](http://nim-lang.org/) programming language see
 
 The full source code of this post can be found in [its repository](https://github.com/def-/nim-binary-size). All measurements are done on Linux x86-64 with GCC 5.1 and Clang 3.6.0.
 
+<!--more-->
 ## Using the C Standard Library
 
 

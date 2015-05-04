@@ -24,6 +24,7 @@ Running the Nim version is pretty simple. You need the Nim compiler from the [de
     user> (+ 2 3)
     5
 
+<!--more-->
 Running the tests:
 
     $ cd ..

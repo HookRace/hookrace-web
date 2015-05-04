@@ -13,6 +13,8 @@ title: Home
 
     <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
 
-    {{ post.content }}
+    {{ post.excerpt }}
+
+    <a href="{{ post.url }}">Read the full post</a>
   </div>
 {% endfor %}
