@@ -85,7 +85,7 @@ Instead of increasing the cumbersomeness of our build command anymore, NimES's [
       passL = "-O3 -Lemscripten -s USE_SDL=2 --preload-file tetris.nes --preload-file pacman.nes --preload-file smb.nes --preload-file smb3.nes -s TOTAL_MEMORY=16777216"
     @end
 
-Now a simple `nim -d:release -d:emscripten` builds the JavaScript port. Note that I'm preloading a few ROMs so that they can be loaded. The HTML then uses the `?nes=` parameter to pass the command line argument:
+Now a simple `nim -d:release -d:emscripten c src/nimes` builds the JavaScript port. Note that I'm preloading a few ROMs so that they can be loaded. The HTML then uses the `?nes=` parameter to pass the command line argument:
 
 {% highlight js %}
 var argument;
