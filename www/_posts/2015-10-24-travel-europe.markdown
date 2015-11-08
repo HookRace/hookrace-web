@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Travelling through Europe, Photos"
+title:  "Travelling through Europe, Photos 1/2"
 categories: travel
 permalink: /blog/travel-europe/
 ---
@@ -49,3 +49,5 @@ Or in pictorial form, thanks to Wolfram Alpha:
 
 <img src="/public/travel-1.gif" style="width:45%; display:inline;">
 <img src="/public/travel-2.gif" style="width:45%; display:inline;">
+
+See [the new post](/blog/travel-europe-2/) for the rest of the photos.
