@@ -9,31 +9,31 @@ I'm done with the second half of my Europe travels. Here's the photos:
 
 ## Scotland
 
-- [Edinburgh](//photos.hookrace.net/scotland/edinburgh/) (49 photos)
-- [Highlands](//photos.hookrace.net/scotland/highlands/) (99 photos)
-
-## Ireland
-
-- [Dublin](//photos.hookrace.net/ireland/dublin/) (11 photos)
-- [Cliffs of Moher](//photos.hookrace.net/ireland/moher/) (106 photos)
+- [Edinburgh (49 photos) ![Edinburgh](http://photos.hookrace.net/scotland/edinburgh/preview.jpg)](//photos.hookrace.net/scotland/edinburgh/)
+- [Highlands (99 photos) ![Highlands](http://photos.hookrace.net/scotland/highlands/preview.jpg)](//photos.hookrace.net/scotland/highlands/)
 
 <!--more-->
+## Ireland
+
+- [Dublin (11 photos) ![Dublin](http://photos.hookrace.net/ireland/dublin/preview.jpg)](//photos.hookrace.net/ireland/dublin/)
+- [Cliffs of Moher (106 photos) ![Cliffs of Moher](http://photos.hookrace.net/ireland/moher/preview.jpg)](//photos.hookrace.net/ireland/moher/)
+
 ## Belgium
 
-- [Brussels](//photos.hookrace.net/belgium/brussels/) (31 photos)
+- [Brussels (31 photos) ![Brussels](http://photos.hookrace.net/belgium/brussels/preview.jpg)](//photos.hookrace.net/belgium/brussels/)
 
 ## Hungary
 
-- [Budapest](//photos.hookrace.net/hungary/budapest/) (100 photos)
+- [Budapest (100 photos) ![Budapest](http://photos.hookrace.net/hungary/budapest/preview.jpg)](//photos.hookrace.net/hungary/budapest/)
 
 ## Denmark
 
-- [Copenhagen](//photos.hookrace.net/denmark/copenhagen/) (70 photos)
+- [Copenhagen (70 photos) ![Copenhagen](http://photos.hookrace.net/denmark/copenhagen/preview.jpg)](//photos.hookrace.net/denmark/copenhagen/)
 
 ## Lithuania
 
-- [Kaunas](//photos.hookrace.net/lithuania/kaunas/) (37 photos)
-- [Trakai](//photos.hookrace.net/lithuania/trakai/) (52 photos)
-- [Vilnius](//photos.hookrace.net/lithuania/vilnius/) (55 photos)
+- [Kaunas (37 photos) ![Kaunas](http://photos.hookrace.net/lithuania/kaunas/preview.jpg)](//photos.hookrace.net/lithuania/kaunas/)
+- [Trakai (52 photos) ![Trakai](http://photos.hookrace.net/lithuania/trakai/preview.jpg)](//photos.hookrace.net/lithuania/trakai/)
+- [Vilnius (55 photos) ![Vilnius](http://photos.hookrace.net/lithuania/vilnius/preview.jpg)](//photos.hookrace.net/lithuania/vilnius/)
 
 See [the last post](/blog/travel-europe/) for the rest of the photos.

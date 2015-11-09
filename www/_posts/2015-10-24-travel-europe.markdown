@@ -8,25 +8,24 @@ permalink: /blog/travel-europe/
 This is my first non-technical post. I'm currently travelling Europe for 1 month after just finishing my CS master. Right now I'm back at home, but will be flying around again in a few days. I've never had a photo camera before, so not sure if the photos are good. This was my route so far with photos:
 
 ## Croatia
-
-- [Zadar](//photos.hookrace.net/croatia/zadar/) (15 photos)
-- [Kornati Islands](//photos.hookrace.net/croatia/kornati/) (24 photos)
-- [Plitvice Lakes](//photos.hookrace.net/croatia/plitvice/) (61 photos)
-
-## Norway
-
-- [Oslo](//photos.hookrace.net/norway/oslo/) (77 photos)
-- [Road Trip through Nature](//photos.hookrace.net/norway/roadtrip/) (← probably the nicest one, 89 photos)
+- [Zadar (15 photos) ![Zadar](http://photos.hookrace.net/croatia/zadar/preview.jpg)](//photos.hookrace.net/croatia/zadar/)
+- [Kornati Islands (24 photos) ![Kornati Islands](http://photos.hookrace.net/croatia/kornati/preview.jpg)](//photos.hookrace.net/croatia/kornati/)
+- [Plitvice Lakes (61 photos) ![Plitvice Lakes](http://photos.hookrace.net/croatia/plitvice/preview.jpg)](//photos.hookrace.net/croatia/plitvice/)
 
 <!--more-->
+## Norway
+
+- [Oslo (77 photos) ![Oslo](http://photos.hookrace.net/norway/oslo/preview.jpg)](//photos.hookrace.net/norway/oslo/)
+- [Road Trip through Nature (← probably the nicest one, 89 photos) ![Road Trip through Nature](http://photos.hookrace.net/norway/roadtrip/preview.jpg)](//photos.hookrace.net/norway/roadtrip/)
+
 ## Poland
 
-- [Krakow](//photos.hookrace.net/poland/krakow/) (75 photos)
-- [Silesia](//photos.hookrace.net/poland/silesia/) (178 photos)
+- [Krakow (75 photos) ![Krakow](http://photos.hookrace.net/poland/krakow/preview.jpg)](//photos.hookrace.net/poland/krakow/)
+- [Silesia (178 photos) ![Silesia](http://photos.hookrace.net/poland/silesia/preview.jpg)](//photos.hookrace.net/poland/silesia/)
 
 ## England
 
-- [London](//photos.hookrace.net/england/london/) (74 photos)
+- [London (74 photos) ![London](http://photos.hookrace.net/england/london/preview.jpg)](//photos.hookrace.net/england/london/)
 
 The full route of my flights:
 
