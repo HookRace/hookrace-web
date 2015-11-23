@@ -35,7 +35,7 @@ Running the tests:
 There is a nice presentation in MAL about MAL you can read:
 
     $ cd nim
-    $ ./stepA_mal ../mal/clojurewest2014.mal
+    $ ./stepA_mal ../examples/clojurewest2014.mal
 
 And you can run MAL implented in MAL itself using the Nim interpreter:
 
