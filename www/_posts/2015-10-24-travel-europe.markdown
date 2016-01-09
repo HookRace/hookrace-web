@@ -7,12 +7,12 @@ permalink: /blog/travel-europe/
 
 This is my first non-technical post. I'm currently travelling Europe for 1 month after just finishing my CS master. Right now I'm back at home, but will be flying around again in a few days. I've never had a photo camera before, so not sure if the photos are good. This was my route so far with photos:
 
+<!--more-->
 ## Croatia
 - [Zadar (15 photos) ![Zadar](http://photos.hookrace.net/croatia/zadar/preview.jpg)](//photos.hookrace.net/croatia/zadar/)
 - [Kornati Islands (24 photos) ![Kornati Islands](http://photos.hookrace.net/croatia/kornati/preview.jpg)](//photos.hookrace.net/croatia/kornati/)
 - [Plitvice Lakes (61 photos) ![Plitvice Lakes](http://photos.hookrace.net/croatia/plitvice/preview.jpg)](//photos.hookrace.net/croatia/plitvice/)
 
-<!--more-->
 ## Norway
 
 - [Oslo (77 photos) ![Oslo](http://photos.hookrace.net/norway/oslo/preview.jpg)](//photos.hookrace.net/norway/oslo/)

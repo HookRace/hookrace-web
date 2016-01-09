@@ -7,12 +7,12 @@ permalink: /blog/travel-europe-2/
 
 I'm done with the second half of my Europe travels. Here's the photos:
 
+<!--more-->
 ## Scotland
 
 - [Edinburgh (49 photos) ![Edinburgh](http://photos.hookrace.net/scotland/edinburgh/preview.jpg)](//photos.hookrace.net/scotland/edinburgh/)
 - [Highlands (99 photos) ![Highlands](http://photos.hookrace.net/scotland/highlands/preview.jpg)](//photos.hookrace.net/scotland/highlands/)
 
-<!--more-->
 ## Ireland
 
 - [Dublin (11 photos) ![Dublin](http://photos.hookrace.net/ireland/dublin/preview.jpg)](//photos.hookrace.net/ireland/dublin/)
