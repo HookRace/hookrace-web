@@ -14,6 +14,7 @@ But first, the idea:
 The resulting livestream is running on [Twitch](http://twitch.tv/ddnetlive).
 All the scripts are on [Github](https://github.com/ddnet/ddnet-live)
 
+<!--more-->
 ## 1. Livestream
 
 It's surprisingly simple to livestream from Linux to Twitch. Only FFmpeg is needed:
