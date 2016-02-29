@@ -32,15 +32,17 @@ By default Nim uses GCC as the backend C compiler on most platforms, and we dyna
 
 That's pretty nice and can be done with any Nim program to reduce binary size.
 
-Now let's try to get rid of glibc, at least temporarily (we will come back to a more permanent solution later). Instead of glibc we're now statically linking against musl libc, which actually reduces our filesize slightly:
+Now let's try to get rid of glibc, at least temporarily (we will come back to a more permanent solution later). Instead of glibc we're now statically linking against musl libc:
 
-    $ nim -d:release --opt:size --passL:-static \
-      --gcc.exe:/usr/local/musl/bin/musl-gcc \
-      --gcc.linkerexe:/usr/local/musl/bin/musl-gcc c hello
+    $ nim --gcc.exe:/usr/local/musl/bin/musl-gcc \
+      --gcc.linkerexe:/usr/local/musl/bin/musl-gcc \
+      -d:release --opt:size --passL:-static c hello
     $ strip -s hello
-    18 KB
+    30 KB
 
-So that's a statically linked binary in 18 KB, which can be deployed without depending on any glibc version (or any other libraries)!
+Update: The order of arguments to nim matters, `--passL:-static` has to be passed after setting the gcc exe so that it isn't overwritten.
+
+So that's a statically linked binary in 30 KB, which can be deployed without depending on any glibc version (or any other libraries)!
 
 What about using Clang instead of GCC by setting `--cc:clang`:
 
