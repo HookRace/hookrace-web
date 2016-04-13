@@ -9,7 +9,7 @@ Some more photos of the last few months in Germany and Switzerland.
 
 These image galleries are created with
 [fgallery](https://github.com/wavexx/fgallery) using `fgallery -i -j 4
-input-dir output-dir` to get the full images as well and to run the image
+input-dir output-dir title` to get the full images as well and to run the image
 conversion processes on a few cores in parallel.
 
 <!--more-->
