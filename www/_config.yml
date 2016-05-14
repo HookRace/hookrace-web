@@ -26,6 +26,8 @@ pages_list:
   DDNet: 'http://ddnet.tw/'
   Me: 'http://felsin9.de/nnis/'
 
+gems: [jekyll-paginate]
+
 # Custom vars
 version:          1.0.0
 github:
