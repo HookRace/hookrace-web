@@ -21,6 +21,7 @@ their performance impact:
 2. [RRDtool](https://oss.oetiker.ch/rrdtool/index.en.html): Record and graph data
 3. [Nim](http://nim-lang.org/): Favorite programming language for performance and readability
 
+<!--more-->
 ## Gathering live server statistics with ServerStatus
 
 We've been running BotoX's [ServerStatus](https://github.com/BotoX/ServerStatus) to get [live server statistics](https://ddnet.tw/status/) for some time now. It works quite well to quickly notice major server problems like a high load or incoming (D)DoS attacks, provided that you keep an eye out for it.
