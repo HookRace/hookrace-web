@@ -630,3 +630,5 @@ For further information and reference see:
 - [Nim Tutorial (Part 2)](http://nim-lang.org/docs/tut2.html#templates)
 - [Nim Manual](http://nim-lang.org/docs/manual.html#templates)
 - [Macros Module](http://nim-lang.org/docs/macros.html)
+
+Discussions on [Hacker News](https://news.ycombinator.com/item?id=11843730) and [r/programming](https://www.reddit.com/r/programming/comments/4mpuh7/introduction_to_metaprogramming_in_nim/).
