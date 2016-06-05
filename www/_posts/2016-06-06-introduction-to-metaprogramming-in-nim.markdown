@@ -15,7 +15,7 @@ description of metaprogramming:
 > read, generate, analyse and/or transform other programs, and even modify
 > itself while running.
 
-In this article we will explore Nim's metaprogramming capabilities, which are
+In this article we will explore [Nim](http://nim-lang.org/)'s metaprogramming capabilities, which are
 quite powerful. The general rule is to use the least powerful construct that is
 still powerful enough to solve a problem, in this order:
 
