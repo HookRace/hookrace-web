@@ -629,4 +629,4 @@ For further information and reference see:
 
 - [Nim Tutorial (Part 2)](http://nim-lang.org/docs/tut2.html#templates)
 - [Nim Manual](http://nim-lang.org/docs/manual.html#templates)
-- [The macros module](http://nim-lang.org/docs/macros.html)
+- [Macros Module](http://nim-lang.org/docs/macros.html)
