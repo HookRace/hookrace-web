@@ -624,3 +624,9 @@ I hope you enjoyed this trip through Nim's metaprogramming capabilities. Always
 remember: With great power comes great responsibility. So use the least
 powerful construct that does the job. This reduces complexity and makes it
 easier to understand the code.
+
+For further information and reference see:
+
+- [Nim Tutorial (Part 2)](http://nim-lang.org/docs/tut2.html#templates)
+- [Nim Manual](http://nim-lang.org/docs/manual.html#templates)
+- [The macros module](http://nim-lang.org/docs/macros.html)
