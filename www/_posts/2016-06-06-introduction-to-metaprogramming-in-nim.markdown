@@ -15,9 +15,11 @@ description of metaprogramming:
 > read, generate, analyse and/or transform other programs, and even modify
 > itself while running.
 
-In this article we will explore [Nim](http://nim-lang.org/)'s metaprogramming capabilities, which are
-quite powerful. The general rule is to use the least powerful construct that is
-still powerful enough to solve a problem, in this order:
+In this article we will explore [Nim](http://nim-lang.org/)'s metaprogramming
+capabilities, which are quite powerful and yet still easy to use. After all
+great metaprogramming is one of Nim's main features. The general rule is to use
+the least powerful construct that is still powerful enough to solve a problem,
+in this order:
 
 <!--more-->
 1. [Normal procs](#normal-procs) and [inline iterators](#inline-iterators)
@@ -220,7 +222,7 @@ withLock lock:
   echo "This might throw an exception"
 {% endhighlight %}
 
-When our template accepts a value of type `stmt` we can use the colon to pass an entire indented block. When we have multiple parameters of type `stmt` the [do notation](http://nim-lang.org/docs/manual.html#procedures-do-notation) can be used.
+When our template accepts a value of type `stmt` we can use the colon to pass an entire indented block of code. When we have multiple parameters of type `stmt` the [do notation](http://nim-lang.org/docs/manual.html#procedures-do-notation) can be used.
 
 This gets transformed into:
 
@@ -236,14 +238,16 @@ finally:
   release lock
 {% endhighlight %}
 
-Now we will never forget to call `release lock`.
+Now we will never forget to call `release lock`. You could use this to make a
+higher level locking library that only exposes `withLock` instead of the
+lower-level `acquire` and `release` primitives.
 
 ## Macros
 Just like templates, macros are executed at compiletime. But with templates you
 can only do constant substitutions in the AST. With macros you can analyze the
 passed arguments and create a new AST at the current position in any way you
-want. An nice property of Nim is that these compiletime macros are also written
-in regular Nim code, so there is no need to learn another language.
+want. A nice property of Nim is that these compiletime macros are also written
+in the regular Nim language, so there is no need to learn another language.
 
 A simple way to create an AST is to use `parseStmt` and `parseExpr` to parse
 the regular textual representation into a NimNode. For example
@@ -558,7 +562,7 @@ And thus print the following HTML:
       My own website
     </h1>
     <p>
-      Content
+      Default Content
     </p>
     <p>
       My extra content
@@ -666,15 +670,16 @@ proc page(title, content: string): string =
 Where `\x0A` is just the newline character. Looks good and the output works!
 
 [emerald](http://flyx.github.io/emerald/) is a much more complete HTML DSL that
-works in a similar manner. A simpler version is included in the standard
-library in the [htmlgen](http://nim-lang.org/docs/htmlgen.html) module.
+works in a similar manner. A simpler HTML generator is included in the
+standard library in the [htmlgen](http://nim-lang.org/docs/htmlgen.html)
+module.
 
 ## Conclusion
 
 I hope you enjoyed this trip through Nim's metaprogramming capabilities. Always
-remember: With great power comes great responsibility. So use the least
+remember: With great power comes great responsibility, so use the least
 powerful construct that does the job. This reduces complexity and makes it
-easier to understand the code.
+easier to understand the code and keep it maintainable.
 
 For further information and reference see:
 
@@ -682,4 +687,4 @@ For further information and reference see:
 - [Nim Manual](http://nim-lang.org/docs/manual.html#templates)
 - [Macros Module](http://nim-lang.org/docs/macros.html)
 
-Discussions on [Hacker News](https://news.ycombinator.com/item?id=11843730) and [r/programming](https://www.reddit.com/r/programming/comments/4mpuh7/introduction_to_metaprogramming_in_nim/).
+Discuss on [Hacker News](https://news.ycombinator.com/item?id=11851234) and [r/programming](https://www.reddit.com/r/programming/comments/4mpuh7/introduction_to_metaprogramming_in_nim/).
