@@ -128,6 +128,8 @@ templates are written in Nim itself and fit well into the rest of the language.
 Templates simply insert their code at the invocation site, working at the level
 of the abstract syntax tree. They can be used in just the same way as procs.
 
+### Logger
+
 A common example are loggers, which we looked at in [another
 article](/blog/writing-an-async-logger-in-nim/) already. Consider that you want
 to have extensive debug logging in your program. A trivial implementation would
@@ -186,6 +188,55 @@ We can still call the template in the exact same way as the proc. But now we
 have the advantage that the template is inlined at compiletime, so
 `expensiveDebuggingInfo` is only called if the runtime `logLevel` actually
 requires it. Perfect.
+
+### Safe locking
+
+Another problem that can be solved with a template is automatically acquiring and releasing a system [lock](http://nim-lang.org/docs/locks.html):
+
+{% highlight nimrod %}
+import locks
+
+template withLock(lock: Lock, body: stmt) =
+  acquire lock
+  try:
+    body
+  finally:
+    release lock
+{% endhighlight %}
+
+Compile with `--threads:on` for platform independent lock support.
+
+This looks pretty simple, we just acquire the lock, execute the passed
+statements and finally release the lock, even if exceptions have been thrown.
+We can pass any set of statements as the `body`. The usage is as easy as using
+a built-in if statement:
+
+{% highlight nimrod %}
+var lock: Lock
+initLock lock
+
+withLock lock:
+  echo "Do something that requires locking"
+  echo "This might throw an exception"
+{% endhighlight %}
+
+When our template accepts a value of type `stmt` we can use the colon to pass an entire indented block. When we have multiple parameters of type `stmt` the [do notation](http://nim-lang.org/docs/manual.html#procedures-do-notation) can be used.
+
+This gets transformed into:
+
+{% highlight nimrod %}
+var lock: Lock
+initLock lock
+
+acquire lock
+try:
+  echo "Do something that requires locking"
+  echo "This might throw an exception"
+finally:
+  release lock
+{% endhighlight %}
+
+Now we will never forget to call `release lock`.
 
 ## Macros
 Just like templates, macros are executed at compiletime. But with templates you
