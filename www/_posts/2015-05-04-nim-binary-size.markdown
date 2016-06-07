@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nim binary size from 160 KB to 150 Bytes"
-categories: nim
+tags: Nim
 permalink: /blog/nim-binary-size/
 ---
 

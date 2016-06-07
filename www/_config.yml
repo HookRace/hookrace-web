@@ -13,7 +13,6 @@ excerpt_separator: <!--more-->
 title:            HookRace - a Nim blog for now
 tagline:          The successor of DDraceNetwork
 url:              http://hookrace.net
-paginate:         1
 baseurl:          /
 author:
   name:           Dennis Felsing
@@ -26,7 +25,13 @@ pages_list:
   DDNet: 'http://ddnet.tw/'
   Me: 'http://felsin9.de/nnis/'
 
-gems: [jekyll-paginate]
+#gems: [jekyll-tagging]
+
+tag_page_layout:  tag_page
+tag_page_dir:     blog
+
+tag_feed_layout:  tag_feed
+tag_feed_dir:     blog/feed
 
 # Custom vars
 version:          1.0.0

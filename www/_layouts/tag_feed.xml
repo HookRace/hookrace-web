@@ -1,21 +1,19 @@
 ---
-layout: null
+layout: nil
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
- <title>{{ site.title }}</title>
- <link href="{{ site.url }}{{ site.baseurl }}blog/feed/" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}"/>
+ <title>{{ page.tag }} Posts · {{ site.title }}</title>
+ <link href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" rel="self"/>
+ <link href="{{ site.url }}{{ site.baseurl }}blog/{{ page.tag }}/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <id>{{ site.url }}blog/{{ page.tag }}</id>
  <author>
    <name>{{ site.author.name }}</name>
    <email>{{ site.author.email }}</email>
  </author>
 
- {% for post in site.posts %}
+ {% for post in page.posts %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
@@ -26,5 +24,4 @@ layout: null
    </content>
  </entry>
  {% endfor %}
-
 </feed>

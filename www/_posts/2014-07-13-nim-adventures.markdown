@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nim Adventures"
-categories: nim
+tags: Nim
 permalink: /blog/nim-adventures/
 ---
 

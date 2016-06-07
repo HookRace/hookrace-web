@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is special about Nim?"
-categories: nim
+tags: Nim
 permalink: /blog/what-is-special-about-nim/
 ---
 

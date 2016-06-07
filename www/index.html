@@ -11,10 +11,14 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}
+    {% for tag in post.tags %}
+      &middot; <a href="/blog/{{ tag | downcase }}/">{{ tag }}</a>
+    {% endfor %}
+    </span>
 
     {{ post.excerpt }}
 
-    <a href="{{ post.url }}">Read the full post</a>
+    <p><a href="{{ post.url }}">Read the full post</a></p>
   </div>
 {% endfor %}

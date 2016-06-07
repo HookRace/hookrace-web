@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Writing an Async Logger in Nim"
-categories: hookrace, nim
+tags: HookRace Nim
 permalink: /blog/writing-an-async-logger-in-nim/
 ---
 

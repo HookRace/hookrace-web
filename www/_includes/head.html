@@ -5,13 +5,13 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
+  {% if page.title == "Home" %}
+    <title>{{ site.title }}</title>
+  {% elsif page.tag %}
+    <title>{{ page.tag }} Posts &middot; {{ site.title }}</title>
+  {% else %}
+    <title>{{ page.title }} &middot; {{ site.title }}</title>
+  {% endif %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}public/css.css">
@@ -22,7 +22,7 @@
   <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="Blog Feed" href="{{ site.baseurl }}blog/feed/">
+  <link rel="alternate" type="application/atom+xml" title="Posts &middot; Blog Feed" href="{{ site.baseurl }}blog/feed/">
 
   {{ page.head }}
 </head>

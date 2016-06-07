@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "More Photos in Europe"
-categories: travel
+tags: Travel
 permalink: /blog/more-europe-photos/
 ---
 

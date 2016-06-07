@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to Metaprogramming in Nim"
-categories: nim
+tags: Nim
 permalink: /blog/introduction-to-metaprogramming-in-nim/
 ---
 

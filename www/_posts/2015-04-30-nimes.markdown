@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "NimES: a NES emulator in Nim"
-categories: nim,nes
+tags: Nim
 permalink: /blog/nimes/
 ---
 

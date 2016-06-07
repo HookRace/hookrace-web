@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Porting a NES emulator from Go to Nim"
-categories: nim,nes
+tags: Nim
 permalink: /blog/porting-nes-go-nim/
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Travelling through Europe, Photos 2/3"
-categories: travel
+tags: Travel
 permalink: /blog/travel-europe-2/
 ---
 
