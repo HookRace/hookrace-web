@@ -40,7 +40,7 @@ proc insertSort[T](a: var openarray[T]) =
 {% endhighlight %}
 
 ## [Rank languages by popularity](http://rosettacode.org/wiki/Rosetta_Code/Rank_languages_by_popularity#Nimrod)
-The standard library is extremely useful, providing an [HTTP client](http://nim-lang.org/httpclient.html), [JSON parser](http://nim-lang.org/json.html), [regular expressions](http://nim-lang.org/re.html), [string utils](http://nim-lang.org/strutils.html) and [algorithms](http://nim-lang.org/algorithm.html), which I use to create a ranking of the popularity of languages on Rosetta Code:
+The standard library is extremely useful, providing an [HTTP client](http://nim-lang.org/docs/httpclient.html), [JSON parser](http://nim-lang.org/docs/json.html), [regular expressions](http://nim-lang.org/docs/re.html), [string utils](http://nim-lang.org/docs/strutils.html) and [algorithms](http://nim-lang.org/docs/algorithm.html), which I use to create a ranking of the popularity of languages on Rosetta Code:
 {% highlight nimrod %}
 import httpclient, json, re, strutils, algorithm, future
 

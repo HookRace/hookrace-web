@@ -5,7 +5,7 @@ tags: Nim
 permalink: /blog/nim-binary-size/
 ---
 
-The size of binaries in the [Nim](http://nim-lang.org/) programming language seems [to be a](http://www.schipplock.software/2015/02/static-linking-with-nim.html) [popular](http://forum.nim-lang.org/t/679) [topic](http://forum.nim-lang.org/t/963) [recently](http://forum.nim-lang.org/t/1171). Nim's slogan is _expressive, efficient, elegant_, so let's examine the _efficient_ part in this post by exploring a few ways to reduce the size of a simple Nim `Hello World` binary on Linux. Along the way we will:
+The size of binaries in the [Nim](http://nim-lang.org/) programming language seems [to be a](https://www.schipplock.software/p/static-linking-with-nim.html) [popular](http://forum.nim-lang.org/t/679) [topic](http://forum.nim-lang.org/t/963) [recently](http://forum.nim-lang.org/t/1171). Nim's slogan is _expressive, efficient, elegant_, so let's examine the _efficient_ part in this post by exploring a few ways to reduce the size of a simple Nim `Hello World` binary on Linux. Along the way we will:
 
 - Build a regular program into a 6 KB binary
 - Disregard the C standard library and build a 952 byte binary

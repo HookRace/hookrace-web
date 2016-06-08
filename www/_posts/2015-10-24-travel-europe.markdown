@@ -9,23 +9,23 @@ This is my first non-technical post. I'm currently travelling Europe for 1 month
 
 <!--more-->
 ## Croatia
-- [Zadar (15 photos) ![Zadar](http://photos.hookrace.net/croatia/zadar/preview.jpg)](//photos.hookrace.net/croatia/zadar/)
-- [Kornati Islands (24 photos) ![Kornati Islands](http://photos.hookrace.net/croatia/kornati/preview.jpg)](//photos.hookrace.net/croatia/kornati/)
-- [Plitvice Lakes (61 photos) ![Plitvice Lakes](http://photos.hookrace.net/croatia/plitvice/preview.jpg)](//photos.hookrace.net/croatia/plitvice/)
+- [Zadar (15 photos) ![Zadar](//photos.hookrace.net/croatia/zadar/preview.jpg)](//photos.hookrace.net/croatia/zadar/)
+- [Kornati Islands (24 photos) ![Kornati Islands](//photos.hookrace.net/croatia/kornati/preview.jpg)](//photos.hookrace.net/croatia/kornati/)
+- [Plitvice Lakes (61 photos) ![Plitvice Lakes](//photos.hookrace.net/croatia/plitvice/preview.jpg)](//photos.hookrace.net/croatia/plitvice/)
 
 ## Norway
 
-- [Oslo (77 photos) ![Oslo](http://photos.hookrace.net/norway/oslo/preview.jpg)](//photos.hookrace.net/norway/oslo/)
-- [Road Trip through Nature (← probably the nicest one, 89 photos) ![Road Trip through Nature](http://photos.hookrace.net/norway/roadtrip/preview.jpg)](//photos.hookrace.net/norway/roadtrip/)
+- [Oslo (77 photos) ![Oslo](//photos.hookrace.net/norway/oslo/preview.jpg)](//photos.hookrace.net/norway/oslo/)
+- [Road Trip through Nature (← probably the nicest one, 89 photos) ![Road Trip through Nature](//photos.hookrace.net/norway/roadtrip/preview.jpg)](//photos.hookrace.net/norway/roadtrip/)
 
 ## Poland
 
-- [Krakow (75 photos) ![Krakow](http://photos.hookrace.net/poland/krakow/preview.jpg)](//photos.hookrace.net/poland/krakow/)
-- [Silesia (178 photos) ![Silesia](http://photos.hookrace.net/poland/silesia/preview.jpg)](//photos.hookrace.net/poland/silesia/)
+- [Krakow (75 photos) ![Krakow](//photos.hookrace.net/poland/krakow/preview.jpg)](//photos.hookrace.net/poland/krakow/)
+- [Silesia (178 photos) ![Silesia](//photos.hookrace.net/poland/silesia/preview.jpg)](//photos.hookrace.net/poland/silesia/)
 
 ## England
 
-- [London (74 photos) ![London](http://photos.hookrace.net/england/london/preview.jpg)](//photos.hookrace.net/england/london/)
+- [London (74 photos) ![London](//photos.hookrace.net/england/london/preview.jpg)](//photos.hookrace.net/england/london/)
 
 The full route of my flights:
 

@@ -4,7 +4,7 @@ title:  "NimES: a NES emulator in Nim, compiled to JavaScript"
 ---
 # NimES: a NES emulator in Nim, compiled to JavaScript
 
-<p>This is <a href="https://github.com/def-/nimes">NimES</a>, a NES emulator in <a href="http://nim-lang.org/">Nim</a>, compiled to JavaScript using emscripten (<a href="http://hookrace.net/blog/porting-nes-go-nim/">accompanying blog post</a>):</p>
+<p>This is <a href="https://github.com/def-/nimes">NimES</a>, a NES emulator in <a href="http://nim-lang.org/">Nim</a>, compiled to JavaScript using emscripten (<a href="https://hookrace.net/blog/porting-nes-go-nim/">accompanying blog post</a>):</p>
 <div style="text-align: center;"><canvas style="width: 256px; height: 240px;" class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas></div>
 <p>Games: <a href="?nes=smb.nes">Super Mario Bros</a>, <a href="?nes=smb3.nes">Super Mario Bros 3</a>, <a href="?nes=tetris.nes">Tetris</a>, <a href="?nes=pacman.nes">Pacman</a></p>
 <table style="margin-left: auto; margin-right: auto;">

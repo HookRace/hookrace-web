@@ -98,7 +98,7 @@ Here's the resulting build script if you want to try it out on any of these plat
     $ bin/hello
     Hello World
 
-`niminst` can also be used to [build full installers](http://nim-lang.org/niminst.html) for your program. It's what the Nim compiler itself uses.
+`niminst` can also be used to [build full installers](http://nim-lang.org/docs/niminst.html) for your program. It's what the Nim compiler itself uses.
 
 ## Debug and Release Builds
 
@@ -161,11 +161,11 @@ proc max[T](x: varargs[T]): T =
 {.pop.}
 {% endhighlight %}
 
-Great, now we can control which part of our program has runtime checks and which doesn't. `checks` enables and disables all runtime checks at once, but there are more [fine-grained controls](http://nim-lang.org/manual.html#compilation-option-pragmas) as well.
+Great, now we can control which part of our program has runtime checks and which doesn't. `checks` enables and disables all runtime checks at once, but there are more [fine-grained controls](http://nim-lang.org/docs/manual.html#pragmas-compilation-option-pragmas) as well.
 
 ## Nim instead of Python + C++
 
-High performance languages like C++ may require some boilerplate. A higher level language can be used at compile time to automatically create the boilerplate. In [DDNet](http://ddnet.tw/) (which inherited them from [Teeworlds](http://teeworlds.com/)) there are [many examples](https://github.com/def-/ddnet/tree/DDRace64/datasrc) for this.
+High performance languages like C++ may require some boilerplate. A higher level language can be used at compile time to automatically create the boilerplate. In [DDNet](https://ddnet.tw/) (which inherited them from [Teeworlds](https://www.teeworlds.com/)) there are [many examples](https://github.com/def-/ddnet/tree/DDRace64/datasrc) for this.
 
 A really simple use case is to get the current git revision at compile time in Python and put it into the config.h with a `#define` so it can be referred to at runtime in the program. In Nim you need neither Python nor a C preprocessor and can instead do it all directly at compile time in Nim:
 
@@ -324,7 +324,7 @@ Note that you can tell from the `discard` statements where I chose to ignore err
 
 ## Final words
 
-That's Nim from a more practical angle. Hopefully you'll consider Nim for your next project, there are [many libraries](http://nim-lang.org/lib.html) available already. Also, the community always needs more helping hands!
+That's Nim from a more practical angle. Hopefully you'll consider Nim for your next project, there are [many libraries](http://nim-lang.org/docs/lib.html) available already. Also, the community always needs more helping hands!
 
 To do my part in making Nim more practical, I'm trying to implement a new, working REPL using TinyCC. We may also soon get a working compiler as a service for proper IDE integration, directly from Andreas Rumpf.
 

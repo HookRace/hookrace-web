@@ -5,7 +5,7 @@ tags: HookRace DDNet Nim
 permalink: /blog/what-is-hookrace/
 ---
 
-I have been running [DDraceNetwork](http://ddnet.tw) for 1 year, which started out as a little server of a [Teeworlds](http://teeworlds.com) modification called DDRace. It has turned into the biggest project within Teeworlds, offering servers in 6 countries with thousands of players and dozens of mappers. We also offer a custom server and client (Windows, Linux, OS X, Android).
+I have been running [DDraceNetwork](https://ddnet.tw) for 1 year, which started out as a little server of a [Teeworlds](https://www.teeworlds.com) modification called DDRace. It has turned into the biggest project within Teeworlds, offering servers in 6 countries with thousands of players and dozens of mappers. We also offer a custom server and client (Windows, Linux, OS X, Android).
 
 Now it's time to start something new. I'm working on a new game called HookRace, which will be the successor to DDraceNetwork. It will be its own game, not based on Teeworlds.
 

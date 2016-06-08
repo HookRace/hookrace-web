@@ -341,7 +341,7 @@ at just the right places, exactly as it would happen if we added the `%` calls
 manually.
 
 For this purpose we print the AST of `j2` by putting it into `dumpTree` from
-the [macros module](http://nim-lang.org/macros.html):
+the [macros module](http://nim-lang.org/docs/macros.html):
 
 {% highlight nimrod %}
 import json, macros
@@ -460,7 +460,7 @@ With enums we can create new types that contain ordered values, just like this:
   type Fruit = enum Apple, Banana, Cherry
 {% endhighlight %}
 
-Strings can be parsed to an enum using `parseEnum` from [strutils](http://nim-lang.org/strutils.html):
+Strings can be parsed to an enum using `parseEnum` from [strutils](http://nim-lang.org/docs/strutils.html):
 
 {% highlight nimrod %}
   let fruit = parseEnum[Fruit]("cherry")

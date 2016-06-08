@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 # Setup
 title:            HookRace - a Nim blog for now
 tagline:          The successor of DDraceNetwork
-url:              http://hookrace.net
+url:              https://hookrace.net
 baseurl:          /
 author:
   name:           Dennis Felsing
@@ -22,7 +22,7 @@ author:
 pages_list:
   Posts: '/blog/'
   Feed: '/blog/feed/'
-  DDNet: 'http://ddnet.tw/'
+  DDNet: 'https://ddnet.tw/'
   Me: 'http://felsin9.de/nnis/'
 
 #gems: [jekyll-tagging]

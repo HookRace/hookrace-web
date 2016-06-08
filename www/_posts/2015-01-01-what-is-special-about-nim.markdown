@@ -7,9 +7,9 @@ permalink: /blog/what-is-special-about-nim/
 
 [Russian Translation by frol](http://habrahabr.ru/post/258119/), [Chinese Translation by JiyinYiyong](https://segmentfault.com/a/1190000002576013)
 
-The [Nim programming language](http://nim-lang.org/) is exciting. While the [official tutorial](http://nim-lang.org/tut1.html) is great, it slowly introduces you to the language. Instead I want to quickly show what you can do with Nim that would be more difficult or impossible in other languages.
+The [Nim programming language](http://nim-lang.org/) is exciting. While the [official tutorial](http://nim-lang.org/docs/tut1.html) is great, it slowly introduces you to the language. Instead I want to quickly show what you can do with Nim that would be more difficult or impossible in other languages.
 
-I discovered Nim in my quest to find the right tools to write a game, HookRace, the successor of my current [DDNet](http://ddnet.tw) game/mod of Teeworlds. Since I'm busy with other projects for now, this blog is now officially about Nim instead, until I find time to continue developing the game.
+I discovered Nim in my quest to find the right tools to write a game, HookRace, the successor of my current [DDNet](https://ddnet.tw) game/mod of Teeworlds. Since I'm busy with other projects for now, this blog is now officially about Nim instead, until I find time to continue developing the game.
 
 ## Easy to get running
 
@@ -77,7 +77,7 @@ const crc32table = createCRCTable()
 Yes, that's right: All we had to do was replace the `var` with a `const`. Beautiful, isn't it? We can write the exact same code and have it run at runtime and compile time. No template metaprogramming necessary.
 
 ## Extend the language
-[Templates](http://nim-lang.org/manual.html#templates) and [macros](http://nim-lang.org/manual.html#macros) can be used to get rid of boilerplate, by transforming your code at compile time.
+[Templates](http://nim-lang.org/docs/manual.html#templates) and [macros](http://nim-lang.org/docs/manual.html#macros) can be used to get rid of boilerplate, by transforming your code at compile time.
 
 Templates just replace their invocations with their code at compile-time. We can define our own loops like this:
 
@@ -137,7 +137,7 @@ for x in 1..n:
 echo result
 {% endhighlight %}
 
-You can use the [future module](http://nim-lang.org/future.html) and write:
+You can use the [future module](http://nim-lang.org/docs/future.html) and write:
 
 {% highlight nimrod %}
 import future
@@ -168,7 +168,7 @@ template canonMul{`*`(a,b)}(a: int{lit}, b: int): int =
   b * a
 {% endhighlight %}
 
-In the first [term rewriting](http://nim-lang.org/trmacros.html) template we specify that `a * 2` can be replaced by `a + a`. In the second one we specify that `int`s in a multiplication can be swapped if the first is an integer literal, so that we can potentially apply the first template.
+In the first [term rewriting](http://nim-lang.org/docs/manual.html#term-rewriting-macros) template we specify that `a * 2` can be replaced by `a + a`. In the second one we specify that `int`s in a multiplication can be swapped if the first is an integer literal, so that we can potentially apply the first template.
 
 More complicated patterns can also be implemented, for example to optimize boolean logic:
 
@@ -204,7 +204,7 @@ while true:
 {% endhighlight %}
 
 ## Bind to your favorite C functions and libraries
-Since Nim compiles down to C, [foreign function interfaces](http://nim-lang.org/manual.html#foreign-function-interface) are fun.
+Since Nim compiles down to C, [foreign function interfaces](http://nim-lang.org/docs/manual.html#foreign-function-interface) are fun.
 
 You can easily use your favorite functions from the C standard library:
 
@@ -237,7 +237,7 @@ proc set_default_dpi*(dpi: cdouble) {.cdecl,
 {% endhighlight %}
 
 ## Control the garbage collector
-To achieve soft realtime, you can tell the [garbage collector](http://nim-lang.org/gc.html) when and for how long it is allowed to run. The main game logic can be implemented like this in Nim, to prevent the garbage collector from causing stutters:
+To achieve soft realtime, you can tell the [garbage collector](http://nim-lang.org/docs/gc.html) when and for how long it is allowed to run. The main game logic can be implemented like this in Nim, to prevent the garbage collector from causing stutters:
 
 {% highlight nimrod %}
 gcDisable()
@@ -283,7 +283,7 @@ echo a[freeze]
 
 ## Unified Call Syntax
 
-This is just syntactic sugar, but it's definitely nice to have. In Python I always forget whether `len` and `append` are functions or methods. In Nim I don't have to remember, because there is no difference. Nim uses [Unified Call Syntax](http://nim-lang.org/manual.html#method-call-syntax), which has now also been proposed for C++ by [Herb Sutter](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4165.pdf) and [Bjarne Stroustrup](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4174.pdf).
+This is just syntactic sugar, but it's definitely nice to have. In Python I always forget whether `len` and `append` are functions or methods. In Nim I don't have to remember, because there is no difference. Nim uses [Unified Call Syntax](http://nim-lang.org/docs/manual.html#procedures-method-call-syntax), which has now also been proposed for C++ by [Herb Sutter](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4165.pdf) and [Bjarne Stroustrup](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4174.pdf).
 
 {% highlight nimrod %}
 var xs = @[1,2,3]
@@ -379,7 +379,7 @@ int main() {
 
 ## Compile to JavaScript
 
-You can [compile Nim to JavaScript](http://nim-lang.org/backends.html#the-javascript-target), instead of C. This allows you to write the client as well as the server directly in Nim. Let's make a small visitor counter on the server that gets displayed in the browser. This is our `client.nim`:
+You can [compile Nim to JavaScript](http://nim-lang.org/docs/backends.html#backends-the-javascript-target), instead of C. This allows you to write the client as well as the server directly in Nim. Let's make a small visitor counter on the server that gets displayed in the browser. This is our `client.nim`:
 
 {% highlight nimrod %}
 import htmlgen, dom
@@ -445,11 +445,11 @@ runForever()
 
 The server delivers the main website. It also delivers the `client.js`, by compiling and reading the `client.nim` at compile time. The logic is in the `/visitors` handling. Compile and run with `nim -r c server` and open [http://localhost:5000/](http://localhost:5000/) to see the code in effect.
 
-You can see our code in action on the [Jester-generated site](http://visitors.hookrace.net/) or inline here:
+You can see our code in action on the [Jester-generated site](//visitors.hookrace.net/) or inline here:
 
 <div id="info"><p>You don't have JavaScript enabled or something went wrong.</p></div>
-<script src="http://visitors.hookrace.net/client.js" type="text/javascript"></script>
-<script src="http://visitors.hookrace.net/visitors" type="text/javascript"></script>
+<script src="//visitors.hookrace.net/client.js" type="text/javascript"></script>
+<script src="//visitors.hookrace.net/visitors" type="text/javascript"></script>
 
 ## Final words
 

@@ -8,10 +8,10 @@ permalink: /blog/ddnet-live/
 Last night I had an idea and implemented it, soo let's see what will happen.
 But first, the idea:
 
-> Have a livestream [1] of [DDNet](http://ddnet.tw/) running non-stop [2] that
+> Have a livestream [1] of [DDNet](https://ddnet.tw/) running non-stop [2] that
 > always shows some interesting [3] players on the server.
 
-The resulting livestream is running on [Twitch](http://twitch.tv/ddnetlive).
+The resulting livestream is running on [Twitch](https://www.twitch.tv/ddnetlive).
 All the scripts are on [Github](https://github.com/ddnet/ddnet-live)
 
 <!--more-->
@@ -153,10 +153,10 @@ while true:
 Right now there is really not much limitation to what you can do. Only a
 handful of commands are explicitly blocked, otherwise the client can be
 controlled freely and every single chat message is sent to the client. The
-[client commands](http://ddnet.tw/settingscommands/#client-commands) and
-[client settings](http://ddnet.tw/settingscommands/#client-settings) list the
+[client commands](https://ddnet.tw/settingscommands/#client-commands) and
+[client settings](https://ddnet.tw/settingscommands/#client-settings) list the
 available commands and settings. [Chat
-commands](http://ddnet.tw/settingscommands/#chat-commands) can be sent to the
+commands](https://ddnet.tw/settingscommands/#chat-commands) can be sent to the
 server as well through the `say` command. Some examples:
 
 {% highlight bash %}
