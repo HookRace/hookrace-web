@@ -401,7 +401,7 @@ We define a `Data` type that we use to pass data from the server to client. The 
 For the server we need to [get the Nimble package manager](https://github.com/nim-lang/nimble) and run `nimble install jester`. Now we can use the [Jester web framework](https://github.com/dom96/jester) and write our `server.nim`:
 
 {% highlight nimrod %}
-import jester, asyncdispatch, json, strutils, times, sets, htmlgen, strtabs
+import jester, asyncdispatch, json, strutils, times, sets, htmlgen, strtabs, httpcore
 
 var
   visitors = 0
@@ -430,7 +430,7 @@ routes:
     inc visitors
     let ip =
       if request.headers.hasKey "X-Forwarded-For":
-        request.headers["X-Forwarded-For"]
+        request.headers["X-Forwarded-For", 0]
       else:
         request.ip
     uniques.incl ip
