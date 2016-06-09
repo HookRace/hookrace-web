@@ -3,11 +3,11 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- <title>{{ page.tag }} Posts · {{ site.title }}</title>
- <link href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" rel="self"/>
- <link href="{{ site.url }}{{ site.baseurl }}blog/{{ page.tag }}/"/>
+ <title>{{ page.tag | xml_escape }} Posts · {{ site.title | xml_escape }}</title>
+ <link href="{{ site.url }}/blog/feed/{{ page.tag | downcase }}/" rel="self"/>
+ <link href="{{ site.url }}/blog/{{ page.tag | downcase }}/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}blog/{{ page.tag }}</id>
+ <id>{{ site.url }}/blog/{{ page.tag }}</id>
  <author>
    <name>{{ site.author.name }}</name>
    <email>{{ site.author.email }}</email>
@@ -15,8 +15,8 @@ layout: nil
 
  {% for post in page.posts %}
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
+   <title>{{ post.title | xml_escape }}</title>
+   <link href="{{ site.url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.id }}</id>
    <content type="html">
