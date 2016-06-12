@@ -649,7 +649,7 @@ The main goal is to keep DDNet running, well maintained, and keep a steady
 stream of new maps from the community.
 
 We submitted DDNet to [Steam
-Greenlight](http://steamcommunity.com/sharedfiles/filedetails/?l=german&id=506147661)
+Greenlight](http://steamcommunity.com/sharedfiles/filedetails/?id=506147661)
 and have been greenlit since then, which means we could release it on Steam
 now. This would be an opportunity for us to reach more potential players,
 especially those who have never played Teeworlds before. The main problem right
