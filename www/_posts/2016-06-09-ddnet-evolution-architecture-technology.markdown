@@ -657,3 +657,7 @@ now is that DDNet is a difficult game to get started with, since it requires
 practice, fine control and patience. Right now work is [being
 done](https://forum.ddnet.tw/viewtopic.php?t=3771) to create a tutorial for new
 players and generally improve the ease of getting started.
+
+## Discussion
+
+You can find discussions about this article on [Hacker News](https://news.ycombinator.com/item?id=11874830), [r/programming](https://www.reddit.com/r/programming/comments/4nnlsq/experiences_of_running_an_online_game_for_3_years/) and also the [DDNet Forum](https://forum.ddnet.tw/viewtopic.php?f=3&t=3779).
