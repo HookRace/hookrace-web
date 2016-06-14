@@ -235,7 +235,8 @@ blockquote p:last-child {
   padding: 0;
 }
 
-img {
+img,
+video {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
