@@ -23,7 +23,7 @@ For the sake of simplicity we're going to use the familiar graphics from
 [DDNet](https://ddnet.tw/) and [Teeworlds](https://www.teeworlds.com/), with
 the end result of this tutorial looking like this:
 
-<video controls muted>
+<video controls muted poster="/public/platformer/video-preview3.png">
   <source src="/public/platformer/platformer-finished.mp4" type="video/mp4">
 </video>
 
@@ -580,7 +580,7 @@ proc physics(game: Game) =
   game.player.pos += game.player.vel
 {% endhighlight %}
 
-<video controls muted>
+<video controls muted poster="/public/platformer/video-preview1.png">
   <source src="/public/platformer/platformer-gravity.mp4" type="video/mp4">
 </video>
 
@@ -626,7 +626,7 @@ around if you have other preferences. Note that we don't set the player
 position directly, instead we modify the velocity vector and add that to the
 position. This is important for collision detection.
 
-<video controls muted>
+<video controls muted poster="/public/platformer/video-preview1.png">
   <source src="/public/platformer/platformer-moving.mp4" type="video/mp4">
 </video>
 
@@ -780,7 +780,7 @@ Jumping is only possible when standing on the ground. Horizontal movement in
 the air is calculated in a different way than on the ground, simulating
 different air and ground friction.
 
-<video controls muted>
+<video controls muted poster="/public/platformer/video-preview1.png">
   <source src="/public/platformer/platformer-collisions.mp4" type="video/mp4">
 </video>
 
@@ -809,7 +809,7 @@ for tick in lastTick+1 .. newTick:
   game.moveCamera()
 {% endhighlight %}
 
-<video controls muted>
+<video controls muted poster="/public/platformer/video-preview3.png">
   <source src="/public/platformer/platformer-camera1.mp4" type="video/mp4">
 </video>
 
@@ -826,7 +826,7 @@ proc moveCamera(game: Game) =
   game.camera.x = clamp(game.camera.x, leftArea, rightArea)
 {% endhighlight %}
 
-<video controls muted>
+<video controls muted poster="/public/platformer/video-preview2.png">
   <source src="/public/platformer/platformer-camera2.mp4" type="video/mp4">
 </video>
 
@@ -843,7 +843,7 @@ proc moveCamera(game: Game) =
   game.camera.x -= 0.05 * dist
 {% endhighlight %}
 
-<video controls muted>
+<video controls muted poster="/public/platformer/video-preview3.png">
   <source src="/public/platformer/platformer-camera3.mp4" type="video/mp4">
 </video>
 
@@ -1222,7 +1222,7 @@ We also reduced the exactness of the current time format because before it had
 to be recalculated every single frame. Now we're back to using 4 % CPU and our
 final game looks like this:
 
-<video controls muted>
+<video controls muted poster="/public/platformer/video-preview3.png">
   <source src="/public/platformer/platformer-finished.mp4" type="video/mp4">
 </video>
 
