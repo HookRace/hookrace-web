@@ -687,7 +687,7 @@ proc onGround(map: Map, pos: Point2d, size: Vector2d): bool =
     map.checkPoint(point2d(pos.x + size.x, pos.y + size.y + 1))
 {% endhighlight %}
 
-Meanwhile `textBox` considers the player as an axis aligned boundary box, and
+Meanwhile `testBox` considers the player as an axis aligned boundary box, and
 tells us if the player is stuck inside of any solid walls:
 
 {% highlight nim %}
@@ -1570,4 +1570,4 @@ Because I changed around things late into the article I might have made a
 mistake or missed something. If you find a bug or have a comment you can drop
 me an email at [dennis@felsin9.de](mailto:dennis@felsin9.de).
 
-Discussions on [Hacker News](https://news.ycombinator.com/item?id=11900617) and [r/programming](https://www.reddit.com/r/programming/comments/4o0h0u/writing_a_2d_platform_game_in_nim_with_sdl2/).
+Discussions on [r/programming](https://www.reddit.com/r/programming/comments/4o0h0u/writing_a_2d_platform_game_in_nim_with_sdl2/) and [Hacker News](https://news.ycombinator.com/item?id=11927780).
