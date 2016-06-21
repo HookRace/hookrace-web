@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Experiences of Running an Online Game for 3 Years"
-tags: DDNet
+tags: DDNet Frugality
 permalink: /blog/ddnet-evolution-architecture-technology/
 ---
 

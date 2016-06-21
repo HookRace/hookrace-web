@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "DDNet Server Statistics with ServerStatus, RRDtool and Nim"
-tags: DDNet Nim
+tags: DDNet Nim Frugality
 permalink: /blog/server-statistics/
 ---
 
