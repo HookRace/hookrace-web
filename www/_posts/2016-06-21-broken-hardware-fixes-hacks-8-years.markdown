@@ -325,7 +325,7 @@ system in 2014.
 
 ## Conclusion
 
-All in all I would say that the hardware help up reasonably well and when it
+All in all I would say that the hardware held up reasonably well and when it
 broke it was usually possible to fix it without replacing the entire device.
 More repairable hardware would still be a huge bonus, especially since the
 industry has been moving in the opposite direction with ever smaller and more
