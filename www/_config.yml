@@ -10,7 +10,7 @@ permalink:        pretty
 excerpt_separator: <!--more-->
 
 # Setup
-title:            HookRace - a Nim blog for now
+title:            HookRace Blog
 tagline:          The successor of DDraceNetwork
 url:              https://hookrace.net
 baseurl:          /
