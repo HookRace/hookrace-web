@@ -338,3 +338,5 @@ I wrote this up on the exact hardware described in this post, while waiting for
 my new hardware to arrive in the next days. I hope build quality and
 repairability of PC hardware haven't gone down in the last years. But only time
 will tell.
+
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=11942618).
