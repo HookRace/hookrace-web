@@ -339,4 +339,4 @@ my new hardware to arrive in the next days. I hope build quality and
 repairability of PC hardware haven't gone down in the last years. But only time
 will tell.
 
-Discussion on [Hacker News](https://news.ycombinator.com/item?id=11942618).
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=11942618) and [r/Hardware](https://www.reddit.com/r/hardware/comments/4pap8e/broken_hardware_fixes_and_hacks_over_8_years/).
