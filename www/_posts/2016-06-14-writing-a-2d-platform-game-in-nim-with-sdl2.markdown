@@ -181,7 +181,7 @@ will need later:
 {% highlight nim %}
 proc newGame(renderer: RendererPtr): Game =
   new result
-  result.renderer = RendererPtr
+  result.renderer = renderer
 {% endhighlight %}
 
 We don't need to initialize the `inputs` field in any way as everything is
