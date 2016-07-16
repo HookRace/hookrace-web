@@ -113,12 +113,6 @@ single component in this list gets rid of the problem. For now I use DRI3
 instead of TearFree, which has slight tearing only in very special cases that I
 never encounter in regular usage.
 
-<p>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/JJxv01q64XI" frameborder="0" allowfullscreen></iframe>
-  </div>
-</p>
-
 But one problem I imagine to have with a large screen is that the left and
 right edges are so far away that they look distorted. After all when I use two
 regular screens I rotate them a bit so I can look at them head-on. So instead I
