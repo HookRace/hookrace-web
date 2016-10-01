@@ -5,6 +5,8 @@ tags: HookRace Nim DDNet
 permalink: /blog/writing-a-2d-platform-game-in-nim-with-sdl2/
 ---
 
+[Japanese Translation](http://postd.cc/writing-a-2d-platform-game-in-nim-with-sdl2/)
+
 In this article we're going to write a simple 2D [platform game](https://en.wikipedia.org/wiki/Platform_game). You can also consider this as a tutorial for game development with SDL2 in Nim.
 
 We will read in user input, display graphics and a tile map, and simulate
