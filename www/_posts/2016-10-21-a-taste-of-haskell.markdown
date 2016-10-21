@@ -11,11 +11,11 @@ Let's start by seeing how programmers compare Haskell to a mainstream programmin
 
 <!--more-->
 
-![Java vs Haskell](/public/haskell/hammer1.png)
+[![Java vs Haskell](/public/haskell/hammer1.png)](http://hammerprinciple.com/therighttool)
 
 Doesn't sound that good for Java, what do people say about Haskell?
 
-![Haskell vs Java](/public/haskell/hammer2.png)
+[![Haskell vs Java](/public/haskell/hammer2.png)](http://hammerprinciple.com/therighttool)
 
 Sounds much better and makes it seem like a reasonable endeavour to learn Haskell! So what is Haskell actually?
 
@@ -237,7 +237,7 @@ Let's look at a few common list operations in Haskell:
 6
 {% endhighlight %}
 
-![List Visualization](/public/haskell/listmonster.png)
+[![List Visualization](/public/haskell/listmonster.png)](http://learnyouahaskell.com/starting-out#an-intro-to-lists)
 
 Knowing how lists are implemented we can easily implement our own definitions of these functions:
 
