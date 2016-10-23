@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Taste of Haskell"
-tags: Programming
+tags: Haskell
 permalink: /blog/a-taste-of-haskell/
 ---
 
