@@ -641,3 +641,5 @@ Because in Haskell functions are pure and data is immutable we can perform equat
 I hope you enjoyed this small excursion into functional programming land with Haskell. Maybe you learned something that gives you something to think when programming in your favorite programming language. If you're interested in learning more Haskell, here are a few books you can read:
 
 <a href="http://www.cs.nott.ac.uk/~pszgmh/pih.html"><img style="display: inline; width: 33%; padding: 0;" src="/public/haskell/pih.jpg" alt="Programming in Haskell"></a><a href="http://learnyouahaskell.com/"><img style="display: inline; width: 33%; padding: 0;" src="/public/haskell/haskell-book-cover.png" alt="Learn You a Haskell for Great Good!"></a><a href="http://book.realworldhaskell.org/"><img style="display: inline; width: 33%; padding: 0;" src="/public/haskell/rwh_cover.jpg" alt="Real World Haskell"></a>
+
+Discussions on [HackerNews](https://news.ycombinator.com/item?id=12777757) and [r/Programming](https://www.reddit.com/r/programming/comments/593ud7/a_taste_of_haskell/).
