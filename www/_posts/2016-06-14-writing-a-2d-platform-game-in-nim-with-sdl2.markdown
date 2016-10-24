@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Writing a 2D Platform Game in Nim with SDL2"
-tags: HookRace Nim DDNet
+tags: HookRace Nim DDNet Programming
 permalink: /blog/writing-a-2d-platform-game-in-nim-with-sdl2/
 ---
 
