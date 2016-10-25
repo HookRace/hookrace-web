@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What makes Nim practical?"
-tags: Nim
+tags: Nim Programming
 permalink: /blog/what-makes-nim-practical/
 ---
 

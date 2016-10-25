@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Conclusion on Nim"
-tags: Nim
+tags: Nim Programming
 permalink: /blog/conclusion-on-nim/
 ---
 

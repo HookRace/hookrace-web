@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nim Adventures"
-tags: Nim
+tags: Nim Programming
 permalink: /blog/nim-adventures/
 ---
 

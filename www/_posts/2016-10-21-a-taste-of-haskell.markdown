@@ -645,4 +645,4 @@ I hope you enjoyed this small excursion into functional programming land with Ha
 
 <a href="http://www.cs.nott.ac.uk/~pszgmh/pih.html"><img style="display: inline; width: 33%; padding: 0;" src="/public/haskell/pih.jpg" alt="Programming in Haskell"></a><a href="http://learnyouahaskell.com/"><img style="display: inline; width: 33%; padding: 0;" src="/public/haskell/haskell-book-cover.png" alt="Learn You a Haskell for Great Good!"></a><a href="http://book.realworldhaskell.org/"><img style="display: inline; width: 33%; padding: 0;" src="/public/haskell/rwh_cover.jpg" alt="Real World Haskell"></a>
 
-Discussions on [HackerNews](https://news.ycombinator.com/item?id=12782888) and [r/Programming](https://www.reddit.com/r/programming/comments/593ud7/a_taste_of_haskell/).
+Discussions on [Hacker News](https://news.ycombinator.com/item?id=12782888) and [r/Programming](https://www.reddit.com/r/programming/comments/593ud7/a_taste_of_haskell/).

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Make a Lisp in Nim"
-tags: Nim
+tags: Nim Programming
 permalink: /blog/make-a-lisp-in-nim/
 ---
 

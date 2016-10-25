@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is HookRace?"
-tags: HookRace DDNet Nim
+tags: HookRace DDNet Nim Programming
 permalink: /blog/what-is-hookrace/
 ---
 

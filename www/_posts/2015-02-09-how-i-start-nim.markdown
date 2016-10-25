@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How I Start: Nim"
-tags: Nim
+tags: Nim Programming
 permalink: /blog/how-i-start-nim/
 ---
 

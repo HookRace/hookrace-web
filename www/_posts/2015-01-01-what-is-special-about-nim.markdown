@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is special about Nim?"
-tags: Nim
+tags: Nim Programming
 permalink: /blog/what-is-special-about-nim/
 ---
 
