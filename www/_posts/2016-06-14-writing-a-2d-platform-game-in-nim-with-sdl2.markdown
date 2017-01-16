@@ -685,8 +685,8 @@ A player is on the ground when there is a block below either side of its feet:
 proc onGround(map: Map, pos: Point2d, size: Vector2d): bool =
   let size = size * 0.5
   result =
-    map.checkPoint(point2d(pos.x - size.x, pos.y + size.y + 1)) or
-    map.checkPoint(point2d(pos.x + size.x, pos.y + size.y + 1))
+    map.isSolid(point2d(pos.x - size.x, pos.y + size.y + 1)) or
+    map.isSolid(point2d(pos.x + size.x, pos.y + size.y + 1))
 {% endhighlight %}
 
 Meanwhile `testBox` considers the player as an axis aligned boundary box, and
@@ -696,10 +696,10 @@ tells us if the player is stuck inside of any solid walls:
 proc testBox(map: Map, pos: Point2d, size: Vector2d): bool =
   let size = size * 0.5
   result =
-    map.checkPoint(point2d(pos.x - size.x, pos.y - size.y)) or
-    map.checkPoint(point2d(pos.x + size.x, pos.y - size.y)) or
-    map.checkPoint(point2d(pos.x - size.x, pos.y + size.y)) or
-    map.checkPoint(point2d(pos.x + size.x, pos.y + size.y))
+    map.isSolid(point2d(pos.x - size.x, pos.y - size.y)) or
+    map.isSolid(point2d(pos.x + size.x, pos.y - size.y)) or
+    map.isSolid(point2d(pos.x - size.x, pos.y + size.y)) or
+    map.isSolid(point2d(pos.x + size.x, pos.y + size.y))
 {% endhighlight %}
 
 `moveBox` now tries to apply the velocity vector `vel` to the player's position
