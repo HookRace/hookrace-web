@@ -63,7 +63,6 @@ to see idiomatic Nim performing well:
     ocaml            1      3        7063
     cs              10     11        5414
     vb              12     13        4523
-    rust             2      5        4084
     c                1      4        3649
     go               1      6        3048
     racket           3     10        2461
@@ -112,7 +111,6 @@ to Python shows how much I oriented on the Python implementation:
     forth            1609    6826   44715
     cs               1249    4136   45039
     java             1591    4966   53223
-    rust             1897    5702   56516
     vb               1556    5175   58099
     make             1593    6055   62310
     c                2304    6957   73047
