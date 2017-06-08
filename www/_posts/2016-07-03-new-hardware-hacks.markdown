@@ -26,7 +26,7 @@ challenging graphics I need is DDNet client, which easily runs at 400 fps at
 Skylake CPUs. But it's still nice to have a PCIe port in case you ever need it.
 So Mini-ITX it is.
 
-Unfortunately the [Streacom DB4](http://www.streacom.com/products/db4-fanless-chassis/) is not available yet, as it would have made for a beautiful silent Mini-ITX cube. Instead I went with the [In Win Chopin](https://www.inwin-style.com/en/gaming-chassis/Chopin), which is even smaller, features no GPU port and has a small integrated TFX PSU rated at 150 W. I was a bit worried about the PSU being strong enough, but you can read more about that later in this post. There really aren't that many good-looking and reasonable Mini-ITX cases.
+Unfortunately the [Streacom DB4](http://www.streacom.com/products/db4-fanless-chassis/) is not available yet, as it would have made for a beautiful silent Mini-ITX cube. Instead I went with the [In Win Chopin](https://www.inwin-style.com/en/gaming-chassis/Chopin), which is even smaller, features no GPU port and has a small integrated PSU rated at 150 W. I was a bit worried about the PSU being strong enough, but you can read more about that later in this post. There really aren't that many good-looking and reasonable Mini-ITX cases.
 
 <img class="halfimg" src="/public/hardware2/streacom-db4.jpg" alt="Streacom DB4"><img class="halfimg" src="/public/hardware2/in-win-chopin.jpg" alt="In Win Chopin">
 
