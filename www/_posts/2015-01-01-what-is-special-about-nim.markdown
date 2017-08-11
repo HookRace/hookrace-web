@@ -445,11 +445,11 @@ runForever()
 
 The server delivers the main website. It also delivers the `client.js`, by compiling and reading the `client.nim` at compile time. The logic is in the `/visitors` handling. Compile and run with `nim -r c server` and open [http://localhost:5000/](http://localhost:5000/) to see the code in effect.
 
-You can see our code in action on the [Jester-generated site](//visitors.hookrace.net/) or inline here:
+You can see our code in action on the [Jester-generated site](/visitors/visitors) or inline here:
 
 <div id="info"><p>You don't have JavaScript enabled or something went wrong.</p></div>
-<script src="//visitors.hookrace.net/client.js" type="text/javascript"></script>
-<script src="//visitors.hookrace.net/visitors" type="text/javascript"></script>
+<script src="/visitors/client.js" type="text/javascript"></script>
+<script src="/visitors/visitors" type="text/javascript"></script>
 
 ## Final words
 
