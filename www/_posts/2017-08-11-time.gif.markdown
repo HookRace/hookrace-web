@@ -1,0 +1,18 @@
+---
+layout: post
+title: "time.gif"
+tags: Travel
+permalink: /blog/time.gif/
+---
+
+This is a GIF that always shows the current time in UTC:
+
+![time.gif](/time.gif)
+
+It is written in Haskell and works by dynamically generating each frame of the GIF and slowly feeding them over the HTTP connection.
+
+This is cannibalized from [gifstream](https://github.com/def-/gifstream)), which lets you play snake and have people watch a GIF livestream.
+
+![snake](https://raw.githubusercontent.com/def-/gifstream/master/snake.gif)
+
+[Source Code](https://github.com/def-/time.gif)
