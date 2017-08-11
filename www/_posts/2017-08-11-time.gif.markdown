@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "time.gif"
-tags: Travel
+tags: Haskell Programming
 permalink: /blog/time.gif/
 ---
 
