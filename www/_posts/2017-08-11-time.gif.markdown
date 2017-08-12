@@ -17,3 +17,5 @@ It is written in Haskell and works by dynamically generating each frame of the G
 This is cannibalized from [gifstream](https://github.com/def-/gifstream), which lets you play snake and have people watch a GIF livestream. It was actually created as a Christmas exercise for students of the Programming Paradigms course at KIT.
 
 ![snake](https://raw.githubusercontent.com/def-/gifstream/master/snake.gif)
+
+Discuss on [Hacker News](https://news.ycombinator.com/item?id=14996715)
