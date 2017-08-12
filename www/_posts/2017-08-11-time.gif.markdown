@@ -5,7 +5,7 @@ tags: Haskell Programming
 permalink: /blog/time.gif/
 ---
 
-This is an endless GIF that always shows the current time in UTC (4 KB/s):
+This is an endless GIF that always shows the current time in UTC:
 
 <!--more-->
 ![time.gif (reload page if it fails; on Firefox only one tab with time.gif works)](/time.gif)
@@ -54,5 +54,7 @@ loop delay frameSignal sock = do
 This is cannibalized from [gifstream](https://github.com/def-/gifstream), which lets you play snake and have people watch a GIF livestream. It was actually created as a Christmas exercise for students of the Programming Paradigms course at KIT.
 
 ![snake](https://raw.githubusercontent.com/def-/gifstream/master/snake.gif)
+
+Update: Optimized, runs at less than 1% CPU, 4 MB RAM with 500 simultaneous watchers, LZW encoding reduces bandwidth from 4 KB/s to 300 B/s.
 
 Discuss on [Hacker News](https://news.ycombinator.com/item?id=14996715)
