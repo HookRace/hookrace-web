@@ -5,16 +5,16 @@ tags: Haskell Programming
 permalink: /blog/time.gif/
 ---
 
-This is a GIF that always shows the current time in UTC:
+This is an endless GIF that always shows the current time in UTC:
 
 <!--more-->
 ![time.gif](/time.gif)
 
 [Source Code](https://github.com/def-/time.gif)
 
-Update: It only seems to "sort of work" in Firefox, Chrome and Android browser. Haven't tested any others. There is no guarantee that this GIF shows a reasonable time and this is just for fun anyway, so better don't build your next project based on the time from this GIF. If my server is overloaded, you can try compiling it yourself and run it locally.
-
 It is written in Haskell and works by dynamically generating each frame of the GIF and slowly feeding them over the HTTP connection.
+
+Update: Only tested in Firefox, Chrome and Android browser. There is no guarantee that this GIF shows a reasonable time and this is just for fun anyway, so better don't build your next project based on the time from this GIF. If my server is overloaded, you can try compiling it yourself and run it locally.
 
 This is cannibalized from [gifstream](https://github.com/def-/gifstream), which lets you play snake and have people watch a GIF livestream. It was actually created as a Christmas exercise for students of the Programming Paradigms course at KIT.
 
