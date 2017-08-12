@@ -5,16 +5,51 @@ tags: Haskell Programming
 permalink: /blog/time.gif/
 ---
 
-This is an endless GIF that always shows the current time in UTC:
+This is an endless GIF that always shows the current time in UTC (4 KB/s):
 
 <!--more-->
-![time.gif](/time.gif)
+![time.gif (reload page if it fails; on Firefox only one tab with time.gif works)](/time.gif)
 
 [Source Code](https://github.com/def-/time.gif)
 
-It is written in Haskell and works by dynamically generating each frame of the GIF and slowly feeding them over the HTTP connection.
+(From reports it doesn't seem to work on Safari, other browsers should be fine.)
 
-Update: Only tested in Firefox, Chrome and Android browser. There is no guarantee that this GIF shows a reasonable time and this is just for fun anyway, so better don't build your next project based on the time from this GIF. If my server is overloaded, you can try compiling it yourself and run it locally.
+time.gif is written in Haskell and works by dynamically generating each frame of the GIF and slowly feeding them over the HTTP connection.
+
+There is no guarantee that this GIF shows a reasonable time and this is just for fun anyway, so better don't build your next project based on the time from this GIF. If my server is overloaded, you can try compiling it yourself and run it locally.
+
+{% highlight haskell %}
+-- Wait for incoming connections and start delivering a GIF to them
+loop :: Int -> FrameSignal -> Socket -> IO ()
+loop delay frameSignal sock = do
+  (conn, _) <- accept sock
+
+  forkIO $ body conn
+  loop delay frameSignal sock
+
+  where
+    body c = do
+      f <- receiveMSignal frameSignal
+      sendAll c $ msg $ initialFrame (delay `div` 10000) f
+      nextFrame c
+
+    nextFrame c = do
+      f <- receiveMSignal frameSignal
+      sendAll c $ frame (delay `div` 10000) f
+      nextFrame c
+
+    msg content = B.intercalate "\r\n"
+      [ "HTTP/1.0 200 OK"
+      , "Server: gifstream/0.1"
+      , "Content-Type: image/gif"
+      , "Content-Transfer-Encoding: binary"
+      , "Cache-Control: no-cache"
+      , "Cache-Control: no-store"
+      , "Cache-Control: no-transform"
+      , ""
+      , content
+      ]
+{% endhighlight %}
 
 This is cannibalized from [gifstream](https://github.com/def-/gifstream), which lets you play snake and have people watch a GIF livestream. It was actually created as a Christmas exercise for students of the Programming Paradigms course at KIT.
 
