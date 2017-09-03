@@ -8,7 +8,7 @@ permalink: /blog/time.gif/
 This is an endless GIF that always shows the current time in UTC:
 
 <!--more-->
-![time.gif (reload page if it fails; on Firefox only one tab with time.gif works)](/time.gif)
+![time.gif (reload if it fails)](/time.gif)
 
 [Source Code](https://github.com/def-/time.gif)
 
@@ -17,6 +17,8 @@ This is an endless GIF that always shows the current time in UTC:
 time.gif is written in Haskell and works by dynamically generating each frame of the GIF and slowly feeding them over the HTTP connection.
 
 There is no guarantee that this GIF shows a reasonable time and this is just for fun anyway, so better don't build your next project based on the time from this GIF. If my server is overloaded, you can try compiling it yourself and run it locally.
+
+Update: Optimized, runs at less than 1% CPU with 500 simultaneous connections open, LZW encoding reduces bandwidth from 4 KB/s to 300 B/s.
 
 {% highlight haskell %}
 -- Wait for incoming connections and start delivering a GIF to them
@@ -54,7 +56,5 @@ loop delay frameSignal sock = do
 This is cannibalized from [gifstream](https://github.com/def-/gifstream), which lets you play snake and have people watch a GIF livestream. It was actually created as a Christmas exercise for students of the Programming Paradigms course at KIT.
 
 ![snake](https://raw.githubusercontent.com/def-/gifstream/master/snake.gif)
-
-Update: Optimized, runs at less than 1% CPU, 4 MB RAM with 500 simultaneous watchers, LZW encoding reduces bandwidth from 4 KB/s to 300 B/s.
 
 Discuss on [Hacker News](https://news.ycombinator.com/item?id=14996715)

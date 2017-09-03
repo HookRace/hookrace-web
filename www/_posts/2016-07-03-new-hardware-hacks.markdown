@@ -279,8 +279,8 @@ result for such a powerful machine.
 The final build assembled in its new environment, where I'm sitting right now
 on a Sunday morning to write this:
 
-[![Finished build #1](/public/hardware2/finished1.jpg)](https://photos.hookrace.net/germany/heidelberg-life/#0)
+![Finished build #1](/public/hardware2/finished1.jpg)
 
 Closeup of the computer case:
 
-[![Finished build #2](/public/hardware2/finished2.jpg)](https://photos.hookrace.net/germany/heidelberg-life/#8)
+![Finished build #2](/public/hardware2/finished2.jpg)
