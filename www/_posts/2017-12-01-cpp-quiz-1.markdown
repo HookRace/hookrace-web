@@ -89,7 +89,23 @@ Thus spoke the C++ standard:
 >
 > Parentheses do not alter the type of the embedded `declarator-id`, but they can alter the binding of complex declarators.
 
-This kind of ambiguous parsing can lead to dangerous situations, as is documented in [DCL53-CPP](https://wiki.sei.cmu.edu/confluence/display/cplusplus/DCL53-CPP.+Do+not+write+syntactically+ambiguous+declarations). A similar example is also available in Wikipedia's [most vexing parse article](https://en.wikipedia.org/wiki/Most_vexing_parse).
+This kind of ambiguous parsing can lead to dangerous situations, as is documented in [DCL53-CPP](https://wiki.sei.cmu.edu/confluence/display/cplusplus/DCL53-CPP.+Do+not+write+syntactically+ambiguous+declarations):
+
+{% highlight cpp %}
+#include <mutex>
+
+static std::mutex m;
+static int shared_resource;
+
+void increment_by_42() {
+  std::unique_lock<std::mutex>(m);
+  shared_resource += 42;
+}
+{% endhighlight %}
+
+The code looks like it locks the mutex `m` while modifiying `shared_resource`, but instead a new mutex `m` is created, shadowing the global mutex `m`.
+
+A similar example is also available in Wikipedia's [most vexing parse article](https://en.wikipedia.org/wiki/Most_vexing_parse).
 
 ## Future Directions
 
