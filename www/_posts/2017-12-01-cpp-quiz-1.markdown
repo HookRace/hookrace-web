@@ -1,0 +1,111 @@
+---
+layout: post
+title:  "C++ Quiz #1"
+tags: C++ Programming
+permalink: /blog/cpp-quiz-1/
+---
+
+What is the output of this small snippet that is based on real C++ code?
+
+<!--more-->
+
+{% highlight cpp %}
+#include <iostream>
+
+struct Foo
+{
+    Foo() { std::cout << "standard" << std::endl; }
+    Foo(const Foo&) { std::cout << "copy" << std::endl; }
+    Foo(int) { std::cout << "int" << std::endl; }
+    Foo(int, int) { std::cout << "int, int" << std::endl; }
+    Foo(const Foo&, int) { std::cout << "Foo, int" << std::endl; }
+    Foo(int, const Foo&) { std::cout << "int, Foo" << std::endl; }
+};
+
+void f(Foo) {}
+
+struct Bar
+{
+    int m_i;
+    int m_j;
+
+    Bar()
+    {
+        f(Foo(m_i, m_j));
+        f(Foo(m_i));
+        Foo(m_i, m_j);
+        Foo(m_i);
+        Foo(m_i, m_j);
+    }
+};
+
+int main()
+{
+    Bar();
+}
+{% endhighlight %}
+
+The code compiles without warnings with clang++ 5.0.0 as well as g++ 7.2.0 using `-Wall -Wextra`.
+
+<script language="javascript">
+function toggle() {
+    var spoiler = document.getElementById("spoiler");
+    spoiler.style.display = (spoiler.style.display == "block") ? "none" : "block";
+}
+</script>
+
+<h2><a href="javascript:toggle();">Solution</a></h2>
+
+<div id="spoiler" style="display: none" markdown="1">
+The preliminaries are simple:
+
+- We have a struct Foo with a few different constructors, each of which prints a text that represents its parameter types.
+- We have a struct Bar with two members, `m_i` and `m_j`.
+- The `main` function calls the standard constructor of Bar.
+
+The constructor of Bar is where the magic happens, so let's go through it line by line:
+
+1. `f(Foo(m_i, m_j))` creates a temporary Foo object by calling the Foo constructor with `m_i` and `m_j` as parameters, so `int, int` is printed. The resulting Foo object is then passed to the function `f`.
+2. `f(Foo(m_i))` works analogously, it calls  the Foo constructor with `m_i` as parameter, so `int` is printed. The resulting Foo object is then passed to the function `f`.
+3. `Foo(m_i, m_j)` works the same as the first line, except it doesn't pass the resulting temporary Foo object to a function, so it is destroyed again immediately.
+4. So far so good, but now look closely. `Foo(m_i)` surprisingly behaves entirely differently from all the previous lines. It does *not* call the Foo constructor with `m_i` as the parameter. Instead it creates a Foo object of the name `m_i`, just like `Foo m_i` would. So `standard` is printed.
+5. Now the last line looks just like the third line, but it still does something different. Why? Because the name `m_i` is no longer referring to the `int m_i` member of Bar. Instead `m_i` is now referring to a local variable of type `Foo`, so `Foo(m_i, m_j)` prints `Foo, int`.
+
+## Explanation
+
+Thus spoke the C++ standard:
+
+> §8.3 Meaning of declarators
+>
+> [...]
+>
+> 6 In a declaration `T D` where `D` has the form
+>
+> _( D1 )_
+>
+> the type of the contained _declarator-id_ is the same as that of the contained _declarator-id_ in the declaration
+>
+> `T D1`
+>
+> Parentheses do not alter the type of the embedded `declarator-id`, but they can alter the binding of complex declarators.
+
+This kind of ambiguous parsing can lead to dangerous situations, as is documented in [DCL53-CPP](https://wiki.sei.cmu.edu/confluence/display/cplusplus/DCL53-CPP.+Do+not+write+syntactically+ambiguous+declarations). A similar example is also available in Wikipedia's [most vexing parse article](https://en.wikipedia.org/wiki/Most_vexing_parse).
+
+## Future Directions
+
+The upcoming Clang version will have a warning for this:
+
+```
+y.cpp:25:12: warning: parentheses were disambiguated as redundant parentheses around declaration of variable named
+      'm_i' [-Wvexing-parse]
+        Foo(m_i);
+           ^~~~~
+y.cpp:25:9: note: add enclosing parentheses to perform a function-style cast
+        Foo(m_i);
+        ^
+        (       )
+y.cpp:25:12: note: remove parentheses to silence this warning
+        Foo(m_i);
+           ^   ~
+```
+</div>
