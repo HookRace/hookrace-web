@@ -67,7 +67,7 @@ The constructor of Bar is where the magic happens, so let's go through it line b
 
 1. `f(Foo(m_i, m_j))` creates a temporary Foo object by calling the Foo constructor with `m_i` and `m_j` as parameters, so `int, int` is printed. The resulting Foo object is then passed to the function `f`.
 2. `f(Foo(m_i))` works analogously, it calls  the Foo constructor with `m_i` as parameter, so `int` is printed. The resulting Foo object is then passed to the function `f`.
-3. `Foo(m_i, m_j)` works the same as the first line, except it doesn't pass the resulting temporary Foo object to a function, so it is destroyed again immediately.
+3. `Foo(m_i, m_j)` works the same as the first line, except it doesn't pass the resulting temporary Foo object to a function, so it is destroyed again immediately, `int, int` is printed again.
 4. So far so good, but now look closely. `Foo(m_i)` surprisingly behaves entirely differently from all the previous lines. It does *not* call the Foo constructor with `m_i` as the parameter. Instead it creates a Foo object of the name `m_i`, just like `Foo m_i` would. So `standard` is printed.
 5. Now the last line looks just like the third line, but it still does something different. Why? Because the name `m_i` is no longer referring to the `int m_i` member of Bar. Instead `m_i` is now referring to a local variable of type `Foo`, so `Foo(m_i, m_j)` prints `Foo, int`.
 
