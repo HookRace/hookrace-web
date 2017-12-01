@@ -105,8 +105,6 @@ void increment_by_42() {
 
 The code looks like it locks the mutex `m` while modifiying `shared_resource`, but instead a new mutex `m` is created, shadowing the global mutex `m`.
 
-A similar example is also available in Wikipedia's [most vexing parse article](https://en.wikipedia.org/wiki/Most_vexing_parse).
-
 ## Future Directions
 
 The upcoming Clang version will have a warning for this:
