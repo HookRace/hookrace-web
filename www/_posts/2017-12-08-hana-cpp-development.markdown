@@ -260,3 +260,5 @@ Once the colleagues give a green light on all tests, the merge goes in and we ca
 ## Conclusion
 
 I hope you found something interesting in this post. On a related note, SAP HANA is [hiring right now in a few locations](https://jobs.sap.com/search/?q=SAPhanacareers&locationsearch=&utm_source=DennisFelsing&utm_campaign=SAP_accelerate).
+
+Discuss on [Hacker News](https://news.ycombinator.com/item?id=15878702) and [r/programming](https://www.reddit.com/r/programming/comments/7if7fa/hana_c_development_environment_and_processes/).
