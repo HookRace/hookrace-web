@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HANA C++ Development Environment and Processes"
-tags: C++ Programming
+tags: C++ Programming Work
 permalink: /blog/hana-cpp-development/
 ---
 
