@@ -36,3 +36,5 @@ It seems like people already know that they want to use a blockchain even before
 ## The Conclusion
 
 In the end I guess I don't want to be associated with the current state of the blockchain ecosystem. So even if the job offer is great, I have to deny it. It took me a long time to realize this for myself and getting my priorities straight.
+
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=16205776).
