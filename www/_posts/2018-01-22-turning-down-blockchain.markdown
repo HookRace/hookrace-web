@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Turning down a Blockchain Job Offer"
+title: "Turning Down a Blockchain Job Offer"
 tags: Programming Work
 permalink: /blog/turning-down-blockchain/
 ---
