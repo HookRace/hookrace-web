@@ -25,7 +25,7 @@ I would have been able to work in a nice programming language, developing a bloc
 
 Proof of work in the form of mining is currently the most common form of trustless consensus in blockchain systems. It requires immense amounts of computational hardware in the form of ASICs and GPUs as well as energy to supply them. The only function of this is to prevent any one actor to take over more than 50% of the mining market and thus controlling the currency. This is a large price to pay for replacing trust.
 
-Looking at it the other way: Trust can be seen as a shortcut that humanity has used for a long time in order not to require expensive proof of work. Most applications this still works fine.
+Looking at it the other way: Trust can be seen as a shortcut that humanity has used for a long time in order not to require expensive proof of work. For most applications this still works fine.
 
 Companies are doing initial coin offerings (ICOs), giving out their own cryptotoken to public investors, circumventing a proper IPO process. While companies often claim that their tokens will have another purpose, this is usually not true.
 
