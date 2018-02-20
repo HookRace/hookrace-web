@@ -7,9 +7,9 @@ permalink: /blog/hana-cpp-development/
 
 I started working as a C++ developer in the HANA Core Platform team at SAP in Walldorf, Germany more than a year ago. In this time I have gotten some insights into the development environment and processes. I will use this post to illustrate them by the example of adding a small new feature and explaining the steps on the way of getting it released. Some of this will be specific to HANA, some to my team inside HANA, some to my own system.
 
-![Office](/public/office.jpg)
-
 <!--more-->
+
+![Office](/public/office.jpg)
 
 ## Compilation
 

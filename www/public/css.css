@@ -522,3 +522,51 @@ a.pagination-item:hover {
     width: 100%;
     height: 100%;
 }
+
+.osm-map {
+    width: 100%;
+    border-width: 0px;
+}
+
+@media (max-width: 30em) {
+  .osm-map {
+    height: 20em;
+  }
+}
+@media (min-width: 30em) {
+  .osm-map {
+    height: 40em;
+  }
+}
+
+.ytplayer img {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: .4s all;
+  -moz-transition: .4s all;
+  transition: .4s all;
+}
+
+.ytplayer img:hover {
+  -webkit-filter: brightness(75%);
+}
+
+.ytplayer .play {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url("/public/youtube-play.png") no-repeat;
+  pointer-events: none;
+}
