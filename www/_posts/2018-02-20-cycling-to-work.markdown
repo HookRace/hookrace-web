@@ -186,4 +186,4 @@ worst winter conditions I ever had to cycle in.
 
 I'll keep cycling to work in the foreseeable future. I don't think this post is
 of much use to anyone, but I had fun reflecting my last year of cycling to
-work. Thanks for reading.
+work. Thanks for reading. Comments on [Hacker News](https://news.ycombinator.com/item?id=16420271).
