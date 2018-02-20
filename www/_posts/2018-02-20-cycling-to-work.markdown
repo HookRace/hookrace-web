@@ -97,10 +97,10 @@ go straight to work afterwards. Then the showers are a godsend of course.
 ## The journey is the reward
 
 Close to my home I have to cross a red light, which is also where I had the
-only accident involving a car in this year. (Edit: I have never had an accident
-involving a car before, so this is probably an outlier.) A car driver ignored
-my right of way and so I landed on their hood. But that didn't result in any
-injuries or damages, so it's not too bad.
+only accident in this year. A car driver ignored my right of way and so I had
+to break hard and ended up sitting on their hood. But luckily that didn't
+result in any injuries or damages. (Edit: I have never had an accident
+involving a car before, so this is probably an outlier.)
 
 After exiting the industrial area I am riding exclusively on small field roads.
 Especially in the morning this makes for nice sunrises with fog on parts of the
