@@ -523,19 +523,19 @@ a.pagination-item:hover {
     height: 100%;
 }
 
-.osm-map {
-    width: 100%;
-    border-width: 0px;
-}
-
 @media (max-width: 30em) {
   .osm-map {
-    height: 20em;
+    height: 25em;
+    width: 100vw;
+    margin-left: -1rem;
+    border-width: 0px;
   }
 }
 @media (min-width: 30em) {
   .osm-map {
     height: 40em;
+    width: 100%;
+    border-width: 0px;
   }
 }
 
