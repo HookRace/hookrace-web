@@ -5,6 +5,8 @@ tags: Programming Work
 permalink: /blog/turning-down-blockchain/
 ---
 
+[Russian Translation by HTR](http://howtorecover.me/prevrasenie-predlozenia-o-rabote-blocnoi-cepi)
+
 I have recently received a job offer to work on a blockchain implementation. While the offer was very generous, I had to turn it down. In this post I want to collect the thoughts that went into my decision process leading to this conclusion.
 
 <!--more-->
