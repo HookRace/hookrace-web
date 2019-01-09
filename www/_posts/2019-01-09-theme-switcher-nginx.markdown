@@ -12,6 +12,8 @@ Thanks to xse we got a [JavaScript based theme switcher](https://github.com/ddne
 <!--more-->
 The final result is quite simple, and only requires static HTML, a cookie for the theme and Nginx for setting and returning the correct CSS file for it. You can try it out by clicking on the [Switch Theme](/switch-theme/) button at the top of this page, which just redirects you to `/switch-theme/`.
 
+Doing the CSS decision server-side instead of in JavaScript has the advantage that you don't get any flicker on rendering, no matter what theme you chose.
+
 The entire nginx logic is:
 
 {% highlight nginx %}
