@@ -24,6 +24,7 @@ pages_list:
   Feed: '/blog/feed/'
   DDNet: 'https://ddnet.tw/'
   Me: 'http://felsin9.de/nnis/'
+  Switch Theme: '/switch-theme/'
 
 #gems: [jekyll-tagging]
 
