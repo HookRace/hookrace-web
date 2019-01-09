@@ -48,3 +48,5 @@ location /public/css-dark.css {
 {% endhighlight %}
 
 One side effect of this entire approach is that the CSS file can't be cached anymore though, otherwise we'd end up showing the old theme when it gets switched. I'm sure this could be optimized somehow to tell the browser to only fetch the CSS file again after the theme was switched. But for my site the current performance is good enough.
+
+Also note that [If Is Evil](https://www.nginx.com/resources/wiki/start/topics/depth/ifisevil/) in Nginx, so if you abuse features like this you might run into trouble.
