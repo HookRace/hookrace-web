@@ -36,8 +36,6 @@ For the [DDNet](https://ddnet.tw/) production servers I prefer [Debian](https://
 
 ## Window Manager
 
-[![Windows 1.0 screenshot](/public/linux-desktop/windows1.0_small.jpg)](/public/linux-desktop/windows1.0.png)
-
 Since I started out with Gentoo I quickly noticed the huge compile time of KDE, which made it a no-go for me. I looked around for more minimal solutions, and used [Openbox](http://openbox.org/wiki/Main_Page) and [Fluxbox](http://fluxbox.org/) initially. At some point I jumped on the tiling window manager train in order to be more keyboard-focused and picked up [dwm](https://dwm.suckless.org/) and [awesome](https://awesomewm.org/) close to their initial releases.
 
 In the end I settled on [xmonad](https://xmonad.org/) thanks to its flexibility, extendability and being written and configured in pure [Haskell](https://www.haskell.org/), a great functional programming language. One example of this is that at home I run a single 40" 4K screen, but often split it up into four virtual screens, each displaying a workspace on which my windows are automatically arranged. Of course xmonad has a [module](http://hackage.haskell.org/package/xmonad-contrib-0.15/docs/XMonad-Layout-LayoutScreens.html) for that.
