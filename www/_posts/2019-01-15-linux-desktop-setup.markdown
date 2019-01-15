@@ -2,12 +2,10 @@
 layout: post
 title: "Linux Desktop Setup"
 tags: Programming Frugality
-permalink: /blog/decade-linux-desktop/
+permalink: /blog/linux-desktop-setup/
 ---
 
-Two years ago I talked about my hardware setup in [two](/blog/broken-hardware-fixes-hacks-8-years/) [posts](/blog/new-hardware-hacks/).
-
-I've been asked about my software setup a few times in the last years, so here I'll complete my personal setup series by talking about the software I use and how I use it. My software setup has been surprisingly constant over the last decade, after a few years of experimentation since I initially switched to Linux in 2006. It might be interesting to look back in another 10 years and see what changed. A quick overview of what's running as I'm writing this post:
+My software setup has been surprisingly constant over the last decade, after a few years of experimentation since I initially switched to Linux in 2006. It might be interesting to look back in another 10 years and see what changed. A quick overview of what's running as I'm writing this post:
 
 <!--more-->
 [![htop overview](/public/linux-desktop/htop_small.png)](/public/linux-desktop/htop.png)
