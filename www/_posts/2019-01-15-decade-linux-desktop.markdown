@@ -396,3 +396,5 @@ Host chn.ddnet.tw
 ## Final Remarks
 
 Thanks for reading my random collection of tools. I probably forgot many programs that I use so naturally every day that I don't even think about them anymore. Let's see how stable my software setup stays in the next years. If you have any questions, feel free to get in touch with me at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+
+Comments on [Hacker News](https://news.ycombinator.com/item?id=18914121).
