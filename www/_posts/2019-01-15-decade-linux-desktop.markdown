@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Linux Desktop Setup"
-tags: Software Frugality
+tags: Programming Frugality
 permalink: /blog/decade-linux-desktop/
 ---
 
