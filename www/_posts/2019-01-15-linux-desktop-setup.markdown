@@ -334,6 +334,8 @@ MOUSE_BTN7 add chapter -1
 MOUSE_BTN8 add chapter 1
 ```
 
+[youtube-dl](https://rg3.github.io/youtube-dl/) works great for watching videos hosted online, best quality can be achieved with `-f bestvideo+bestaudio/best --all-subs --embed-subs`.
+
 As a music player [MOC](http://moc.daper.net/) hasn't been actively developed for a while, but it's still a simple player that plays every format conceivable, including the strangest Chiptune formats. In the AUR there is a [patch](https://aur.archlinux.org/packages/moc-pulse/) adding PulseAudio support as well. Even with the CPU clocked down to 800 MHz MOC barely uses 1-2% of a single CPU core.
 
 ![moc](/public/linux-desktop/moc.png)
