@@ -1030,7 +1030,7 @@ proc render(game: Game, tick: int) =
 {% endhighlight %}
 
 We need to initialize the TTF subsystem and now we also need to pass the
-current tick to `render`:
+current tick to `render` inside of our `main` function:
 
 {% highlight nim %}
 sdlFailIf(ttfInit() == SdlError): "SDL2 TTF initialization failed"
@@ -1039,6 +1039,26 @@ defer: ttfQuit()
 ...
 
 game.render(lastTick)
+{% endhighlight %}
+
+As well as loading our [DejaVuSans.ttf](https://github.com/def-/nim-platformer/blob/master/tutorial/DejaVuSans.ttf?raw=true) font inside of `newGame`:
+
+{% highlight nim %}
+result.font = openFont("DejaVuSans.ttf", 28)
+sdlFailIf result.font.isNil: "Failed to load font"
+{% endhighlight %}
+
+The `Game` object now looks like this, including a `font`:
+
+{% highlight nim %}
+type
+  Game = ref object
+    inputs: array[Input, bool]
+    renderer: RendererPtr
+    font: FontPtr
+    player: Player
+    map: Map
+    camera: Vector2d
 {% endhighlight %}
 
 This is what the text rendering looks like after finishing the map:
