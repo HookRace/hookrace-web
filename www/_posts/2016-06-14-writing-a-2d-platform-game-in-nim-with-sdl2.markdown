@@ -297,7 +297,7 @@ our definition of `newGame` and initialize the `Game` and `Player` data
 structures:
 
 {% highlight nim %}
-import sdl2.image
+import sdl2/image
 
 proc restartPlayer(player: Player) =
   player.pos = point2d(170, 500)
@@ -936,7 +936,7 @@ proc getTile(map: Map, pos: Point2d): uint8 =
   map.getTile(pos.x.round.int, pos.y.round.int)
 
 proc logic(game: Game, tick: int) =
-  template time: expr = game.player.time
+  template time: untyped = game.player.time
   case game.map.getTile(game.player.pos)
   of start:
     time.begin = tick
@@ -972,7 +972,7 @@ It would be much nicer to have the text output with the result in the actual
 game window instead of on the terminal. For this we will now use SDL\_ttf:
 
 {% highlight nim %}
-import sdl2.ttf
+import sdl2/ttf
 
 proc renderText(renderer: RendererPtr, font: FontPtr, text: string,
                 x, y: cint, color: Color) =
@@ -1249,6 +1249,7 @@ bin           = @["platformer"]
 requires "nim >= 0.10.0"
 requires "sdl2 >= 1.1"
 requires "strfmt >= 0.6"
+requires "basic2d >= 0.1.0"
 
 task tests, "Compile all tutorial steps":
   for i in 1..9:
