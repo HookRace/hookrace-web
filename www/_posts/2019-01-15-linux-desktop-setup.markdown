@@ -71,7 +71,7 @@ Instead of [bash](https://www.gnu.org/software/bash/) I use [zsh](http://www.zsh
 
 As a terminal emulator I found [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) to be simple enough, support Unicode and 256 colors and has great performance. Another great feature is being able to run the urxvt client and daemon separately, so that even a large number of terminals barely takes up any memory (except for the scrollback buffer).
 
-There is only one font that looks absolutely clean and perfect to me: [Terminus](http://terminus-font.sourceforge.net/). Since i's a bitmap font everything is pixel perfect and renders extremely fast and at low CPU usage. In order to switch fonts on-demand in each terminal with `CTRL-WIN-[1-7]` my ~/.Xdefaults contains:
+There is only one font that looks absolutely clean and perfect to me: [Terminus](http://terminus-font.sourceforge.net/). Since it's a bitmap font everything is pixel perfect and renders extremely fast and at low CPU usage. In order to switch fonts on-demand in each terminal with `CTRL-WIN-[1-7]` my ~/.Xdefaults contains:
 
 ```
 URxvt.font: -xos4-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
