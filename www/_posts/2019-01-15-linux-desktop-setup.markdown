@@ -97,7 +97,7 @@ One problem with Vim is that you get so used to its key mappings that you'll wan
 
 ## System Monitoring
 
-[htop](https://hisham.hm/htop/) (look at the background of that site, it's a live view of the server that's hosting it) works great for getting a quick overview of what the software is currently doing. [lm\_sensors](http://lm-sensors.org/) allows monitoring the hardware temperatures, fans and voltages. [powertop](https://01.org/powertop/) is a great little tool by Intel to find power savings. [ncdu](https://dev.yorhel.nl/ncdu) lets you analyze disk usage interactively.
+[htop](https://hisham.hm/htop/) works great for getting a quick overview of what the software is currently doing. [lm\_sensors](http://lm-sensors.org/) allows monitoring the hardware temperatures, fans and voltages. [powertop](https://01.org/powertop/) is a great little tool by Intel to find power savings. [ncdu](https://dev.yorhel.nl/ncdu) lets you analyze disk usage interactively.
 
 [nmap](https://nmap.org/), iptraf-ng, [tcpdump](https://www.tcpdump.org/) and [Wireshark](https://www.wireshark.org/) are essential tools for analyzing network problems.
 
