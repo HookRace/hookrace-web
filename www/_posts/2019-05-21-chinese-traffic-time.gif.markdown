@@ -35,7 +35,7 @@ For reference, the system I'm running on is a simple [Debian](https://www.debian
 
 I already had to do some scaling when posting the [initial blog post](/blog/time.gif/) on Hacker News, optimizing the Haskell application itself to use LZW encoding in the GIF frames, to properly clean up connections to prevent any memory leaks and disable buffering in nginx's config.
 
-But the current level of traffic is on a different scale with 2.4 million hits on time.gif today (667 hits per second) resulting in 108 GB of data being transferred. And many of those connections don't finish quickly, instead they linger for seconds, minutes or even hours.
+But the current level of traffic is on a different scale with 2.4 million hits on time.gif in the last 23 hours (30 hits per second) resulting in 113 GB of data being transferred. And many of those connections don't finish quickly, instead they linger for seconds, minutes or even hours.
 
 Using `lsof -i | grep Time | wc -l` I can see that there are about 6000 people downloading the GIF at peak times, causing up to 30 Mbit/s of outgoing traffic with 7000 packets/second incoming and the same number outgoing. The [DDNet server statistics](https://ddnet.tw/stats/server/) lets me monitor this nicely ([related blog article](/blog/server-statistics/)):
 
