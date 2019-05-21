@@ -33,7 +33,7 @@ I checked a few IP addresses and they were all in mobile networks, not data cent
 
 For reference, the system I'm running on is a simple [Debian](https://www.debian.org/) based VPS with 2 threads and 2 GB of RAM that also functions as the main server for [DDNet's website](https://ddnet.tw/), database and my HookRace blog.
 
-I already had to do some scaling when posting the [initial blog post](/blog/time.gif/) on Hacker News, optimizing the Haskell application itself to use LZW encoding in the GIF frames, to properly clean up connections to prevent any memory leaks and disable buffering in nginx's config.
+I already had to do some scaling when posting the [initial blog post](/blog/time.gif/) on [Hacker News](https://news.ycombinator.com/item?id=14996715), optimizing the Haskell application itself to use LZW encoding in the GIF frames, to properly clean up connections to prevent any memory leaks and disable buffering in nginx's config.
 
 But the current level of traffic is on a different scale with 2.4 million hits on time.gif in the last 23 hours (30 hits per second) resulting in 113 GB of data being transferred. And many of those connections don't finish quickly, instead they linger for seconds, minutes or even hours.
 
