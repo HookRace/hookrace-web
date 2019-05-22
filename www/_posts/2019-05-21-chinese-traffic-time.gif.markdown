@@ -99,3 +99,29 @@ A limitation of my current approach is the number of ports nginx can open to pro
 ## Final Words
 
 While it was fun to keep time.gif running in the face of this amount of traffic, I still haven't answered the final question of where this traffic is coming from. It might be that lots of Chinese happen to be spreading time.gif on WeChat and QQ, but for that the traffic looks a bit too sterile. Has anyone seen similar traffic patterns and might know if they are real or some kind of botnet? Maybe someone has embedded traffic.gif on some WeChat-specific page. If anyone has a clue please drop me an email at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+
+The best guess so far is by Kolen:
+
+> Hi,
+>
+> I read your post and this is just my guess:
+>
+> Chinese “WhatsApp” type of communication culture is very strange. They
+> are like spam emails in the old days. Often time some one might create
+> posts in picture, eg include warm message such as reminding each other to
+> put on more clothes as the weather is getting cold, etc.
+>
+> My guess is then someone read your trick and thought that it is a good
+> idea to create some picture that always show the current time. Eg to
+> remind others that it is time to sleep or something.
+>
+> And like email spams in the old days, people can share things like this
+> crazily, often by older people who don’t know much about technology.
+> (Just like how some tweet can go viral, messages like this could also go
+> viral within there networks. And unfortunately the viral thing we often
+> received are really rubbish like.)
+> yours,
+>
+> Kolen
+
+Discuss on [Hacker News](https://news.ycombinator.com/item?id=19978393).
