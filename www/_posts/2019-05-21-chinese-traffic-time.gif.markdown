@@ -120,6 +120,7 @@ The best guess so far is by Kolen:
 > (Just like how some tweet can go viral, messages like this could also go
 > viral within there networks. And unfortunately the viral thing we often
 > received are really rubbish like.)
+>
 > yours,
 >
 > Kolen
