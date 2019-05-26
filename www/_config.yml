@@ -11,7 +11,7 @@ excerpt_separator: <!--more-->
 
 # Setup
 title:            HookRace Blog
-tagline:          The successor of DDraceNetwork
+tagline:          Just a blog for now
 url:              https://hookrace.net
 baseurl:          /
 author:
@@ -37,4 +37,4 @@ tag_feed_dir:     blog/feed
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/HookRace/hookrace-web
