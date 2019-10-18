@@ -5,6 +5,8 @@ tags: Programming Frugality
 permalink: /blog/linux-desktop-setup/
 ---
 
+[Russian Translation by Akhmad Karimov](https://vectorified.com/ru-linux-desktop-setup)
+
 My software setup has been surprisingly constant over the last decade, after a few years of experimentation since I initially switched to Linux in 2006. It might be interesting to look back in another 10 years and see what changed. A quick overview of what's running as I'm writing this post:
 
 <!--more-->
