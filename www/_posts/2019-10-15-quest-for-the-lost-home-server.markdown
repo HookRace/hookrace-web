@@ -24,3 +24,5 @@ I still wish that Arch Linux will one day tell me which running executables to r
 {% highlight bash %}
 ps axh -o pid | while read PID; do grep ".so" /proc/$PID/maps | grep "(deleted)" && echo "$PID" && sed -e "s/\x00/ /g" < /proc/$PID/cmdline && echo "\n"; done
 {% endhighlight %}
+
+Update: [overdue](https://github.com/tylerjl/overdue/) is a pacman post-transaction hook that lists daemons that still reference old shared libraries.
