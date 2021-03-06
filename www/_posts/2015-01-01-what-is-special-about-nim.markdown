@@ -5,7 +5,7 @@ tags: Nim Programming
 permalink: /blog/what-is-special-about-nim/
 ---
 
-[Russian Translation by frol](http://habrahabr.ru/post/258119/), [Chinese Translation by JiyinYiyong](https://segmentfault.com/a/1190000002576013)
+[Russian Translation by frol](http://habrahabr.ru/post/258119/), [Chinese Translation by JiyinYiyong](https://segmentfault.com/a/1190000002576013), [Japanese Translation by Mutsuha Asada](https://qiita.com/momeemt/items/0a8dca5eb43d9b8cfbe9)
 
 The [Nim programming language](http://nim-lang.org/) is exciting. While the [official tutorial](http://nim-lang.org/docs/tut1.html) is great, it slowly introduces you to the language. Instead I want to quickly show what you can do with Nim that would be more difficult or impossible in other languages.
 
