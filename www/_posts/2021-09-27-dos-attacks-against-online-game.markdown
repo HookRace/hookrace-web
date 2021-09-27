@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DoS Attacks against my Online Game"
+title: "DoS Attacks against our Online Game"
 tags: DDNet
 permalink: /blog/dos-attacks-against-online-game/
 ---
