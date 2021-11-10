@@ -198,7 +198,7 @@ Another problem that can be solved with a template is automatically acquiring an
 {% highlight nimrod %}
 import locks
 
-template withLock(lock: Lock, body: stmt) =
+template withLock(lock: Lock, body: untyped) =
   acquire lock
   try:
     body
@@ -511,7 +511,7 @@ exists as well. Here's how the final proc with a macro inside looks:
 
 {% highlight nimrod %}
 proc parseEnum*[T: enum](s: string): T =
-  macro m: stmt =
+  macro m: untyped =
     result = newStmtList()
     for e in T: result.add parseStmt(
       "if cmpIgnoreStyle(s, \"$1\") == 0: return $1".format(e))
@@ -600,7 +600,7 @@ proc page(title, content: string): string =
 Looks simple enough, here's how the macro works:
 
 {% highlight nimrod %}
-macro htmlTemplate(procDef: expr): stmt =
+macro htmlTemplate(procDef: expr): untyped =
   procDef.expectKind nnkProcDef
 
   # Same name as specified
