@@ -62,7 +62,8 @@ Then it can be set as a global shortcut in Preferences:
 
 There seems to be considerable overhead to using Automator for shortcuts though, the terminal window takes nearly a second to appear. Luckily I rarely needed a new terminal, since the windows persist after a reboot and I mostly just have to set them up once, and the hotkey terminal is fine for quick tasks like checking mail.
 
-One issue I still have is that iTerm seems to send the home/end/pageup/pagedown keys differently from urxvt, my terminal emulator on Linux. But since both are identifying as `TERM=xterm-256color` to support full colors, I can't tell them apart using zkbd when SSHing into a remote system. Not sure yet how to solve this cleanly.
+One issue I still have is that iTerm seems to send the home/end/insert keys differently from urxvt, my terminal emulator on Linux. But since both are identifying as `TERM=xterm-256color` to support full colors, I can't tell them apart using zkbd when SSHing into a remote system. Not sure yet how to solve this cleanly. Here are the differences:
+[![zkbd](/public/macos/zkbd.png)](/public/macos/zkbd.png)
 
 My favorite fixed-width bitmap font [Terminus](http://terminus-font.sourceforge.net/) works fine with anti-aliasing disabled in iTerm with the [font-terminus formula](https://github.com/Homebrew/homebrew-cask-fonts/blob/master/Casks/font-terminus.rb) installed via:
 {% highlight bash %}
