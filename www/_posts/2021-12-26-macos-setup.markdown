@@ -44,6 +44,9 @@ I started missing [xmonad](https://xmonad.org/), my tiling window manager of cho
 It seemed to work ok, but was feeling a bit more awkward to use compared to on Linux. So I decided to use the native macOS window management instead and try to get used to it instead of actively fighting against it. At the moment I'm using the integrated 16" screen and an external 24" monitor. Most applications I use "zoomed in", which means they take all the space, but are not actually fullscreen, so you still see the dock and window's title bar. There appears to be no system shortcut to zoom a window, so I have to double click the title bar.
 [![screen](/public/macos/screen.png)](/public/macos/screen.png)
 
+Update: I found out that you can set a shortcut for "Zoom" by adding it in the System Preferences. This apparently works for any term that is available in the program's title bar:
+[![zoom](/public/macos/zoom.png)](/public/macos/zoom.png)
+
 ## Terminal
 [iTerm2](https://iterm2.com/) is the terminal emulator I chose to use. It has lots of features and so far seems to work fine. Each window and tab gets a dedicated shortcut, and it allows splitting the tab horizontally and vertically, so I can have multiple terminals open at once and jump between them reasonably without needing to use the mouse.
 
