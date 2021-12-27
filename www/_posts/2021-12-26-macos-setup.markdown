@@ -130,6 +130,12 @@ I'm using a Logitech MX Master 3 connected via Bluetooth. I want it to scroll no
 
 Unfortunately the mouse scrolling seems to have an acceleration, which I have not been able to disable yet.
 
+Update: Luc sent me this command which seems to improve the acceleration situation, but it still doesn't feel as linear as on Linux:
+
+{% highlight bash %}
+defaults write .GlobalPreferences com.apple.scrollwheel.scaling -1
+{% endhighlight %}
+
 Putting the display to sleep easily by moving the mouse cursor in the corner is nice (I'd still prefer a keyboard shortcut), and can be enabled in the system preferences:
 [![hotcorner](/public/macos/hotcorner.png)](/public/macos/hotcorner.png)
 
