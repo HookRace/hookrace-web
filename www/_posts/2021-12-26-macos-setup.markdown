@@ -47,6 +47,8 @@ It seemed to work ok, but was feeling a bit more awkward to use compared to on L
 Update: I found out that you can set a shortcut for "Zoom" by adding it in the System Preferences. This apparently works for any term that is available in the program's title bar:
 [![zoom](/public/macos/zoom.png)](/public/macos/zoom.png)
 
+Update 2: Several people suggested [Rectangle](https://rectangleapp.com/) for moving and resizing windows, which seems to work well, especially with my large 40" screen.
+
 ## Terminal
 [iTerm2](https://iterm2.com/) is the terminal emulator I chose to use. It has lots of features and so far seems to work fine. Each window and tab gets a dedicated shortcut, and it allows splitting the tab horizontally and vertically, so I can have multiple terminals open at once and jump between them reasonably without needing to use the mouse.
 
@@ -104,6 +106,45 @@ Of course I also remapped capslock as a secondary escape key, which is commonly 
 
 It's unfortunate this modifier remapping has to be done with an external application, which can now read all my keyboard inputs system-wide, and thus has to be trusted.
 
+Update: Thanks to Anriudh for suggesting an easier [solution](https://hidutil-generator.netlify.app/) for the remapping. This file in `~/Library/LaunchAgents/com.local.KeyRemapping.plist` takes care of the problem, no more Karabiner-Elements required:
+
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.local.KeyRemapping</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/hidutil</string>
+        <string>property</string>
+        <string>--set</string>
+        <string>{"UserKeyMapping":[
+
+            {
+              "HIDKeyboardModifierMappingSrc": 0x7000000E7,
+              "HIDKeyboardModifierMappingDst": 0x7000000E6
+            },
+
+            {
+              "HIDKeyboardModifierMappingSrc": 0x7000000E6,
+              "HIDKeyboardModifierMappingDst": 0x7000000E7
+            },
+
+            {
+              "HIDKeyboardModifierMappingSrc": 0x700000039,
+              "HIDKeyboardModifierMappingDst": 0x700000029
+            }
+
+        ]}</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
+{% endhighlight %}
+
 ## Deadkeys
 On Linux I've always been using a nodeadkeys keyboard layout, which means keys like ^ and ´ get output immediately instead of being combined with the next letter entered. There seems to be no support for this on macOS, so I had to make my own keyboard layout using [Ukelele](https://software.sil.org/ukelele/):
 [![ukelele](/public/macos/ukelele.png)](/public/macos/ukelele.png)
@@ -139,6 +180,10 @@ Update: Luc sent me this command which seems to improve the acceleration situati
 {% highlight bash %}
 defaults write .GlobalPreferences com.apple.scrollwheel.scaling -1
 {% endhighlight %}
+
+Update: Thanks to Kristjan for suggesting [LinearMouse](https://linearmouse.org/), which solves the acceleration problem for me. No more Logitech Options required either to reverse scrolling wheel on mouse only.
+
+Update 2: LinearMouse is somehow limiting my mouse wheel speed when scrolling very quickly, so I still prefer Logitech Options.
 
 Putting the display to sleep easily by moving the mouse cursor in the corner is nice (I'd still prefer a keyboard shortcut), and can be enabled in the system preferences:
 [![hotcorner](/public/macos/hotcorner.png)](/public/macos/hotcorner.png)
@@ -203,6 +248,7 @@ Here are some of the default system shortcuts I've been using to get over not us
 | Move app to previous desktop | | Click and hold title bar, ⌃ ◄
 | New window | | ⌘ N
 | Close window | | ⌘ Q
+| Move focus to next window | | ⌘ `
 | New tab | iTerm, Firefox | ⌘ T
 | Close tab | iTerm, Firefox | ⌘ W
 | Next tab | iTerm, Firefox | ⌃ ⇥
@@ -242,3 +288,5 @@ And since some keys are missing on the MacBook keyboard here is how to get them:
 
 ## Conclusion
 macOS is working better than expected for me so far, and definitely better than Windows would. So I'm glad with my choice of a MacBook Pro as a work device. Now that I've written down some of the steps I had to take to make it more usable, I hopefully won't forget them if I ever have to set a macOS based system up again. If you have any questions or tips get in touch with me at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=29742551).
