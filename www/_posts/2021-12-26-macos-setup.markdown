@@ -35,6 +35,8 @@ openwith io.mpv mkv mov mp4 avi
 
 Compared to the x86-64 binary executed with the Rosetta2 translator this uses half the CPU. Surprisingly playing YouTube videos on Firefox directly is using even less CPU. My current assumption is that the videotoolbox hardware decoding support doesn't support the same codecs in mpv yet as it does in Firefox.
 
+Update: By building my own FFmpeg version [VP9 videotoolbox support](https://github.com/FFmpeg/FFmpeg/commit/a41a2efc85f8c88caec10040ee437562f9d0b947) is available, it will probably be in the next FFmpeg release.
+
 ## Command line software
 My regular command line software like vim, mutt, remind, htop, unison, yt-dlp, newsboat, ssh, rsync, [rrb](https://github.com/def-/rrb) work just fine and were easy to install with a `brew install` command. So most of my setup can stay the same and I can still have the same setup whether I run my applications in a local terminal or on my home server via SSH, for example from my phone or a remote machine.
 
@@ -63,7 +65,7 @@ on run {input, parameters}
 end run
 {% endhighlight %}
 Then it can be set as a global shortcut in Preferences:
-[![shortcut](/public/macos/shortcut.png)](/public/macos/shorcut.png)
+[![shortcut](/public/macos/shortcut.png)](/public/macos/shortcut.png)
 
 There seems to be considerable overhead to using Automator for shortcuts though, the terminal window takes nearly a second to appear. Luckily I rarely needed a new terminal, since the windows persist after a reboot and I mostly just have to set them up once, and the hotkey terminal is fine for quick tasks like checking mail.
 
