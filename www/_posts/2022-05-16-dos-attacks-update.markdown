@@ -81,7 +81,7 @@ There are of course also larger companies providing custom DoS protection for UD
 ## Proxy Servers
 Instead of exposing our real game servers directly to the players, for the future we are considering a [proxy server](https://github.com/ddnet/ddnet/pull/4791) that sits inbetween the game server and player. This would allow us to run multiple proxies for subsets of the players and attempt to isolate the impact the attacker can have.
 
-This might also allow us to proxy Steam players' traffic through [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay) (SDR), although more work would be required to implement that. Someone from Steam reached out to us after the previous post, and we might follow up on this once the proxy server implementation is ready. It is really cool that Steam is offering help here, even for a free game like ours.
+This might also allow us to proxy Steam players' traffic through [Steam Datagram Relay](https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay) (SDR), although more work would be required to implement that. Someone from Valve reached out to us after the previous post, and we might follow up on this once the proxy server implementation is ready. It is really cool that Valve is offering help here, even for a free game like ours.
 
 We can't entirely switch to SDR through Steam's servers since we want DDNet to stay playable as an open source game. As a solution we can provide a regular open source proxy for open source players, and a separate SDR-based proxy for Steam players.
 
