@@ -115,7 +115,7 @@ So far we have only tried 10 Gbit/s dedicated servers. Maybe the reason that the
 
 The network handling of the game servers can be switched to run multithreaded, so that we can at least handle the packets of unconnected players faster. This doesn't help with the really cheap servers, and the attacker could just increase the attack strength beyond what we can handle with our usual 2-4 available cores. This already happens when multiple game servers are attacked at once, so it seems like it might not help much.
 
-Instead of improving the game servers, we could have a Linux kernel based firewall using Express Data Path (XDP) for higher performance. Another server hoster called noby had success with this approach, but for us this hasn't helped much yet, probably since we are still out of bandwidth and CPU.
+Instead of improving the game servers, we could have a Linux kernel based firewall using Express Data Path (XDP) for higher performance. Other server hosters, namely noby and ReiTW, had success with this approach, but for us this hasn't helped much yet, probably since we are still out of bandwidth and CPU.
 
 So the next logical step would be not to have this kind of firewall on our rented virtual machines, but as part of the dedicated DoS solutions that the hosters are providing. Unfortunately so far no hoster was willing to add it, except for a large fee. Hosting a more popular online game would make this easier, maybe we should just imitate another game's network packets to benefit from the improved DoS protection support.
 
