@@ -79,7 +79,7 @@ displays.  Instead I went through even older hardware in the house and
 scavenged still functioning capacitors. Mostly you have to look out for three
 things:
 
-1. New capacitor has [correct characteristics](http://www.niccomp.com/help/capsubguide.asp)
+1. New capacitor has [correct characteristics](https://web.archive.org/web/20160204013821/https://www.niccomp.com/help/capsubguide.asp)
 2. New capacitor fits into space of the old one
 3. Install the new capacitor the right way or more hardware might blow up
    (negative stripe on capacitor to white mark on board)
