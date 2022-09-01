@@ -7,7 +7,12 @@ permalink: /blog/euro9-ticket/
 
 As a relief for rising energy costs and inflation Germany is offering nearly-free public transportation for the months of June, July and August. For just €9 per month you can take any kind of regional public transportation in all of Germany. That's basically everything except the IC/ICE for long distance. This means that a monthly ticket is now as cheap as what I would normally pay for a single route. In this post I want to talk about my experiences with this [€9 ticket](https://www.bahn.com/en/offers/regional/9-euro-ticket-en).
 
+Update 2022-09-01: The €9 ticket ended yesterday without a similar replacement system in place. So many people are again back to paying about €100 per month for much smaller regional tickets instead (see for example this [German Reddit thread](https://old.reddit.com/r/de/comments/x2x01s/70_euro_f%C3%BCr_4_stationen_endlich_zur%C3%BCck_in_meinem/). Financially it makes more sense for me personally to go back to driving. (I hope the gasoline in the car is still good after three months.) My hope is that these three months will stay in people's minds in Germany and shape the future of public transportation to be cheaper and simpler:
+
 <!--more-->
+
+[![Fahrkartenautomat](/public/9euro/fahrkartenautomat.webp)](/public/9euro/fahrkartenautomat.webp)
+Image via [Reddit](https://old.reddit.com/r/de/comments/26rty0/ausland_vs_deutschland/)
 
 ## Train Stations
 
