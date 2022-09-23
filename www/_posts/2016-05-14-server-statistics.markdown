@@ -5,7 +5,7 @@ tags: DDNet Nim Frugality Programming
 permalink: /blog/server-statistics/
 ---
 
-About a month ago I set up [statistics](https://ddnet.tw/stats/server/) for the official [DDNet](https://ddnet.tw/) servers. My motivations for this are:
+About a month ago I set up [statistics](https://ddnet.org/stats/server/) for the official [DDNet](https://ddnet.org/) servers. My motivations for this are:
 
 1. Monitor the servers more easily
 2. Get notified about server problems
@@ -24,9 +24,9 @@ their performance impact:
 <!--more-->
 ## Gathering live server statistics with ServerStatus
 
-We've been running BotoX's [ServerStatus](https://github.com/BotoX/ServerStatus) to get [live server statistics](https://ddnet.tw/status/) for some time now. It works quite well to quickly notice major server problems like a high load or incoming (D)DoS attacks, provided that you keep an eye out for it.
+We've been running BotoX's [ServerStatus](https://github.com/BotoX/ServerStatus) to get [live server statistics](https://ddnet.org/status/) for some time now. It works quite well to quickly notice major server problems like a high load or incoming (D)DoS attacks, provided that you keep an eye out for it.
 
-We use ServerStatus by running its [simple Python client](https://github.com/BotoX/ServerStatus/blob/master/clients/client.py) on each server to gather interesting information. The client transmits that data by TCP to the C/C++ server, which aggregates it into [a JSON file](https://ddnet.tw/status/json/stats.json). This JSON file is then fetched and displayed every two seconds by the JavaScript frontend of [our Status page](https://ddnet.tw/status/).
+We use ServerStatus by running its [simple Python client](https://github.com/BotoX/ServerStatus/blob/master/clients/client.py) on each server to gather interesting information. The client transmits that data by TCP to the C/C++ server, which aggregates it into [a JSON file](https://ddnet.org/status/json/stats.json). This JSON file is then fetched and displayed every two seconds by the JavaScript frontend of [our Status page](https://ddnet.org/status/).
 
 On a regular Saturday morning the end result looks like this:
 
@@ -95,7 +95,7 @@ First we need to think about what data we want to record in the RRD:
 Then we can use this to create the actual database file:
 
 {% highlight bash %}
-rrdtool create ddnet.tw-net.rrd `# File name` \
+rrdtool create ddnet.org-net.rrd `# File name` \
   --step 30 `# Interval in seconds with which data is fed` \
   DS:network_rx:GAUGE:60:0:U `# Data source receiving` \
   DS:network_tx:GAUGE:60:0:U `# DS Sending` \
@@ -106,12 +106,12 @@ rrdtool create ddnet.tw-net.rrd `# File name` \
 
 If you're curious about what exactly happens here, you can find more information in [rrdcreate(1)](https://oss.oetiker.ch/rrdtool/doc/rrdcreate.en.html).
 
-The resulting ddnet.tw-net.rrd file is just 32 KB in size and will forever stay that exact size. (All our databases together are just 1 MB.) New data in each round robin archive simply overwrites the oldest data. A disadvantage of RRDtool is that you need to think ahead and plan what data you want to store.
+The resulting ddnet.org-net.rrd file is just 32 KB in size and will forever stay that exact size. (All our databases together are just 1 MB.) New data in each round robin archive simply overwrites the oldest data. A disadvantage of RRDtool is that you need to think ahead and plan what data you want to store.
 
 The next step is to put new data into our little database, which we should do every 30 seconds:
 
 {% highlight bash %}
-rrdtool update ddnet.tw-net.rrd N:42:1234
+rrdtool update ddnet.org-net.rrd N:42:1234
 {% endhighlight %}
 
 Super simple! `42` is our `network_rx` value, `1234` the value for `network_tx`. These values are now aggregated using the `AVERAGE` and finally put into their respective archives.
@@ -119,13 +119,13 @@ Super simple! `42` is our `network_rx` value, `1234` the value for `network_tx`.
 Once we have enough values we can finally create the graph, for example for 1 day:
 
 {% highlight bash %}
-rrdtool graph ddnet.tw-net-1d.png --rigid --base 1000 \
+rrdtool graph ddnet.org-net-1d.png --rigid --base 1000 \
   --width 419 --height 150 --logarithmic --units=si -a PNG \
   `# Calculation over last day only` \
   --vertical-label "Bytes/s" --start now-1d \
   `# Fetch data from RRD file` \
-  DEF:network_rx=ddnet.tw-net.rrd:network_rx:AVERAGE \
-  DEF:network_tx=ddnet.tw-net.rrd:network_tx:AVERAGE \
+  DEF:network_rx=ddnet.org-net.rrd:network_rx:AVERAGE \
+  DEF:network_tx=ddnet.org-net.rrd:network_tx:AVERAGE \
   `# Calculate aggregates based on data` \
   VDEF:network_rx_a=network_rx,AVERAGE \
   VDEF:network_rx_m=network_rx,MAXIMUM \
@@ -157,8 +157,8 @@ As always, the [manual of rrdgraph](http://oss.oetiker.ch/rrdtool/doc/rrdgraph.e
 
 I'm using RRDtool 1.6.0 instead of 1.4.8 because I very much prefer its density of x-axis labels. Here are the outputs of our database:
 
-RRDtool 1.4.8: ![RRDtool 1.4.8](/public/ger.ddnet.tw-net-1d-1.4.8.png)
-RRDtool 1.6.0: ![RRDtool 1.6.0](/public/ger.ddnet.tw-net-1d-1.6.0.png)
+RRDtool 1.4.8: ![RRDtool 1.4.8](/public/ger.ddnet.org-net-1d-1.4.8.png)
+RRDtool 1.6.0: ![RRDtool 1.6.0](/public/ger.ddnet.org-net-1d-1.6.0.png)
 
 RRDtool footprint:
 
@@ -266,7 +266,7 @@ while true:
   sleep(int(epochTime() - startTime + 1) * 1000) # every second
 {% endhighlight %}
 
-The final graphs can be seen on the [DDNet Server Statistics page](https://ddnet.tw/stats/server/).
+The final graphs can be seen on the [DDNet Server Statistics page](https://ddnet.org/stats/server/).
 
 Nim monitor footprint:
 
@@ -290,7 +290,7 @@ We can get out a single value from the database to standard output using `PRINT`
 
 {% highlight bash %}
 rrdtool graph x -s-4min \
-  DEF:v=ddnet.tw-net.rrd:network_rx:AVERAGE \
+  DEF:v=ddnet.org-net.rrd:network_rx:AVERAGE \
   VDEF:vm=v,AVERAGE \
   PRINT:vm:%lf
 {% endhighlight %}
@@ -356,11 +356,11 @@ Nim alert footprint:
 ## Conclusion
 
 Live view of the last day of the DDNet.tw web server, also hosting this blog:
-![DDNet.tw Net](https://ddnet.tw/stats/server/ddnet.tw-net-1d.png)
-![DDNet.tw CPU](https://ddnet.tw/stats/server/ddnet.tw-cpu-1d.png)
-![DDNet.tw Mem](https://ddnet.tw/stats/server/ddnet.tw-mem-1d.png)
+![DDNet.tw Net](https://ddnet.org/stats/server/ddnet.org-net-1d.png)
+![DDNet.tw CPU](https://ddnet.org/stats/server/ddnet.org-cpu-1d.png)
+![DDNet.tw Mem](https://ddnet.org/stats/server/ddnet.org-mem-1d.png)
 
-You can see the full graphs on the [DDNet Server Statistics page](https://ddnet.tw/stats/server/). As usual you can find the entire source code in our [git repository](https://github.com/ddnet/ddnet-scripts/tree/master/rrd).
+You can see the full graphs on the [DDNet Server Statistics page](https://ddnet.org/stats/server/). As usual you can find the entire source code in our [git repository](https://github.com/ddnet/ddnet-scripts/tree/master/rrd).
 
 All in all the system runs on very little resources, puts out some nice graphs and alerts me automatically about defined problems.
 

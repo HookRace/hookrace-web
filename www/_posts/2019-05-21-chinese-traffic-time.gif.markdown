@@ -14,7 +14,7 @@ Now looking at my [GoAccess](https://goaccess.io/) dashboard I can see that it i
 
 ![GoAccess excerpt](/public/chinese-traffic/goaccess.png)
 
-But strangely I can't find anything about time.gif being linked on the web. So this might just be an attempted Denial of Service (DoS) attack? At least that would be something I am familiar with from the [DDNet](https://ddnet.tw/) direction, but it's certainly strange on HookRace. But instead of simply shutting down time.gif I decided to try to find out who is accessing it and whether I can keep the server up.
+But strangely I can't find anything about time.gif being linked on the web. So this might just be an attempted Denial of Service (DoS) attack? At least that would be something I am familiar with from the [DDNet](https://ddnet.org/) direction, but it's certainly strange on HookRace. But instead of simply shutting down time.gif I decided to try to find out who is accessing it and whether I can keep the server up.
 
 Let's look into the [nginx](https://www.nginx.com/) logs, since I use nginx to proxy the requests to the Haskell program. There I see about 40 new requests per second looking like this:
 
@@ -31,13 +31,13 @@ I checked a few IP addresses and they were all in mobile networks, not data cent
 
 ## Quantifying the Traffic
 
-For reference, the system I'm running on is a simple [Debian](https://www.debian.org/) based VPS with 2 threads and 2 GB of RAM that also functions as the main server for [DDNet's website](https://ddnet.tw/), database and my HookRace blog.
+For reference, the system I'm running on is a simple [Debian](https://www.debian.org/) based VPS with 2 threads and 2 GB of RAM that also functions as the main server for [DDNet's website](https://ddnet.org/), database and my HookRace blog.
 
 I already had to do some scaling when posting the [initial blog post](/blog/time.gif/) on [Hacker News](https://news.ycombinator.com/item?id=14996715), optimizing the Haskell application itself to use LZW encoding in the GIF frames, to properly clean up connections to prevent any memory leaks and disable buffering in nginx's config.
 
 But the current level of traffic is on a different scale with 2.4 million hits on time.gif in the last 23 hours (30 hits per second) resulting in 113 GB of data being transferred. And many of those connections don't finish quickly, instead they linger for seconds, minutes or even hours.
 
-Using `lsof -i | grep Time | wc -l` I can see that there are about 6000 people downloading the GIF at peak times, causing up to 30 Mbit/s of outgoing traffic with 7000 packets/second incoming and the same number outgoing. The [DDNet server statistics](https://ddnet.tw/stats/server/) lets me monitor this nicely ([related blog article](/blog/server-statistics/)):
+Using `lsof -i | grep Time | wc -l` I can see that there are about 6000 people downloading the GIF at peak times, causing up to 30 Mbit/s of outgoing traffic with 7000 packets/second incoming and the same number outgoing. The [DDNet server statistics](https://ddnet.org/stats/server/) lets me monitor this nicely ([related blog article](/blog/server-statistics/)):
 
 Network
 ![Network Traffic](/public/chinese-traffic/ddnet-network.png)
@@ -48,7 +48,7 @@ CPU
 
 ## Keeping Up with the Traffic
 
-Regenerating the [ranks pages of DDNet](https://ddnet.tw/ranks/) usually causes the main CPU load on the server, which can be seen in the above CPU graph as spikes. This task is already set to only run when the server is below a specified load, so that more essential tasks have priority.
+Regenerating the [ranks pages of DDNet](https://ddnet.org/ranks/) usually causes the main CPU load on the server, which can be seen in the above CPU graph as spikes. This task is already set to only run when the server is below a specified load, so that more essential tasks have priority.
 
 The first new problem was nginx running into a limit of 768 worker\_connections:
 
@@ -84,7 +84,7 @@ The value of `1048576` is chosen since it's the value set in `sysctl fs.file-max
 
 Next I noticed that the server was running out of memory with both the Haskell application and nginx having to keep track of so many connections at once. For now I increased the swap size on the fly to keep some less commonly used stuff there using `dd if=/dev/zero of=/var/swap bs=1M count=5000 && mkswap /var/swap && swapon /var/swap`.
 
-When running out of memory I noticed that Python's msgpack implementation [fails quite confusingly](https://github.com/msgpack/msgpack-python/issues/239) when it runs OOM. So I had to add some fixes to the code creating the [DDNet ranks pages](https://ddnet.tw/ranks/) to handle this possibility.
+When running out of memory I noticed that Python's msgpack implementation [fails quite confusingly](https://github.com/msgpack/msgpack-python/issues/239) when it runs OOM. So I had to add some fixes to the code creating the [DDNet ranks pages](https://ddnet.org/ranks/) to handle this possibility.
 
 The Linux Kernel's TCP buffers ran out of memory next, complaining in dmesg:
 

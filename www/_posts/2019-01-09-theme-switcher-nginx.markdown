@@ -5,7 +5,7 @@ tags: Programming DDNet
 permalink: /blog/theme-switcher-nginx/
 ---
 
-Some people really liked the dark [DDNet](https://ddnet.tw/) theme for Halloween by [Soreu](), so we decided to keep it possible to use the default bright or the dark theme.
+Some people really liked the dark [DDNet](https://ddnet.org/) theme for Halloween by [Soreu](), so we decided to keep it possible to use the default bright or the dark theme.
 
 Thanks to xse we got a [JavaScript based theme switcher](https://github.com/ddnet/ddnet-web/pull/69). After some improvements I finally I switched it away from JavaScript entirely and finally am also using it on this blog with an OLED friendly dark theme.
 

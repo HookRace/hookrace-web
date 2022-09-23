@@ -37,7 +37,7 @@ It's nice to see Nim doing well. Even the compile time is shorter than that of G
 
 ## JavaScript port via emscripten
 
-Nim has a JavaScript backend, but I don't trust it to be stable enough for this task yet. So I opted for emscripten instead, which can compile C code into JavaScript. Since Nim outputs C code, this sounds like a perfect fit. Luckily eeeee helped me with getting it started, since he had experience by porting my [DDNet](https://ddnet.tw/) client to [teewebs.net](http://teewebs.net/).
+Nim has a JavaScript backend, but I don't trust it to be stable enough for this task yet. So I opted for emscripten instead, which can compile C code into JavaScript. Since Nim outputs C code, this sounds like a perfect fit. Luckily eeeee helped me with getting it started, since he had experience by porting my [DDNet](https://ddnet.org/) client to [teewebs.net](http://teewebs.net/).
 
 It turned out that [emsdk](https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html) is the easiest way to use emscripten:
 

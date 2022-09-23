@@ -165,7 +165,7 @@ Great, now we can control which part of our program has runtime checks and which
 
 ## Nim instead of Python + C++
 
-High performance languages like C++ may require some boilerplate. A higher level language can be used at compile time to automatically create the boilerplate. In [DDNet](https://ddnet.tw/) (which inherited them from [Teeworlds](https://www.teeworlds.com/)) there are [many examples](https://github.com/def-/ddnet/tree/DDRace64/datasrc) for this.
+High performance languages like C++ may require some boilerplate. A higher level language can be used at compile time to automatically create the boilerplate. In [DDNet](https://ddnet.org/) (which inherited them from [Teeworlds](https://www.teeworlds.com/)) there are [many examples](https://github.com/def-/ddnet/tree/DDRace64/datasrc) for this.
 
 A really simple use case is to get the current git revision at compile time in Python and put it into the config.h with a `#define` so it can be referred to at runtime in the program. In Nim you need neither Python nor a C preprocessor and can instead do it all directly at compile time in Nim:
 

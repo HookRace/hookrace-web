@@ -92,7 +92,7 @@ There is a relatively high chance of missing a connecting train, or of getting s
 
 ## Getting Visits
 
-While my wife and I didn't do any long distance travel using the €9 ticket, others did. I had a co-developer of [DDraceNetwork](https://ddnet.tw/) visit all the way from Berlin using the €9 ticket. For people who have time it has been much easier to visit others with the €9 ticket, without having to worry about cost.
+While my wife and I didn't do any long distance travel using the €9 ticket, others did. I had a co-developer of [DDraceNetwork](https://ddnet.org/) visit all the way from Berlin using the €9 ticket. For people who have time it has been much easier to visit others with the €9 ticket, without having to worry about cost.
 
 ## While on Vacation
 

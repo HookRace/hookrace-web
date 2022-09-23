@@ -126,7 +126,7 @@ reasonable colors is a bit challenging though. There are even guides about how
 to [properly set these TVs up as computer
 screens](https://hardforum.com/threads/2015-samsung-4k-tv-as-a-monitor-set-up-guide.1869675/).
 In the end I have a far better picture than with my old screens, but the input
-delay of 40 ms is noticeable when playing [DDNet](https://ddnet.tw/). Since I
+delay of 40 ms is noticeable when playing [DDNet](https://ddnet.org/). Since I
 don't play much I don't mind and in case I ever need it it's possible to get it
 down to a more reasonable 20 ms at the loss of color accuracy.
 

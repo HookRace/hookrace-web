@@ -5,9 +5,9 @@ tags: DDNet Frugality
 permalink: /blog/ddnet-evolution-architecture-technology/
 ---
 
-It's been roughly 3 years since [DDraceNetwork](https://ddnet.tw/) (DDNet)
+It's been roughly 3 years since [DDraceNetwork](https://ddnet.org/) (DDNet)
 started in the summer of 2013. Last year I wrote a non-technical [History of
-DDNet](https://forum.ddnet.tw/viewtopic.php?f=3&t=1824). Today in this post we
+DDNet](https://forum.ddnet.org/viewtopic.php?f=3&t=1824). Today in this post we
 will dive into the technical side of what makes DDNet run.
 
 For the uninitiated, DDNet is an [open-source
@@ -25,12 +25,12 @@ better time than other teams.
 </p>
 
 What we offer for DDNet is the [client and server
-software](https://ddnet.tw/downloads/) as well as official servers that run all
+software](https://ddnet.org/downloads/) as well as official servers that run all
 around the world. We have an international community of players trying to beat
 the latest maps and records, and dozens of mappers who send in their newest
 creations for our consideration. A new map is [released every few
-days](https://ddnet.tw/releases/) and occasionally
-[tournaments](https://ddnet.tw/tournaments/) happen in which the best compete
+days](https://ddnet.org/releases/) and occasionally
+[tournaments](https://ddnet.org/tournaments/) happen in which the best compete
 against each other on brand-new maps.
 
 At the time of writing there are 968 people playing Teeworlds, 678 of which are
@@ -51,15 +51,15 @@ China, South Africa and Iran.
 
 Since DDNet is totally free, has no advertisements and no in-game purchases, it
 offers no stream of revenue and is solely [funded by donations, donated servers
-and my own money](https://ddnet.tw/funding/). So one of the goals is to keep
+and my own money](https://ddnet.org/funding/). So one of the goals is to keep
 costs down: On average we pay 10 € per month for each location.
 
 Let's see what we can offer with this to our thousands of players ([detailed
-statistics](https://ddnet.tw/stats/)) and how DDNet evolved to keep with
+statistics](https://ddnet.org/stats/)) and how DDNet evolved to keep with
 increasing number of players, maps and the product of both, ranks.
 
-[![Number of finishes](/public/stats-finishes.png)](https://ddnet.tw/funding/)
-[![Number of players](/public/stats-players.png)](https://ddnet.tw/funding/)
+[![Number of finishes](/public/stats-finishes.png)](https://ddnet.org/funding/)
+[![Number of players](/public/stats-players.png)](https://ddnet.org/funding/)
 
 ## Servers & Locations
 
@@ -85,7 +85,7 @@ Spanish or Farsi.
 
 When in doubt, ask locals what hosters they use or recommend, or check the
 whois entries for servers in the region that seem to run well. For example the
-`whois 31.186.251.128` entry tells you that [DDNet.tw](https://ddnet.tw/) (and
+`whois 31.186.251.128` entry tells you that [DDNet.tw](https://ddnet.org/) (and
 this blog) are hosted at Nuclear Fallout Enterprise, connected by the InterNAP
 Network:
 
@@ -205,8 +205,8 @@ data center of ZGlobalHost went down:
   Service is fully operational again since 02:30 AM.
 
 To make sure that our servers keep running well, we [monitor
-them](https://ddnet.tw/status/) and record the [server
-statistics](https://ddnet.tw/stats/server/). When an unexpected event happens,
+them](https://ddnet.org/status/) and record the [server
+statistics](https://ddnet.org/stats/server/). When an unexpected event happens,
 like a server downtime or high network traffic, a notification is automatically
 sent. You can read more about this system in [a separate post from last
 month](https://hookrace.net/blog/server-statistics/).
@@ -308,19 +308,19 @@ for kind, path in walkDir baseDir/"maps":
   moveFile tmpPath, newPath
 {% endhighlight %}
 
-Most of the [DDNet.tw](https://ddnet.tw/) website is [statically built by
+Most of the [DDNet.tw](https://ddnet.org/) website is [statically built by
 jekyll](https://github.com/ddnet/ddnet-web) and automatically deploying using
 GitHub's webhooks. That's a simple solution and requires very few resources.
 
-Pages about [player status](https://ddnet.tw/status/),
-[ranks](https://ddnet.tw/ranks/), [map releases](https://ddnet.tw/releases/)
-and [mappers](https://ddnet.tw/mappers/) are also statically built, but by
+Pages about [player status](https://ddnet.org/status/),
+[ranks](https://ddnet.org/ranks/), [map releases](https://ddnet.org/releases/)
+and [mappers](https://ddnet.org/mappers/) are also statically built, but by
 [Python
 scripts](https://github.com/ddnet/ddnet-scripts/tree/master/servers/scripts)
 directly on the server. This also makes sense since these pages are expensive
 to build and are requested more often than they have to be generated.
 
-We also used to generate the [player pages](https://ddnet.tw/players/) in the
+We also used to generate the [player pages](https://ddnet.org/players/) in the
 same way, but since we have about 90,000 ranked players so far this would've
 become a bit too expensive. Instead we run a small uWSGI Python server to
 dynamically generate them now from the data kept in memory. Right now it takes
@@ -331,7 +331,7 @@ could be implemented.
 We used to package a growing selection of skins with the DDNet client, but
 maintaining this became too cumbersome and increased memory usage for the
 client. Now instead the website offers a [database of
-skins](https://ddnet.tw/skins/) where you can select individual skins or skin
+skins](https://ddnet.org/skins/) where you can select individual skins or skin
 packs.
 
 ## Software Releases
@@ -412,7 +412,7 @@ Even a [JavaScript port](http://teewebs.net/) of DDNet client is available for
 playing without any installation, compiled with Emscripten. For this purpose
 the official servers also accept WebSocket connections additionally to UDP.
 
-New releases are added to the [website](https://ddnet.tw/downloads/) with a
+New releases are added to the [website](https://ddnet.org/downloads/) with a
 nice changelog. But most existing players get their update notification in the
 client directly and run the updater from there, only downloading the files that
 actually changed instead of the entire new release.
@@ -423,7 +423,7 @@ The best part about DDNet is its active community. New maps for our servers are
 regularly sent in to be tested and later released. Initially the testing
 process was implemented as [Trac](https://trac.edgewall.org/) installation. But
 it turned out that the non-technical people did not appreciate it much, so we
-switched to a [regular phpBB forum](https://forum.ddnet.tw/) for testing and
+switched to a [regular phpBB forum](https://forum.ddnet.org/) for testing and
 communication.
 
 New maps can be uploaded by our testers to the test servers and then tested
@@ -437,12 +437,12 @@ the proper server. The preparation for this happens on the web server and is
 then synchronized to the other servers using an internal git repository.
 
 The new map is also announced on the [recent map releases
-page](https://ddnet.tw/releases/) as well as its feed. Players on the official
+page](https://ddnet.org/releases/) as well as its feed. Players on the official
 servers are informed about the map release using a broadcast message.
 
 It's possible to take a look at our maps using a WebGL renderer that supports
 parts of the map format, but no animations for example: [Lonely
-map](https://ddnet.tw/maps/?map=Lonely)
+map](https://ddnet.org/maps/?map=Lonely)
 
 When a popular new map is released, it's possible to have hundreds of players
 taking up the challenge of playing the new map at once, either in small teams
@@ -484,21 +484,21 @@ git push &>/dev/null
 
 In the start DDNet hosted only new maps categorized by their difficulty:
 
-- [Novice](https://ddnet.tw/ranks/novice/)
-- [Moderate](https://ddnet.tw/ranks/moderate/)
-- [Brutal](https://ddnet.tw/ranks/brutal/)
+- [Novice](https://ddnet.org/ranks/novice/)
+- [Moderate](https://ddnet.org/ranks/moderate/)
+- [Brutal](https://ddnet.org/ranks/brutal/)
 
 Later we also added categories for maps from old servers:
 
-- [Oldschool](https://ddnet.tw/ranks/oldschool/): Ancient maps
-- [DDmaX](https://ddnet.tw/ranks/ddmax/): Old DDRace server before DDNet
+- [Oldschool](https://ddnet.org/ranks/oldschool/): Ancient maps
+- [DDmaX](https://ddnet.org/ranks/ddmax/): Old DDRace server before DDNet
 
 As well as categories for different kinds of single player maps:
 
-- [Solo](https://ddnet.tw/ranks/solo/)
-- [Race](https://ddnet.tw/ranks/race/): Classic mod with fewer features,
+- [Solo](https://ddnet.org/ranks/solo/)
+- [Race](https://ddnet.org/ranks/race/): Classic mod with fewer features,
   converted maps to new DDNet format
-- [Dummy](https://ddnet.tw/ranks/dummy/): Maps where you play with another
+- [Dummy](https://ddnet.org/ranks/dummy/): Maps where you play with another
   player that is unable to move
 
 The idea is that, since we are the major hoster in many countries, many of
@@ -513,7 +513,7 @@ are running already anyway.
 ## Tournaments
 
 When a well-known mapper makes a special map, they can choose to have their map
-played at an official DDNet [tournament](https://ddnet.tw/tournaments/). For
+played at an official DDNet [tournament](https://ddnet.org/tournaments/). For
 this it is necessary to keep the map under wraps, showing it only to a few
 select testers. This ensures that none of the players at the tournament will be
 familiar with the map already, which would give them an unfair advantage.
@@ -540,7 +540,7 @@ hours to compete:
 </p>
 
 Some of our mappers even created [fancy ingame loading
-screens](https://forum.ddnet.tw/viewtopic.php?p=1560#p1560) for the start of
+screens](https://forum.ddnet.org/viewtopic.php?p=1560#p1560) for the start of
 the tournament:
 
 <p>
@@ -576,7 +576,7 @@ Nevertheless we managed to put in many new features, for example:
 - Highly compressed Opus sounds in maps, it's amazing how much quality you get
   with small bit rates
 - In-client updater using HTTPS and a [simple JSON
-  file](http://update2.ddnet.tw/update.json) for control
+  file](http://update2.ddnet.org/update.json) for control
 - Dummy feature to control two ingame characters at once:  
   At first this was meant to help map testers to be able to test maps easier,
   without requiring a second player. But it's also very popular with regular
@@ -604,9 +604,9 @@ font](https://github.com/ddnet/ddnet-scripts/blob/master/servers/scripts/asciiar
 Using the FIFO system at multiple locations at once is achieved using Cluster SSH.
 
 We also offer a list of official DDNet servers [in
-JSON](http://update2.ddnet.tw/ddnet-servers.json) which is used to inform the
+JSON](http://update2.ddnet.org/ddnet-servers.json) which is used to inform the
 client of the official servers as well as internally to generate the [status
-page](https://ddnet.tw/status/).
+page](https://ddnet.org/status/).
 
 Unfortunately attacks with spoofed IP addresses are quite common for us. So we
 have added a spoofing protection using tokens to prevent attackers from filling
@@ -626,7 +626,7 @@ other people's names. So you can never be sure who you're actually talking to.
 Thanks to some Social Engineering this has been a common source of leaked
 moderator passwords.
 
-So for official communications the [DDNet forum](https://forum.ddnet.tw/) is
+So for official communications the [DDNet forum](https://forum.ddnet.org/) is
 used instead. We tried to use [Let's Encrypt](https://letsencrypt.org/) for
 SSL/TLS certificates for the website, but it turned out that Windows XP is [not
 supported](https://github.com/certbot/certbot/issues/1660) and many of our
@@ -640,7 +640,7 @@ might be able to switch back.
 Otherwise technically inclined people mostly discuss on IRC
 ([#ddnet](irc://irc.quakenet.org/ddnet) on QuakeNet,
 [WebChat](http://webchat.quakenet.org/?channels=ddnet&uio=d4),
-[Logs](https://ddnet.tw/irclogs/)) and Skype. Most non-technical discussions
+[Logs](https://ddnet.org/irclogs/)) and Skype. Most non-technical discussions
 happen via Skype.
 
 ## Future Directions
@@ -655,9 +655,9 @@ now. This would be an opportunity for us to reach more potential players,
 especially those who have never played Teeworlds before. The main problem right
 now is that DDNet is a difficult game to get started with, since it requires
 practice, fine control and patience. Right now work is [being
-done](https://forum.ddnet.tw/viewtopic.php?t=3771) to create a tutorial for new
+done](https://forum.ddnet.org/viewtopic.php?t=3771) to create a tutorial for new
 players and generally improve the ease of getting started.
 
 ## Discussion
 
-You can find discussions about this article on [Hacker News](https://news.ycombinator.com/item?id=11874830), [r/programming](https://www.reddit.com/r/programming/comments/4nnlsq/experiences_of_running_an_online_game_for_3_years/) and also the [DDNet Forum](https://forum.ddnet.tw/viewtopic.php?f=3&t=3779).
+You can find discussions about this article on [Hacker News](https://news.ycombinator.com/item?id=11874830), [r/programming](https://www.reddit.com/r/programming/comments/4nnlsq/experiences_of_running_an_online_game_for_3_years/) and also the [DDNet Forum](https://forum.ddnet.org/viewtopic.php?f=3&t=3779).

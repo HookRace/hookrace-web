@@ -9,7 +9,7 @@ permalink: /blog/what-is-special-about-nim/
 
 The [Nim programming language](http://nim-lang.org/) is exciting. While the [official tutorial](http://nim-lang.org/docs/tut1.html) is great, it slowly introduces you to the language. Instead I want to quickly show what you can do with Nim that would be more difficult or impossible in other languages.
 
-I discovered Nim in my quest to find the right tools to write a game, HookRace, the successor of my current [DDNet](https://ddnet.tw) game/mod of Teeworlds. Since I'm busy with other projects for now, this blog is now officially about Nim instead, until I find time to continue developing the game.
+I discovered Nim in my quest to find the right tools to write a game, HookRace, the successor of my current [DDNet](https://ddnet.org) game/mod of Teeworlds. Since I'm busy with other projects for now, this blog is now officially about Nim instead, until I find time to continue developing the game.
 
 ## Easy to get running
 

@@ -5,20 +5,20 @@ tags: DDNet
 permalink: /blog/dos-attacks-against-online-game/
 ---
 
-[DDraceNetwork](https://ddnet.tw/) is an [open source](https://github.com/ddnet/ddnet) online game I've been running since 2013 with a community of volunteers. The game is available for free, I'm hosting servers for it in many countries [around the world](https://ddnet.tw/status/) so that we have trusted [official ranks](https://ddnet.tw/ranks/). The servers are paid for by [donations](https://ddnet.tw/funding/), which I stop collecting once the cost of the servers for the current year is covered. I wrote about DDNet in a [previous post in 2016](/blog/ddnet-evolution-architecture-technology/) and also a bit about the [game history in 2013](https://forum.ddnet.tw/viewtopic.php?t=1824).
+[DDraceNetwork](https://ddnet.org/) is an [open source](https://github.com/ddnet/ddnet) online game I've been running since 2013 with a community of volunteers. The game is available for free, I'm hosting servers for it in many countries [around the world](https://ddnet.org/status/) so that we have trusted [official ranks](https://ddnet.org/ranks/). The servers are paid for by [donations](https://ddnet.org/funding/), which I stop collecting once the cost of the servers for the current year is covered. I wrote about DDNet in a [previous post in 2016](/blog/ddnet-evolution-architecture-technology/) and also a bit about the [game history in 2013](https://forum.ddnet.org/viewtopic.php?t=1824).
 
-Pretty much since the beginning we have been suffering from DoS attacks against the servers. Since the [Steam release](https://store.steampowered.com/app/412220/DDraceNetwork/) in 2020 the player number has increased significantly, so that we have [about 1300 players](https://ddnet.tw/stats/) playing on average.
+Pretty much since the beginning we have been suffering from DoS attacks against the servers. Since the [Steam release](https://store.steampowered.com/app/412220/DDraceNetwork/) in 2020 the player number has increased significantly, so that we have [about 1300 players](https://ddnet.org/stats/) playing on average.
 
 <!--more-->
 
-<a href="https://ddnet.tw/stats/"><img alt="Points earned per Day by Server Type" src="/public/points-earned.svg" style="width: 100%;"></a>
+<a href="https://ddnet.org/stats/"><img alt="Points earned per Day by Server Type" src="/public/points-earned.svg" style="width: 100%;"></a>
 
-Based on the rising player number the urge to deal with the DoS problem is larger than ever. A few months ago for example we organized a [Tournament](https://ddnet.tw/tournaments/56/) for everyone in the community to participate. Unfortunately the event was the continuous target of DoS attacks for multiple hours, with players fleeing from one server to the next, trying to find a safe refuge. These [bandwidth graphs](https://ddnet.tw/stats/server/) for our servers in Netherlands and Germany respectively illustrate the problem:
+Based on the rising player number the urge to deal with the DoS problem is larger than ever. A few months ago for example we organized a [Tournament](https://ddnet.org/tournaments/56/) for everyone in the community to participate. Unfortunately the event was the continuous target of DoS attacks for multiple hours, with players fleeing from one server to the next, trying to find a safe refuge. These [bandwidth graphs](https://ddnet.org/stats/server/) for our servers in Netherlands and Germany respectively illustrate the problem:
 
-![Netherlands](/public/nld.ddnet.tw-net-1d.png)
-![Germany](/public/ger2.ddnet.tw-net-1d.png)
+![Netherlands](/public/nld.ddnet.org-net-1d.png)
+![Germany](/public/ger2.ddnet.org-net-1d.png)
 
-Since DDNet only runs online and you feel every small network latency it is predestined as a target for DoS attacks. Outside of attacks our servers don't need to be particularly powerful for regular gameplay, 1 CPU core can support 150 players concurrently, memory consumption is minimal. So the total we are paying for our ~23 servers around the world is only [~2300 € for the year 2021](https://ddnet.tw/funding/).
+Since DDNet only runs online and you feel every small network latency it is predestined as a target for DoS attacks. Outside of attacks our servers don't need to be particularly powerful for regular gameplay, 1 CPU core can support 150 players concurrently, memory consumption is minimal. So the total we are paying for our ~23 servers around the world is only [~2300 € for the year 2021](https://ddnet.org/funding/).
 
 ## What we have tried
 
@@ -30,9 +30,9 @@ There is even a [Wireshark dissector](https://github.com/heinrich5991/libtw2/tre
 
 Some components of our system were relatively easy to protect: The database server has been moved to a secret IP address, and the game servers will store ranks in a local SQLite file if the main MySQL-based database is not available.
 
-The web server hosting [DDNet.tw](https://ddnet.tw/) and other HTTPS-based components like the map downloader and updater are now reachable through Cloudflare only, and have received no attacks since then.
+The web server hosting [DDNet.tw](https://ddnet.org/) and other HTTPS-based components like the map downloader and updater are now reachable through Cloudflare only, and have received no attacks since then.
 
-For the individual server infos the client currently has to communicate with each game server by UDP, thus revealing its own IP address without having connected to a server. Since one of the known attackers is running their own DDNet server, they can use this method to collect legitimate player IP addresses and spoof them in their attacks. To prevent this heinrich5991 implemented a centrally provided [HTTPS-based server info](https://github.com/ddnet/ddnet/pull/3772/). This means that every player only has to access the [JSON file](https://master1.ddnet.tw/ddnet/15/servers.json) containing all server information, instead of previously receiving this information via UDP from each server directly.
+For the individual server infos the client currently has to communicate with each game server by UDP, thus revealing its own IP address without having connected to a server. Since one of the known attackers is running their own DDNet server, they can use this method to collect legitimate player IP addresses and spoof them in their attacks. To prevent this heinrich5991 implemented a centrally provided [HTTPS-based server info](https://github.com/ddnet/ddnet/pull/3772/). This means that every player only has to access the [JSON file](https://master1.ddnet.org/ddnet/15/servers.json) containing all server information, instead of previously receiving this information via UDP from each server directly.
 
 To prevent our own servers being used for amplification attacks we limit the server info packets per IP address in our [server setup script](https://github.com/ddnet/ddnet-scripts/blob/892c22672d93c1ea78e24ef81fa09ff60d28fdcc/ddnet-setup.sh#L29-L38):
 
@@ -129,6 +129,6 @@ Instead of technical solutions, we could try working with the police. We know th
 
 I wrote most of this post back in May when we were facing large-scale attacks the last time. Since then not much happened, so I didn't want to bring any unwanted attention to our situation. Now in September the attacks seem to be starting again with a long downtime on all our servers today, so I decided to finish this up and post it anyway. Let's hope that this brings more positive attention than negative. After all, I just showed exactly how good of a DoS target we are.
 
-If you have any suggestions, or dealt with a similar problem before, we'd be interested to hear from you. You can reach me on [dennis@felsin9.de](mailto:dennis@felsin9.de) as well as on the [DDNet Discord](https://ddnet.tw/discord) as deen#5910 or on IRC (deen in #ddnet on Quakenet). I hope that there is something trivial we are missing.
+If you have any suggestions, or dealt with a similar problem before, we'd be interested to hear from you. You can reach me on [dennis@felsin9.de](mailto:dennis@felsin9.de) as well as on the [DDNet Discord](https://ddnet.org/discord) as deen#5910 or on IRC (deen in #ddnet on Quakenet). I hope that there is something trivial we are missing.
 
 Discussion on [Hacker News](https://news.ycombinator.com/item?id=28675094).

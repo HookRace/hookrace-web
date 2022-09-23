@@ -186,7 +186,7 @@ which someone else had thrown away: A Radeon HD 4350
 The Logitech MX518 did its job great for the entire time. About 1-2 years ago
 the left mouse button stopped working reliably though. When keeping it pressed
 it sometimes released on its own at unpredictable moments. That's a huge
-problem while playing something like [DDNet](https://ddnet.tw/).
+problem while playing something like [DDNet](https://ddnet.org/).
 
 The first step was of course to open up the mouse. What I saw was that the
 plastic of the mouse buttons was worn out to the point that it could barely

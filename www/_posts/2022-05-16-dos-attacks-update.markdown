@@ -5,12 +5,12 @@ tags: DDNet
 permalink: /blog/dos-attacks-update/
 ---
 
-In my [previous post](/blog/dos-attacks-against-online-game/) 8 months ago I described how our [open source](https://github.com/ddnet/ddnet) online game [DDraceNetwork](https://ddnet.tw/) has been suffering under DoS attacks for about 8 years, basically since its inception. Recently the attacks have gotten much worse, forcing us to work on further approaches. Since many players made suggestions recently, I'm writing this blog post to summarize what we are attempting and to ask for help again.
+In my [previous post](/blog/dos-attacks-against-online-game/) 8 months ago I described how our [open source](https://github.com/ddnet/ddnet) online game [DDraceNetwork](https://ddnet.org/) has been suffering under DoS attacks for about 8 years, basically since its inception. Recently the attacks have gotten much worse, forcing us to work on further approaches. Since many players made suggestions recently, I'm writing this blog post to summarize what we are attempting and to ask for help again.
 
 <!--more-->
 
-![Netherlands](/public/nld.ddnet.tw-net-7d.png)
-![Germany](/public/ger2.ddnet.tw-net-49d.png)
+![Netherlands](/public/nld.ddnet.org-net-7d.png)
+![Germany](/public/ger2.ddnet.org-net-49d.png)
 
 These traffic graphs are from two of the servers we are running, note the logarithmic x-axis. Each spike represents an incoming DoS attack, as you can see some of them last for nearly a day.
 
@@ -103,4 +103,4 @@ digraph D {
 {% endhighlight %}
 
 ## Conclusion
-If you have any suggestions, or dealt with a similar problem before, we'd be interested to hear from you. You can reach me on [dennis@felsin9.de](mailto:dennis@felsin9.de) as well as on the [DDNet Discord](https://ddnet.tw/discord) as deen#5910 or on IRC (deen in #ddnet on Quakenet).
+If you have any suggestions, or dealt with a similar problem before, we'd be interested to hear from you. You can reach me on [dennis@felsin9.de](mailto:dennis@felsin9.de) as well as on the [DDNet Discord](https://ddnet.org/discord) as deen#5910 or on IRC (deen in #ddnet on Quakenet).

@@ -32,7 +32,7 @@ One annoyance though is that Arch Linux removes the old kernel modules once you 
 
 Similar problems happen with other programs, commonly Firefox, cron or Samba requiring a restart after an upgrade, but annoyingly not warning you that that's the case. [SUSE](https://www.suse.com/), which I use at work, nicely warns about such cases.
 
-For the [DDNet](https://ddnet.tw/) production servers I prefer [Debian](https://www.debian.org/) over Arch Linux, so that I have a lower chance of breakage on each upgrade. For my firewall and router I used [OpenBSD](https://www.openbsd.org/) for its clean system, documentation and great [pf firewall](https://www.openbsd.org/faq/pf/), but right now I don't have a need for a separate router anymore.
+For the [DDNet](https://ddnet.org/) production servers I prefer [Debian](https://www.debian.org/) over Arch Linux, so that I have a lower chance of breakage on each upgrade. For my firewall and router I used [OpenBSD](https://www.openbsd.org/) for its clean system, documentation and great [pf firewall](https://www.openbsd.org/faq/pf/), but right now I don't have a need for a separate router anymore.
 
 ## Window Manager
 
@@ -184,7 +184,7 @@ application/pdf; pdftotext -layout /dev/stdin -; copiousoutput
 [Newsboat](https://newsboat.org/) is a nice little RSS/Atom feed reader in the terminal. I have it running on the server in a `tach` session with about 150 feeds. Filtering feeds locally is also possible, for example:
 
 ```
-ignore-article "https://forum.ddnet.tw/feed.php" "title =~ \"Map Testing •\" or title =~ \"Old maps •\" or title =~ \"Map Bugs •\" or title =~ \"Archive •\" or title =~ \"Waiting for mapper •\" or title =~ \"Other mods •\" or title =~ \"Fixes •\""
+ignore-article "https://forum.ddnet.org/feed.php" "title =~ \"Map Testing •\" or title =~ \"Old maps •\" or title =~ \"Map Bugs •\" or title =~ \"Archive •\" or title =~ \"Waiting for mapper •\" or title =~ \"Other mods •\" or title =~ \"Fixes •\""
 ```
 
 I use [Irssi](https://irssi.org/) the same way for communication via IRC.
@@ -398,8 +398,8 @@ Host cr-remote
 While talking about SSH hacks, sometimes a server is not easily reachable thanks to some bad routing. In that case you can route the SSH connection through another server to get better routing, in this case going through the USA to reach my Chinese server which had not been reliably reachable from Germany for a few weeks:
 
 ```
-Host chn.ddnet.tw
-  ProxyCommand ssh -q usa.ddnet.tw nc -q0 chn.ddnet.tw 22
+Host chn.ddnet.org
+  ProxyCommand ssh -q usa.ddnet.org nc -q0 chn.ddnet.org 22
   Port 22
 ```
 

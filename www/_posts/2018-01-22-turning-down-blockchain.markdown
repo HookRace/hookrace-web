@@ -11,7 +11,7 @@ I have recently received a job offer to work on a blockchain implementation. Whi
 
 ## Introduction
 
-I have not touched blockchain technology much before, other than reading the original [Bitcoin paper](https://bitcoin.org/bitcoin.pdf) shortly after it was released and accepting Bitcoin donations for [DDNet](https://ddnet.tw/). But I have always used those donations pretty much immediately, and thus I have no investment in cryptocurrencies either way and am thus impartial to their fate.
+I have not touched blockchain technology much before, other than reading the original [Bitcoin paper](https://bitcoin.org/bitcoin.pdf) shortly after it was released and accepting Bitcoin donations for [DDNet](https://ddnet.org/). But I have always used those donations pretty much immediately, and thus I have no investment in cryptocurrencies either way and am thus impartial to their fate.
 
 ## The Good
 
