@@ -57,4 +57,4 @@ This is cannibalized from [gifstream](https://github.com/def-/gifstream), which 
 
 ![snake](https://raw.githubusercontent.com/def-/gifstream/master/snake.gif)
 
-Discuss on [Hacker News](https://news.ycombinator.com/item?id=14996715)
+Discuss on [Hacker News (2022-10-27)](https://news.ycombinator.com/item?id=33358486) ([previous thread from 2017-08-12](https://news.ycombinator.com/item?id=14996715))
