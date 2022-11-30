@@ -15,8 +15,8 @@ Pretty much since the beginning we have been suffering from DoS attacks against 
 
 Based on the rising player number the urge to deal with the DoS problem is larger than ever. A few months ago for example we organized a [Tournament](https://ddnet.org/tournaments/56/) for everyone in the community to participate. Unfortunately the event was the continuous target of DoS attacks for multiple hours, with players fleeing from one server to the next, trying to find a safe refuge. These [bandwidth graphs](https://ddnet.org/stats/server/) for our servers in Netherlands and Germany respectively illustrate the problem:
 
-![Netherlands](/public/nld.ddnet.org-net-1d.png)
-![Germany](/public/ger2.ddnet.org-net-1d.png)
+![Netherlands](/public/nld.ddnet.tw-net-1d.png)
+![Germany](/public/ger2.ddnet.tw-net-1d.png)
 
 Since DDNet only runs online and you feel every small network latency it is predestined as a target for DoS attacks. Outside of attacks our servers don't need to be particularly powerful for regular gameplay, 1 CPU core can support 150 players concurrently, memory consumption is minimal. So the total we are paying for our ~23 servers around the world is only [~2300 € for the year 2021](https://ddnet.org/funding/).
 

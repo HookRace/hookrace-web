@@ -9,8 +9,8 @@ In my [previous post](/blog/dos-attacks-against-online-game/) 8 months ago I des
 
 <!--more-->
 
-![Netherlands](/public/nld.ddnet.org-net-7d.png)
-![Germany](/public/ger2.ddnet.org-net-49d.png)
+![Netherlands](/public/nld.ddnet.tw-net-7d.png)
+![Germany](/public/ger2.ddnet.tw-net-49d.png)
 
 These traffic graphs are from two of the servers we are running, note the logarithmic x-axis. Each spike represents an incoming DoS attack, as you can see some of them last for nearly a day.
 
