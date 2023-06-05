@@ -306,7 +306,7 @@ Ich fordere Sie hiermit zu Bla Bla Bla auf.
 \end{document}
 {% endhighlight %}
 
-Further example documents and presentations can be found over at [my private site](http://felsin9.de/nnis/research/).
+Further example documents and presentations can be found over at [my private site](https://dennis.felsing.org/research/).
 
 To read PDFs [Zathura](https://pwmt.org/projects/zathura/) is fast, has Vim-like controls and even supports two different PDF backends: Poppler and MuPDF. [Evince](https://wiki.gnome.org/Apps/Evince) on the other hand is more full-featured for the cases where I encounter documents that Zathura doesn't like.
 

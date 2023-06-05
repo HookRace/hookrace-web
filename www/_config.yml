@@ -16,14 +16,14 @@ url:              https://hookrace.net
 baseurl:          /
 author:
   name:           Dennis Felsing
-  url:            http://felsin9.de/nnis
+  url:            https://dennis.felsing.org
   email:          dennis@felsin9.de
 
 pages_list:
   Posts: '/blog/'
   Feed: '/blog/feed/'
   DDNet: 'https://ddnet.org/'
-  Me: 'http://felsin9.de/nnis/'
+  Me: 'https://dennis.felsing.org'
   Switch Theme: '/switch-theme/'
 
 #gems: [jekyll-tagging]
