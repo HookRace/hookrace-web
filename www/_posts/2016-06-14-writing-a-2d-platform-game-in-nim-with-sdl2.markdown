@@ -1591,6 +1591,6 @@ All the material for this article is available in the [repository on
 GitHub](https://github.com/def-/nim-platformer).
 Because I changed around things late into the article I might have made a
 mistake or missed something. If you find a bug or have a comment you can drop
-me an email at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+me an email at [dennis@felsing.org](mailto:dennis@felsing.org).
 
 Discussions on [r/programming](https://www.reddit.com/r/programming/comments/4o0h0u/writing_a_2d_platform_game_in_nim_with_sdl2/) and [Hacker News](https://news.ycombinator.com/item?id=11927780).

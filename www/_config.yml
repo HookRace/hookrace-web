@@ -17,7 +17,7 @@ baseurl:          /
 author:
   name:           Dennis Felsing
   url:            https://dennis.felsing.org
-  email:          dennis@felsin9.de
+  email:          dennis@felsing.org
 
 pages_list:
   Posts: '/blog/'

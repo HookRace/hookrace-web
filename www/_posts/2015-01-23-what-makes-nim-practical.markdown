@@ -328,6 +328,6 @@ That's Nim from a more practical angle. Hopefully you'll consider Nim for your n
 
 To do my part in making Nim more practical, I'm trying to implement a new, working REPL using TinyCC. We may also soon get a working compiler as a service for proper IDE integration, directly from Andreas Rumpf.
 
-For comments use [Reddit](https://www.reddit.com/r/programming/comments/2tedjb/what_makes_nim_practical/), [Hacker News](https://news.ycombinator.com/item?id=8934582) or get in touch with the [Nim community](http://nim-lang.org/community.html) directly. You can reach me personally at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+For comments use [Reddit](https://www.reddit.com/r/programming/comments/2tedjb/what_makes_nim_practical/), [Hacker News](https://news.ycombinator.com/item?id=8934582) or get in touch with the [Nim community](http://nim-lang.org/community.html) directly. You can reach me personally at [dennis@felsing.org](mailto:dennis@felsing.org).
 
 Thanks to Andreas Rumpf and Dominik Picheta again, for proof-reading this post as well.

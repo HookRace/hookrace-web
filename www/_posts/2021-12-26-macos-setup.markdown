@@ -289,6 +289,6 @@ And since some keys are missing on the MacBook keyboard here is how to get them:
 | Insert | 🌐 ⏎
 
 ## Conclusion
-macOS is working better than expected for me so far, and definitely better than Windows would. So I'm glad with my choice of a MacBook Pro as a work device. Now that I've written down some of the steps I had to take to make it more usable, I hopefully won't forget them if I ever have to set a macOS based system up again. If you have any questions or tips get in touch with me at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+macOS is working better than expected for me so far, and definitely better than Windows would. So I'm glad with my choice of a MacBook Pro as a work device. Now that I've written down some of the steps I had to take to make it more usable, I hopefully won't forget them if I ever have to set a macOS based system up again. If you have any questions or tips get in touch with me at [dennis@felsing.org](mailto:dennis@felsing.org).
 
 Discussion on [Hacker News](https://news.ycombinator.com/item?id=29742551).

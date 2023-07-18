@@ -119,7 +119,7 @@ done
 The configuration is as simple as it could be and waits for the server to inform us of fresh emails:
 
 ```
-poll imap.1und1.de protocol imap timeout 120 user "dennis@felsin9.de" password "XXX" folders INBOX keep ssl idle
+poll imap.1und1.de protocol imap timeout 120 user "dennis@felsing.org" password "XXX" folders INBOX keep ssl idle
 ```
 
 My `.procmailrc` config contains a few rules to backup all mails and sort them into the correct directories, for example based on the mailing list id or from field in the mail header:
@@ -160,8 +160,8 @@ host smtp.1und1.de
 tls on
 tls_trust_file /etc/ssl/certs/ca-certificates.crt
 auth on
-from dennis@felsin9.de
-user dennis@felsin9.de
+from dennis@felsing.org
+user dennis@felsing.org
 password XXX
 
 [...]
@@ -405,6 +405,6 @@ Host chn.ddnet.org
 
 ## Final Remarks
 
-Thanks for reading my random collection of tools. I probably forgot many programs that I use so naturally every day that I don't even think about them anymore. Let's see how stable my software setup stays in the next years. If you have any questions, feel free to get in touch with me at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+Thanks for reading my random collection of tools. I probably forgot many programs that I use so naturally every day that I don't even think about them anymore. Let's see how stable my software setup stays in the next years. If you have any questions, feel free to get in touch with me at [dennis@felsing.org](mailto:dennis@felsing.org).
 
 Comments on [Hacker News](https://news.ycombinator.com/item?id=19253072).

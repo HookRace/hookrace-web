@@ -129,6 +129,6 @@ Instead of technical solutions, we could try working with the police. We know th
 
 I wrote most of this post back in May when we were facing large-scale attacks the last time. Since then not much happened, so I didn't want to bring any unwanted attention to our situation. Now in September the attacks seem to be starting again with a long downtime on all our servers today, so I decided to finish this up and post it anyway. Let's hope that this brings more positive attention than negative. After all, I just showed exactly how good of a DoS target we are.
 
-If you have any suggestions, or dealt with a similar problem before, we'd be interested to hear from you. You can reach me on [dennis@felsin9.de](mailto:dennis@felsin9.de) as well as on the [DDNet Discord](https://ddnet.org/discord) as deen#5910 or on IRC (deen in #ddnet on Quakenet). I hope that there is something trivial we are missing.
+If you have any suggestions, or dealt with a similar problem before, we'd be interested to hear from you. You can reach me on [dennis@felsing.org](mailto:dennis@felsing.org) as well as on the [DDNet Discord](https://ddnet.org/discord) as deen#5910 or on IRC (deen in #ddnet on Quakenet). I hope that there is something trivial we are missing.
 
 Discussion on [Hacker News](https://news.ycombinator.com/item?id=28675094).

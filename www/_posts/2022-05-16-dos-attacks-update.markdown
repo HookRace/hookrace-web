@@ -103,4 +103,4 @@ digraph D {
 {% endhighlight %}
 
 ## Conclusion
-If you have any suggestions, or dealt with a similar problem before, we'd be interested to hear from you. You can reach me on [dennis@felsin9.de](mailto:dennis@felsin9.de) as well as on the [DDNet Discord](https://ddnet.org/discord) as deen#5910 or on IRC (deen in #ddnet on Quakenet).
+If you have any suggestions, or dealt with a similar problem before, we'd be interested to hear from you. You can reach me on [dennis@felsing.org](mailto:dennis@felsing.org) as well as on the [DDNet Discord](https://ddnet.org/discord) as deen#5910 or on IRC (deen in #ddnet on Quakenet).

@@ -98,7 +98,7 @@ A limitation of my current approach is the number of ports nginx can open to pro
 
 ## Final Words
 
-While it was fun to keep time.gif running in the face of this amount of traffic, I still haven't answered the final question of where this traffic is coming from. It might be that lots of Chinese happen to be spreading time.gif on WeChat and QQ, but for that the traffic looks a bit too sterile. Has anyone seen similar traffic patterns and might know if they are real or some kind of botnet? Maybe someone has embedded traffic.gif on some WeChat-specific page. If anyone has a clue please drop me an email at [dennis@felsin9.de](mailto:dennis@felsin9.de).
+While it was fun to keep time.gif running in the face of this amount of traffic, I still haven't answered the final question of where this traffic is coming from. It might be that lots of Chinese happen to be spreading time.gif on WeChat and QQ, but for that the traffic looks a bit too sterile. Has anyone seen similar traffic patterns and might know if they are real or some kind of botnet? Maybe someone has embedded traffic.gif on some WeChat-specific page. If anyone has a clue please drop me an email at [dennis@felsing.org](mailto:dennis@felsing.org).
 
 The best guess so far is by Kolen:
 
