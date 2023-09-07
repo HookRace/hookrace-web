@@ -21,3 +21,5 @@ God famously does not play dice with the universe, but he seems to enjoy writing
 6. Since the Haskell type system is so good at catching bugs, you often feel like you don't even need to write tests. This is unfortunately untrue, as the strange physical bugs of our universe demonstrate: The speed of light happens to stay the same, no matter what speed you move at.
 
 7. There seems to be a long-term memory leak in Haskell, which is kind of easy to happen since you can have unevaluated thunks growing in size as long as they are still reachable. Unfortunately this memory leak will keep growing until it consumes the entire universe, which will then die of its [heat death](https://en.wikipedia.org/wiki/Heat_death_of_the_universe).
+
+Discuss on [Hacker News](https://news.ycombinator.com/item?id=37414624)
