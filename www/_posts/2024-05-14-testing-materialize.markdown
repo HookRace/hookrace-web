@@ -8,4 +8,4 @@ I joined Materialize’s Quality Assurance (QA) development team over a year ago
 
 Our goal is to find issues in Materialize as early and as efficiently as possible, ideally before a pull request even lands. Despite our small team, Materialize has a huge surface area.
 
-Read the rest of the blog post over on the [Materialize blog](https://materialize.com/blog/qa-process-overview/).
+Read the rest of the blog post over on the [Materialize blog](https://materialize.com/blog/engineering/qa-process-overview/).
