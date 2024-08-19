@@ -91,7 +91,7 @@ if mzcompose_py.exists():
             self.workflows[name] = fn
 {% endhighlight %}
 
-Since we are reading and analyzing the `mzcompsoe.py` file, something might be running in parallel and corrupting/overwriting it. If I empty the file I can indeed reproduce the issue with the original code:
+Since we are reading and analyzing the `mzcompose.py` file, something might be running in parallel and corrupting/overwriting it. If I empty the file I can indeed reproduce the issue with the original code:
 
 {% highlight text %}
 $ echo > test/skip-version-upgrade/mzcompose.py
