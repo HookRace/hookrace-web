@@ -12,7 +12,7 @@ no such service: default
 mzcompose: error: running docker compose failed (exit status 1)
 {% endhighlight %}
 
-I had seen this error already once or twice in the last year, but it was incredibly rare in CI, and never happened locally. As usual, there were more pressing product issues to debug, so I never looked into it. But last week I switched most of our CI tests to run on [Hetzner Cloud](https://www.hetzner.com/cloud/) instead of [AWS](https://aws.amazon.com/) to save some money. Suddenly this issue started occurring more often in CI, so my thinking was that it must somehow be timing-dependent.
+I had seen this error already once or twice in the last year, but it was incredibly rare in our Continuous Integration (CI) runs, and never happened locally. As usual, there were more pressing product issues to debug, so I never looked into it. But last week I switched most of our CI tests to run on [Hetzner Cloud](https://www.hetzner.com/cloud/) instead of [AWS](https://aws.amazon.com/) to save some money. Suddenly this issue started occurring more often in CI, so my thinking was that it must somehow be timing-dependent.
 
 <!--more-->
 
