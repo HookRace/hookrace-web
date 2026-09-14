@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "One year of cycling to work"
-tags: Work Frugality
+tags: Work Life
 permalink: /blog/cycling-to-work/
 ---
 

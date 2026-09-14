@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Broken Hardware, Fixes and Hacks over 8 Years"
-tags: Hardware Frugality
+tags: Hardware
 permalink: /blog/broken-hardware-fixes-hacks-8-years/
 ---
 

@@ -329,6 +329,32 @@ tbody tr:nth-child(odd) th {
   letter-spacing: 0;
 }
 
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.6rem;
+  height: 0.9rem;
+  border: 1px solid #c0c0c0;
+  border-radius: 0.45rem;
+}
+.theme-switch:hover {
+  border-color: #505050;
+}
+.theme-switch-knob {
+  position: absolute;
+  top: 50%;
+  left: 0.15rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: currentColor;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform .2s ease;
+          transition: transform .2s ease;
+}
+
 
 /*
  * Posts and pages
@@ -536,6 +562,60 @@ a.pagination-item:hover {
     width: 100%;
     border-width: 0px;
   }
+}
+
+.compare {
+  --pos: 50%;
+  position: relative;
+  margin-bottom: 1rem;
+  line-height: 0;
+  cursor: ew-resize;
+  touch-action: pan-y;
+}
+.compare img {
+  display: block;
+  width: 100%;
+}
+.compare .compare-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+          clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+}
+.compare b {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  width: 1rem;
+  margin-left: -0.5rem;
+  background: linear-gradient(#fff, #fff) center / 2px 100% no-repeat;
+  -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, .6));
+          filter: drop-shadow(0 0 2px rgba(0, 0, 0, .6));
+  cursor: ew-resize;
+  touch-action: none;
+}
+.compare b:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 1px;
+}
+.compare a {
+  position: absolute;
+  top: 0.4rem;
+  padding: 0 0.35rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .55);
+  font-size: 0.7rem;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.compare .compare-year-before {
+  left: 0.4rem;
+}
+.compare .compare-year-after {
+  right: 0.4rem;
 }
 
 .ytplayer img {

@@ -1,0 +1,398 @@
+---
+layout: post
+title: "Staying in Taiyuan, China"
+tags: Life
+permalink: /blog/taiyuan/
+---
+[![Sunset view in Taiyuan](/public/taiyuan/IMG_8152_small.jpg)](/public/taiyuan/IMG_8152.jpg)
+
+We live in Heidelberg, Germany. About once a year we travel to my wife's hometown of Taiyuan, the capital of the Shanxi province in China, to visit my parents-in-law. Our most recent visit was in spring of this year, for two months. In this post I'll talk about my experiences of regularly staying in Taiyuan since 2019.
+
+<!--more-->
+
+[![Map of Taiyuan's location in China](/public/taiyuan/map.jpg)](/public/taiyuan/map.jpg)
+
+[Source: Wikipedia](https://commons.wikimedia.org/wiki/File:Taiyuan-location-MAP-in-Shanxi-Province-China.jpg)
+
+## Getting There
+
+Currently Germans can stay for 30 days in China without a visa. Since we stayed in Mainland China for the entire two months, we couldn't make use of it this year unfortunately. Last year we did a quick trip to Hong Kong, so we had two separate 30-day periods.
+
+Luckily we live pretty close to the Frankfurt airport, which has direct flights to Beijing using Air China:
+
+[![Air China plane from Frankfurt to Beijing](/public/taiyuan/IMG_0505_small.jpg)](/public/taiyuan/IMG_0505.jpg)
+
+From Beijing airport we cross the city by subway to the train station, which is slightly challenging with a stroller and heavy luggage:
+
+[![Beijing subway map](/public/taiyuan/subway_small.jpg)](/public/taiyuan/subway.jpg)
+
+From there it's a 2.5 hour trip by high speed train, recently upgraded to 350 km/h. Since the trains are pretty cheap and convenient they are quite popular, so you have to book a ticket early for popular times and fast trains:
+
+<video controls muted poster="/public/taiyuan/trainstation_preview.jpg">
+  <source src="/public/taiyuan/trainstation.mp4" type="video/mp4">
+</video>
+
+I haven't seen a single train being delayed so far, which is refreshing after having ridden trains regularly for about 15 years in delay-plagued Germany. The high speed rail network of China is amazing in general, with more high speed tracks existing inside of China than outside:
+
+[![Rail map of China](/public/taiyuan/rail_small.png)](/public/taiyuan/rail.png)
+
+[Source: Wikipedia](https://en.wikipedia.org/wiki/File:Rail_map_of_PRC.svg)
+
+The train stations function a lot like airports though, so there are security controls and a line to check into the platform before you can enter the train. There was a technical issue for a few seconds right after we went through the ticket check:
+
+[![Train station queue](/public/taiyuan/trainstationqueue_small.jpg)](/public/taiyuan/trainstationqueue.jpg)
+
+## City
+
+The Taiyuan area is famous for coal and steel, similarly to the Ruhr area in Germany. You can still see a lot of industry, including a [huge steel production facility](https://en.wikipedia.org/wiki/Taiyuan_Iron_and_Steel_Group) in our backyard and coal refinement:
+
+[![Coal refining](/public/taiyuan/IMG_7801_small.jpg)](/public/taiyuan/IMG_7801.jpg)
+
+Solar has seen a big boom in China, here's a random hill covered in solar cells:
+
+[![Solar cells on mountain](/public/taiyuan/IMG_0164_small.jpg)](/public/taiyuan/IMG_0164.jpg)
+
+Taiyuan boasts a population of 4-5 million, making it a similar size to Berlin. Yet it seems to be widely unknown, at least I had never heard of it before meeting my wife. There are a lot of huge cities in China after all. While China itself is not growing in population anymore, but shrinking, people from villages and smaller cities are moving to larger cities, so Taiyuan is still growing at ~1.7% per year. Compare that to Heidelberg's measly ~0.4% yearly growth.
+
+[![Taiyuan from above](/public/taiyuan/IMG_9652_small.jpg)](/public/taiyuan/IMG_9652.jpg)
+
+Shanxi is not at China's coast, but a bit inland. This has cut it off from a lot of the recent boom China's coastal cities have received thanks to access to international shipping. Historically Taiyuan played a much larger role in China and was the capital of many dynasties. Unfortunately following the Cultural Revolution there isn't much left of historic buildings. What looks like historic buildings in the center of Taiyuan often turns out to be replicas:
+
+[![Shopping street](/public/taiyuan/IMG_8501_small.jpg)](/public/taiyuan/IMG_8501.jpg)
+
+Nevertheless Taiyuan has some actual ancient sights like the [Jinci temple](https://en.wikipedia.org/wiki/Jinci) and [Twin Pagoda Temple](https://en.wikipedia.org/wiki/Twin_Pagoda_Temple). [Pingyao Ancient City](https://en.wikipedia.org/wiki/Pingyao) is also only 30 minutes by train.
+
+There doesn't seem to be a lot of tourism or international travel to Taiyuan in general. This year I've seen a handful of people from outside of East Asia, in the years before it was even less. When I looked for some information on the city, I couldn't find much in English online, and what I could find wasn't [that kind](https://www.reddit.com/r/China/comments/8sqw6j/thoughts_on_taiyuan/e11w93t/). I can imagine that life in the villages is indeed less interesting:
+
+[![Village](/public/taiyuan/IMG_7750_small.jpg)](/public/taiyuan/IMG_7750.jpg)
+
+## Pollution
+
+While we're talking about the bad sides, air pollution can be tough, especially during the winter. Since I don't enjoy cycling in -20°C either, I'm now avoiding going to Taiyuan in winter:
+
+[![Winter](/public/taiyuan/IMG_20190202_145510_small.jpg)](/public/taiyuan/IMG_20190202_145510.jpg)
+
+In recent years the pollution has been getting better though, spring is usually dry with nice weather. Occasionally there are dust storms from the Gobi desert, which are unpleasant to be in, and about the only time you really need an air purifier at home. But on most days you can see far and the air seems fine:
+
+[![Clear views](/public/taiyuan/IMG_0197_small.jpg)](/public/taiyuan/IMG_0197.jpg)
+
+## Fen River
+
+The Fen river (or Fenhe, literally "Large river") that runs through the city is unfortunately quite polluted, so swimming in it is not advised. The waterfront has been made into a huge park of sorts, with walking paths and cycling paths along the river for the main part of the city. This allows crossing through the city from north to south or vice versa undisturbed by cars or scooters:
+
+[![View of re-naturized area around Fen river in the north](/public/taiyuan/IMG_6798_small.jpg)](/public/taiyuan/IMG_6798.jpg)
+
+Interestingly the Fen river doesn't carry enough water naturally. Taiyuan has also been plagued by the entire city sinking by more than 2 meters since 1949 from the groundwater lowering by about 70 meters, mostly caused by intensive agriculture, coal mining and heavy industry. This trend has recently been [partially reversed](https://www.theguardian.com/science/2021/dec/01/terrawatch-what-the-world-can-learn-from-chinas-sinking-city). Planting trees and reducing water usage seem to have helped, but the major driver has been the [Wanjiazhai Water Control Project](https://en.wikipedia.org/wiki/Wanjiazhai_Dam), which redirects over a billion cubic meters of water per year from the Yellow river to the Fen river.
+
+[![Bridge crossing Fen river](/public/taiyuan/IMG_6778_small.jpg)](/public/taiyuan/IMG_6778.jpg)
+
+China seems to have a thing for huge infrastructure projects, we've already talked a bit about the high speed railway network, you'll also see some nice looking bridges later.
+
+[![Fen river in the south](/public/taiyuan/IMG_8140_small.jpg)](/public/taiyuan/IMG_8140.jpg)
+
+Some older men seem not to be disturbed by the river's pollution. During runs I've quickly learnt where the hot spots of naked swimming are (and to avoid them). There is a nice looking public pool next to the river, so you can still safely swim.
+
+## Traffic & Transportation
+
+Car traffic during rush hour seems bad, but luckily we rarely had to go through it. The experience of staying in a city during vacation isn't representative of actually living and working there after all. On smaller roads there are more electric scooters than cars. [Delivery drivers](https://www.scmp.com/tech/article/3357458/china-moves-end-irrational-food-delivery-subsidies-and-sectors-price-wars) make up a huge fraction of the e-scooters. Gasoline-powered scooters are heavily restricted in the inner city.
+
+[![Road at night](/public/taiyuan/IMG_7612_small.jpg)](/public/taiyuan/IMG_7612.jpg)
+
+Street signs include a N/E/S/W designation to show which direction the street is going.
+
+[![Street sign at a park](/public/taiyuan/83c7d19942b61164480395fb74d53f1e_small.jpg)](/public/taiyuan/83c7d19942b61164480395fb74d53f1e.jpg)
+
+With a stroller taking a bus is more convenient than using bicycles. It is also extremely cheap at 0.5 RMB per ride, or about 0.06 €. This is literally the only photo/video I found including a bus, featuring some bonus sheep coming down from the mountains:
+
+<video controls muted poster="/public/taiyuan/sheep_preview.jpg">
+  <source src="/public/taiyuan/sheep.mp4" type="video/mp4">
+</video>
+
+Two subway lines have been opened in the city so far, one going from North to South (opened in 2020), the other going to the airport (opened in 2025).
+
+[![Subway station](/public/taiyuan/IMG_8446_small.jpg)](/public/taiyuan/IMG_8446.jpg)
+
+For navigation [Amap](https://www.amap.com/) works great, outside the city I've also been relying on [CoMaps](https://www.comaps.app/). Unfortunately Amap only shows exact arrival times at bus stations when set to Chinese, not in English. Luckily searching still works with Pinyin (romanization system) even when the UI is set to be in Chinese.
+
+The bus and subway stop running pretty early in the evening, so we had to also use ridesharing. Didi and Amap are the usual solutions and cost about 1-5 € for our usual trips through the city.
+
+There is a [(barely-international) airport in Taiyuan](https://www.flightconnections.com/flights-from-taiyuan-tyn), which mostly connects to other Chinese cities, including Hong Kong and Macau. Last year there also were direct flights to Thailand, but they don't seem to exist anymore.
+
+## Parks & Running
+
+My parents-in-law live right next to the Forest Park, which is a park trying to emulate being in a forest. This makes it quite different from most other parks in Taiyuan, which look more artificial and often have playgrounds. Parks are for free, (very) actively maintained, and are popular for all kinds of social activities like dancing, singing, sports or [jianzi](https://en.wikipedia.org/wiki/Jianzi):
+
+[![Bridge and lake in a park](/public/taiyuan/IMG_6552_small.jpg)](/public/taiyuan/IMG_6552.jpg)
+
+[![Twin Towers Park](/public/taiyuan/IMG_8120_small.jpg)](/public/taiyuan/IMG_8120.jpg)
+
+[![Playground in park](/public/taiyuan/IMG_7900_small.jpg)](/public/taiyuan/IMG_7900.jpg)
+
+[![People playing jianzi](/public/taiyuan/IMG_8399_small.jpg)](/public/taiyuan/IMG_8399.jpg)
+
+[![Sports equipment](/public/taiyuan/IMG_8400_small.jpg)](/public/taiyuan/IMG_8400.jpg)
+
+[![Waterway in park](/public/taiyuan/IMG_7453_small.jpg)](/public/taiyuan/IMG_7453.jpg)
+
+The area surrounding the lake in the Forest Park is a hotspot for daytime camping in Taiyuan:
+
+[![Daytime camping](/public/taiyuan/IMG_7176_small.jpg)](/public/taiyuan/IMG_7176.jpg)
+
+Soon I started running in the Forest Park, where one round is a convenient 6 km. Occasionally a group of soldiers from a nearby camp would join me.
+
+[![Forest Park](/public/taiyuan/IMG_8408_small.jpg)](/public/taiyuan/IMG_8408.jpg)
+
+After a while Forest Park became a bit repetitive though, but luckily it's right next to the Fen river, so I switched to the paths next to the river instead for longer runs:
+
+[![Cycling path next to Fen river](/public/taiyuan/IMG_6804_small.jpg)](/public/taiyuan/IMG_6804.jpg)
+
+One day I wanted to run a long distance and went all the way north to the [North University of China](https://en.wikipedia.org/wiki/North_University_of_China), which sits where the Fen river starts running into the city. I wanted to go further, but there were ominous signs of the area being restricted by military, and a few people standing guard at the path. Quoting Wikipedia:
+
+> The university played an important role in the weaponry development and personnel training for the People's Liberation Army during the Second Sino-Japanese War and the Chinese Civil War.
+
+[![Close to the end of Northern path](/public/taiyuan/IMG_7340_small.jpg)](/public/taiyuan/IMG_7340.jpg)
+
+Running south was easier, there is even a dedicated walking/running path directly on the river, going pretty far south. So you don't even run into cyclists:
+
+[![Pedestrian path on the Fen](/public/taiyuan/IMG_9015_small.jpg)](/public/taiyuan/IMG_9015.jpg)
+
+Unfortunately pedestrian-only areas are usually blocked off from bicycles and scooters in a way that also won't allow wheelchairs or strollers to enter.
+
+## Cycling into the Mountains
+
+Nevertheless, with running I wouldn't get that far. My father-in-law bought a nice mountain bike and had it retrofitted into an e-bike. The total cost was 500 € for what I'd consider a pretty nice bicycle that you'd probably have to pay 3-4x as much for in Germany. Since the motor sits in the front wheel it rides pretty well as a non-electric bike too:
+
+[![E-Bike](/public/taiyuan/IMG_7522_small.jpg)](/public/taiyuan/IMG_7522.jpg)
+
+Annoyingly the speed limit on the entire cycling path next to the Fen river is 15 km/h, which is unreasonably slow even with a non-motorized bicycle:
+
+[![Speed limit of 15](/public/taiyuan/IMG_6772_small.jpg)](/public/taiyuan/IMG_6772.jpg)
+
+I quickly discovered that the mountains to the west are the highlight of Taiyuan. My first trip into them went up to the 2nd Fenhe reservoir:
+
+[![2nd Fen Reservoir](/public/taiyuan/IMG_0271_small.jpg)](/public/taiyuan/IMG_0271.jpg)
+
+The small building visible in the above picture is the nicest spot that is reachable by a proper road:
+
+[![Tower at 2nd Fen Reservoir](/public/taiyuan/IMG_9583_small.jpg)](/public/taiyuan/IMG_9583.jpg)
+
+There were multiple really nice spots on the ridges of the 2nd Fen reservoir, so I kept coming back for them. Some of the paths were muddy or made of loose stone, with apparently no traffic and barely any visitors.
+
+<video controls muted poster="/public/taiyuan/fenreservoir_preview.jpg">
+  <source src="/public/taiyuan/fenreservoir.mp4" type="video/mp4">
+</video>
+
+Then I started exploring the mountain ridges from north to south. Interestingly driving into the mountains by car requires pre-registration and signing into a list. Since I arrived by bicycle they always just waved me through. Here's a view from what is apparently a new tourist spot up on the mountain, looking down on the Fen river:
+
+[![View from a newly built mountain tourist spot down to the Fen river](/public/taiyuan/IMG_7686_small.jpg)](/public/taiyuan/IMG_7686.jpg)
+
+Once I accidentally rode into a construction site on the mountain, and only realized after reaching the end of it, where I was greeted by a fence blocking access to the road. There were no signs warning of the construction before it, from what I can tell, but I might not have understood them anyway.
+
+[![Construction fence](/public/taiyuan/IMG_0328_small.jpg)](/public/taiyuan/IMG_0328.jpg)
+
+Another time only one lane of the road was closed for construction in the mountains, but on the other lane the road traffic was still not moving. Someone waved at me to just ride past on my bicycle, which is when I noticed an elderly woman sitting in the middle of the remaining lane holding up a sign.
+
+[![Cycling road in the mountains](/public/taiyuan/IMG_8953_small.jpg)](/public/taiyuan/IMG_8953.jpg)
+
+I have barely met any other cyclists in the mountains, but this might also be caused by me usually riding early in the morning during work days. As I kept going further south I discovered the [Mengshan Giant Buddha statue](https://en.wikipedia.org/wiki/Mengshan_Giant_Buddha).
+
+[![Mengshan Giant Buddha from far](/public/taiyuan/IMG_9782_small.jpg)](/public/taiyuan/IMG_9782.jpg)
+
+I realized that I had cycled just past it without seeing it once, so on the next trip I was determined to get to it. Apparently I was too determined... With CoMaps I found a small path that went over some mountain ridges. The path was barely rideable by bicycle because it mostly consisted of loose stones and was pretty steep:
+
+[![Mountain roads](/public/taiyuan/IMG_9744_small.jpg)](/public/taiyuan/IMG_9744.jpg)
+
+Finally I ended up in the Mengshan Giant Buddha area, cycled once around it and finally went in. Some workers kept asking me questions, but with my bad Chinese I didn't manage to understand what they were talking about. I noticed that the closer I got to the statue the more it looked like a park, so I parked my bicycle and walked up the rest of the way:
+
+[![Mengshan Giant Buddha park](/public/taiyuan/IMG_9825_small.jpg)](/public/taiyuan/IMG_9825.jpg)
+
+[![Mengshan Giant Buddha from close](/public/taiyuan/IMG_9830_small.jpg)](/public/taiyuan/IMG_9830.jpg)
+
+When I walked back to my bicycle it had disappeared, and there were two park workers standing there instead. I got picked up by them, they delivered me and my bicycle to some guards who arrived with a car and drove me to the end of what I had now figured out was a paid park. Apparently no one other than me thinks to go through some tiny mountain paths to get in there, so the sight's park entrance from the mountains was neither closed nor staffed and I hadn't noticed that I entered it accidentally. Luckily I managed to explain what had happened to the guards and they let me go on my merry way.
+
+Riding further south also meant I went past a lot of the impressive bridges crossing the Fenhe:
+
+[![Bridge by night](/public/taiyuan/IMG_0049_small.jpg)](/public/taiyuan/IMG_0049.jpg)
+
+The Fenhe path is not well connected to other infrastructure, so even getting up to the bridges often means having to carry the bicycle up stairs:
+
+[![Bridge by night](/public/taiyuan/IMG_0026_small.jpg)](/public/taiyuan/IMG_0026.jpg)
+
+The general pattern seems to be that China likes doing huge infrastructure projects, but actually integrating them properly gets missed sometimes.
+
+[![Bridge by evening](/public/taiyuan/IMG_0019_small.jpg)](/public/taiyuan/IMG_0019.jpg)
+
+[![Bridge by evening](/public/taiyuan/IMG_0013_small.jpg)](/public/taiyuan/IMG_0013.jpg)
+
+[![2 bridges](/public/taiyuan/IMG_8426_small.jpg)](/public/taiyuan/IMG_8426.jpg)
+
+Even further south the mountain roads were *much* better (actually paved, brand new road opened in 2019), with a kind of famous spiral mountain bridge on the Tianlongshan Highway. The only other visitors I saw there were a group of 4 women who stopped their car and started screaming into the sky:
+
+[![View down into the city on modern road](/public/taiyuan/IMG_8198_small.jpg)](/public/taiyuan/IMG_8198.jpg)
+
+[![Spiral road from below](/public/taiyuan/IMG_8218_small.jpg)](/public/taiyuan/IMG_8218.jpg)
+
+[![Spiral road from the middle](/public/taiyuan/IMG_8238_small.jpg)](/public/taiyuan/IMG_8238.jpg)
+
+Mud and rock slides as well as some flooding on the roads seem to be a common occurrence, I noticed them after each strong rain:
+
+[![Rocks on the road](/public/taiyuan/IMG_8362_small.jpg)](/public/taiyuan/IMG_8362.jpg)
+
+[![Rocks on the road](/public/taiyuan/IMG_8416_small.jpg)](/public/taiyuan/IMG_8416.jpg)
+
+I also kept running into clearly man-made loess caves, so-called [yaodong](https://en.wikipedia.org/wiki/Yaodong). They are close to villages, so they might actually connect to the more modern houses there. Quoting Wikipedia:
+
+> As of the early 2000s, between 30 and 40 million people in northern China still lived in yaodongs, a number rapidly decreasing as millions move to more modern dwellings nearby or move away as part of urbanization in China.
+
+[![Artificial cave](/public/taiyuan/IMG_7551_small.jpg)](/public/taiyuan/IMG_7551.jpg)
+
+Graves in random places on the mountains are also a common sight:
+
+[![Graves](/public/taiyuan/IMG_9741_small.jpg)](/public/taiyuan/IMG_9741.jpg)
+
+I didn't have as much success getting into the mountains on the east, the road was blocked and the guard utterly uninterested in explaining why:
+
+[![Closed road up the mountain](/public/taiyuan/IMG_0161_small.jpg)](/public/taiyuan/IMG_0161.jpg)
+
+## Restrictions and the Internet
+
+For using the internet as a foreigner, relying on Google, WhatsApp, Wikipedia, etc., the [Great Firewall](https://en.wikipedia.org/wiki/Great_Firewall) is annoying, but using a cheap Hong Kong eSIM from 3HK easily circumvents it. My interpretation is that China is only trying to prevent their own citizens from accessing the wider internet and doesn't care about visitors.
+
+During the evening connections to Europe are noticeably slower, I guess the total bandwidth for traffic outside of China is just pretty limited. Chinese people might not mind much since they mostly use local services anyway.
+
+For payment Alipay and WeChat Pay work well, and both are literally accepted and preferred by anyone, including the smallest street food shops. It can be connected to a credit card and at least for me the credit card fees were waived every time for some reason. You have to upload your passport in the app to verify your identity, which is slightly disconcerting, but seems to become more common in Western apps nowadays too. You can still get around with cash, but shop owners might scramble to get change from a colleague.
+
+[![Outdoor restaurant](/public/taiyuan/IMG_7296_small.jpg)](/public/taiyuan/IMG_7296.jpg)
+
+The [Taiyuan Satellite Launch Center](https://en.wikipedia.org/wiki/Taiyuan_Satellite_Launch_Center) has been in operation since 1966. It's located about 300 km from the city and has [regular launches](https://orbitalradar.com/launch-database/site/taiyuan). Unfortunately watching them seems not to be allowed, especially for foreigners.
+
+[![Far view](/public/taiyuan/IMG_9632_small.jpg)](/public/taiyuan/IMG_9632.jpg)
+
+## Language, School & Work
+
+My Chinese is very basic, so I have trouble getting around. Unfortunately most people in Taiyuan don't speak any English. I have noticed that school-age kids would mostly just say rote phrases in English, but not actually be able to communicate with me.
+
+School and work schedules seem crazy to me, with both kids and adults staying at school/work all day. I can't imagine learning or working for that many hours in the day, my brain would just shut off after a few hours and I'd have to switch to something lighter.
+
+There seems to be a huge difference in the quality of schools, to the point where some famous public schools would take over other public schools to lend them some of their prestige. Parents move (or pretend to move) to an area to give their children access to a good school. The craziest traffic I've seen is in front of a school, with scooters, people and cars bringing the entire street to a stop during pickup times. I couldn't even get through on foot.
+
+There is also barely any time off, so when weekend or holidays hit all the nice spots are overcrowded. See the parking traffic at Forest Park for example:
+
+[![Traffic at Forest Park](/public/taiyuan/IMG_6113_small.jpg)](/public/taiyuan/IMG_6113.jpg)
+
+## Construction
+
+New buildings are constructed at break-neck speed in Taiyuan, which adds as many people every two years as live in Heidelberg in total (150k). Work on construction sites happens during all times of the day, even in the middle of the night. In a two-month stay I can easily watch the progress of multiple large residential buildings going up. Since my first visit in 2019 the entire skyline behind this view of the Forest Park has changed noticeably:
+
+<div class="compare">
+  <img src="/public/taiyuan/forestpark_2026_small.jpg" alt="Overlooking Forest Park in 2026">
+  <img class="compare-before" src="/public/taiyuan/forestpark_2019_small.jpg" alt="Overlooking Forest Park in 2019">
+  <a class="compare-year-before" href="/public/taiyuan/forestpark_2019.jpg">2019</a>
+  <a class="compare-year-after" href="/public/taiyuan/forestpark_2026.jpg">2026</a>
+  <b tabindex="0" role="slider" aria-label="Compare 2019 and 2026" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></b>
+</div>
+
+<script>
+for (const c of document.querySelectorAll(".compare")) {
+  const b = c.querySelector("b");
+  const set = pos => {
+    pos = Math.min(100, Math.max(0, pos));
+    c.style.setProperty("--pos", pos + "%");
+    b.setAttribute("aria-valuenow", Math.round(pos));
+  };
+  const move = e => {
+    const r = c.getBoundingClientRect();
+    set((e.clientX - r.left) / r.width * 100);
+  };
+  c.onpointerdown = e => {
+    if (e.target.closest("a")) return;
+    e.preventDefault();
+    c.setPointerCapture(e.pointerId);
+    c.onpointermove = move;
+    move(e);
+  };
+  c.onpointerup = c.onpointercancel = () => c.onpointermove = null;
+  b.onkeydown = e => {
+    const step = {ArrowLeft: -5, ArrowRight: 5, Home: -100, End: 100}[e.key];
+    if (step === undefined) return;
+    e.preventDefault();
+    set(+b.getAttribute("aria-valuenow") + step);
+  };
+}
+</script>
+
+Out of curiosity we visited a newly built apartment for sale, and it feels strange to get such a luxury apartment for such a cheap price. Top floor (around 30) with 370 m², with a view overlooking one of the nicest parks in the city, for just 900k €. It's not the exact one as in this video, but it gives you an idea:
+
+<video controls muted poster="/public/taiyuan/apartment_preview.jpg">
+  <source src="/public/taiyuan/apartment.mp4" type="video/mp4">
+</video>
+
+Building quality is much lower than in Germany, with drafts coming in from the 2-paned windows. Insulation is probably not a major concern either, and it kind of makes sense when even electricity only costs about 0.06 €/kWh, or about 6 times less than in Germany.
+
+[![Nice cars too](/public/taiyuan/IMG_6189_small.jpg)](/public/taiyuan/IMG_6189.jpg)
+
+Some buildings are also just erected without any official permission, so the people living there can't even register since the city considers their address as non-existent.
+
+## Food
+
+The food in Taiyuan is amazing. I like noodle dishes and that's what Shanxi is famous for. The northern part of China is way more about wheat and millet, which is what they've been growing for thousands of years.
+
+[![Shanxi Hot Pot](/public/taiyuan/hotpot_small.jpg)](/public/taiyuan/hotpot.jpg)
+
+But you're not restricted to local dishes of course. You can have all kinds of East Asian cuisines, including the full variety of Chinese regions. There are so many restaurants that on a single street you'll find more variety of foods than in all of Heidelberg.
+
+[![Various meals](/public/taiyuan/restaurant_small.jpg)](/public/taiyuan/restaurant.jpg)
+
+Prices are pretty low at restaurants, a normal dinner would set us back 3-8 € per adult.
+
+[![Spicy bowl](/public/taiyuan/IMG_9390_small.jpg)](/public/taiyuan/IMG_9390.jpg)
+
+People regularly bring their own drinks, for example bubble tea or alcohol, or even food from another restaurant, to the restaurant they're eating at:
+
+[![Barbecue with outside seating](/public/taiyuan/IMG_0201_small.jpg)](/public/taiyuan/IMG_0201.jpg)
+
+My favorite is eating street food instead of sitting down in a restaurant. A few years ago most of the improvised street food stalls were banned from the city, but they seem to have made a comeback. I seem not to be alone in liking them, since they are pretty crowded on evenings and during the weekend. The highlight is lamb skewers for 0.25 - 0.5 € each:
+
+[![Restaurant without sitting, dedicated to skewers](/public/taiyuan/IMG_9935_small.jpg)](/public/taiyuan/IMG_9935.jpg)
+
+[![Lamb skewers](/public/taiyuan/skewers_small.jpg)](/public/taiyuan/skewers.jpg)
+
+The "Food Street" of Taiyuan features fake Ming/Qing dynasty style buildings and has lots of street food available. But there are also smaller hot spots around the city. Just taking a bus crossing through the city in the evening you'll run past lots of places where people are sitting/standing outside eating street food.
+
+[![Another popular street food spot](/public/taiyuan/IMG_7357_small.jpg)](/public/taiyuan/IMG_7357.jpg)
+
+In recent years [Mixue](https://en.wikipedia.org/wiki/Mixue_Ice_Cream_%26_Tea) has gotten extremely popular. You can now find the shops on many street corners, selling ice cream (0.25 €), lemonade (0.5 €) and bubble tea (1 €). Quoting Wikipedia:
+
+> At the end of 2025, it operated almost 60,000 stores in China and overseas, making it the world's largest food-service chain by number of stores.
+
+[![Mixue](/public/taiyuan/IMG_6752_small.jpg)](/public/taiyuan/IMG_6752.jpg)
+
+## Attractions
+
+This year we went to a bunch of playgrounds, theme parks and other entertainment since our son could enjoy them much more now that he's three years old. A highlight was the [Fantawild](https://en.wikipedia.org/wiki/Fantawild) Oriental Heritage theme park, with theaters, rollercoasters and lots of other attractions:
+
+[![Live music at Fantawild](/public/taiyuan/IMG_8884_small.jpg)](/public/taiyuan/IMG_8884.jpg)
+
+[![Boat ride at Fantawild](/public/taiyuan/IMG_8835_small.jpg)](/public/taiyuan/IMG_8835.jpg)
+
+[![Rollercoaster at Fantawild](/public/taiyuan/IMG_8818_small.jpg)](/public/taiyuan/IMG_8818.jpg)
+
+<video controls poster="/public/taiyuan/theater_preview.jpg">
+  <source src="/public/taiyuan/theater.mp4" type="video/mp4">
+</video>
+
+## Conclusion
+
+I feel like I've been extremely lucky to get to spend months every year in Taiyuan, which I now consider a hidden gem. It has easy access to my favorite foods, great running paths and mountain roads for cycling:
+
+[![Me at the 2nd Fen Reservoir](/public/taiyuan/IMG_9619_small.jpg)](/public/taiyuan/IMG_9619.jpg)
+
+I'm wondering if I would have started to like any city I get thrown into, being generally optimistic and curious might play a role. It's not like I think Heidelberg is any worse now, it's just great in a myriad of different ways. But that might be for another post.
+
+[Immich](https://immich.app/) has a nice feature of showing a map of where I've taken photos, roughly corresponding to areas of Taiyuan I've been to:
+
+[![Locations from Immich](/public/taiyuan/immich.png)](/public/taiyuan/immich.png)
+
+You can reach me at [dennis@felsing.org](mailto:dennis@felsing.org).
+
+[![2nd Fenhe reservoir](/public/taiyuan/IMG_9597_small.jpg)](/public/taiyuan/IMG_9597.jpg)

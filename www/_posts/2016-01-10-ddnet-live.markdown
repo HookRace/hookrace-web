@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "DDNet Live: Twitch spectates an online game"
-tags: DDNet Frugality
+title: "DDNet Live: Twitch spectates an online game"
+tags: DDNet
 permalink: /blog/ddnet-live/
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "€9 Ticket"
-tags: Frugality Work
+tags: Work Life
 permalink: /blog/euro9-ticket/
 ---
 

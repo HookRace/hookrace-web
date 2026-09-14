@@ -24,7 +24,6 @@ pages_list:
   Feed: '/blog/feed/'
   DDNet: 'https://ddnet.org/'
   Me: 'https://dennis.felsing.org'
-  Switch Theme: '/switch-theme/'
 
 #gems: [jekyll-tagging]
 
